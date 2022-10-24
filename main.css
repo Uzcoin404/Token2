@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Manrope', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+}
+:root{
+    --primary: #F23058;
+    --secondary: #D70D36;
+    --tertiary: #F0F9FF;
+    --blue1: #194060;
+    --blue2: #607D94;
+    --blue3: #C9DCEC;
+    --black: #292D33;
+    --grey: #9497A1;
+    --background: #F1F6FA;
+    --red: #C14040;
+}
