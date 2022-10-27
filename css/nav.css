@@ -1,3 +1,7 @@
+@import url("../main.css");
+@import url("./hero.css");
+@import url("./home.css");
+
 .dropdown-menu li {
     position: relative;
 }
@@ -13,4 +17,41 @@
 }
 .dropdown-menu li:hover .dropdown-submenu {
     display: block;
+}
+.header {
+    height: 100vh;
+    background-image: url("../img/hero-bubbles.png"),
+        linear-gradient(128.28deg, #eb5757 5.72%, #ff3566 59.46%);
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.navbar {
+    box-shadow: none;
+}
+.navbar-brand {
+    margin-right: 120px;
+}
+.nav__btn {
+    height: 44px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #f6335b;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.18) !important;
+    font-family: "Manrope";
+}
+.nav__btn:hover {
+    color: #f6335b;
+}
+.navbar-nav {
+    column-gap: 32px;
+}
+.btn_square {
+    width: 44px;
+    height: 44px;
+}
+.nav-link {
+    color: #fff;
+}
+.nav-link:hover {
+    color: #eee;
 }

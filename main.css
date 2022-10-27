@@ -13,6 +13,15 @@
     --blue3: #C9DCEC;
     --black: #292D33;
     --grey: #9497A1;
-    --background: #F1F6FA;
+    --background: #F3F3F3;
     --red: #C14040;
+}
+body{
+    background-color: var(--background);
+}
+img{
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
 }
