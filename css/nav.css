@@ -52,3 +52,18 @@
 .nav-link:hover {
     color: #eee;
 }
+.nav-item {
+    position: relative;
+}
+.nav-item::before {
+    position: absolute;
+    content: "";
+    transition: .3s;
+    height: 1.5px;
+    background-color: #fff;
+    width: 0;
+    bottom: 5px;
+}
+.nav-item:hover::before{
+    width: 100%;
+}

@@ -112,3 +112,35 @@
     color: var(--black);
     max-width: 540px;
 }
+.subscribe__form {
+    display: flex;
+}
+.subscribe__form .input-group{
+    flex-wrap: nowrap;
+}
+.subscribe__input {
+    border: none;
+    background: #f2f2f2;
+}
+.subscribe__btn {
+    border: none;
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    width: 125px;
+    height: 54px;
+}
+.subscribe__input {
+    min-width: 320px !important;
+    height: 54px;
+    width: 100% !important;
+    font-size: 16px !important;
+}
+.subscribe__input, .subscribe__input::placeholder {
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--black);
+}

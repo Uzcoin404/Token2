@@ -198,7 +198,21 @@
                         <ul class="splide__list">
                             <li class="splide__slide">
                                 <div class="card">
-                                    <img src="img/products/card-product1.png" alt="" class="card__img">
+                                    <div class="splide card_img_slider">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <img src="img/products/card-product1.png" alt="" class="card__img">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="img/products/card-product2.png" alt="" class="card__img">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="img/products/card-product3.png" alt="" class="card__img">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div class="card__content">
                                         <a href="#">
                                             <h3 class="card__title">C301-i programmable TOTP token</h3>
@@ -409,7 +423,11 @@
                     </p>
                 </div>
                 <form action="#" class="subscribe__form">
-                    <button type="submit" class="btn">Send</button>
+                    <div class="input-group">
+                        <input type="email" name="email" class="form-control subscribe__input form-control-lg"
+                            placeholder="Your email">
+                        <button class="btn btn-light subscribe__btn" type="submit">Send</button>
+                    </div>
                 </form>
             </div>
         </section>
@@ -482,8 +500,60 @@
             </div>
             <div class="footer__contact">
                 <div class="footer_contact_content">
-
+                    <h4 class="footer_contact_title">Contacts</h4>
+                    <div class="footer_contact_blog">
+                        <a href="tel:+41225196202" class="footer_contact_text">
+                            +41 22 519 62 02
+                        </a>
+                        <p class="footer_contact_text">La Voie-Creuse 3B, 1202 Geneva, SWITZERLAND</p>
+                        <a href="mailto:info@token2.com" class="footer_contact_link">
+                            info@token2.com
+                            <i class="fa-regular fa-right-long ms-2"></i>
+                        </a>
+                        <a href="#" class="footer_contact_link">
+                            Driving derections
+                            <i class="fa-regular fa-right-long ms-2"></i>
+                        </a>
+                    </div>
                 </div>
+                <div class="footer__social">
+                    <h4 class="footer_contact_title">Social</h4>
+                    <div class="socials">
+                        <a href="#" class="social__media">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social__media">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social__media">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social__media">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#" class="social__media">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="#" class="social__media">
+                            <i class="fa-solid fa-envelope-open"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__terms">
+                <div class="footer_terms_blog">
+                    <a href="#" class="footer_contact_link">
+                        Privacy policy
+                        <i class="fa-regular fa-right-long ms-2"></i>
+                    </a>
+                    <a href="#" class="footer_contact_link">
+                        Terms of us
+                        <i class="fa-regular fa-right-long ms-2"></i>
+                    </a>
+                </div>
+                <p class="footer_terms_text">
+                    © 2022 TOKEN2 Sàrl. All Rights Reserved.
+                </p>
             </div>
         </div>
     </footer>

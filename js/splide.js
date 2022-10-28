@@ -7,5 +7,14 @@ new Splide( '.products__slider', {
 new Splide( '.slider', {
     perPage: 1,
     perMove: 1,
-    gap: '3rem'
+    gap: '3rem',
+    heightRatio: 0.25,
+}).mount();
+
+new Splide( '.card_img_slider', {
+    perPage: 1,
+    perMove: 1,
+    arrows: false,
+    autoplay: true,
+    lazyLoad: 'nearby'
 }).mount();
