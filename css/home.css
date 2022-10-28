@@ -1,3 +1,4 @@
+@import url("./card.css");
 .main {
     margin-top: 500px;
 }
@@ -5,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 300px;
+    margin-bottom: 25px;
 }
 .main__title {
     font-family: "Manrope";
@@ -20,4 +21,94 @@
     font-size: 14px;
     line-height: 24px;
     color: #eb5757;
+}
+.main_see_all:hover {
+    color: #eb5757;
+}
+.products__slider {
+    padding: 0 30px;
+    margin-bottom: 60px;
+}
+.splide__arrow {
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    opacity: 1 !important;
+}
+.splide__arrow svg {
+    fill: var(--black);
+}
+
+.features__boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 25px;
+}
+.features__box {
+    position: relative;
+    padding: 22px 22px 35px;
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.features__title {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--black);
+    margin-bottom: 25px;
+    max-width: 270px;
+}
+.features__text {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #9497a1;
+}
+.features__btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #f23058;
+    background: #f6f7f9;
+}
+.features__btn:hover {
+    color: #f23058;
+}
+.slider .splide__slide {
+    background-color: #777;
+    height: 240px;
+}
+
+.subscribe {
+    background: #e1ddd9;
+    padding: 80px 0;
+    margin-top: 60px;
+}
+.subscribe .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscribe__title {
+    font-family: "Manrope";
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 56px;
+    color: var(--black);
+}
+.subscribe__text {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 33px;
+    color: var(--black);
+    max-width: 540px;
 }

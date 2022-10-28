@@ -25,3 +25,10 @@ img{
 a{
     text-decoration: none;
 }
+.btn__square {
+    width: 44px;
+    height: 44px;
+}
+li{
+    list-style: none;
+}
