@@ -1,30 +1,14 @@
-@import url("../main.css");
-@import url("./hero.css");
-@import url("./home.css");
-@import url("./footer.css");
-
-.dropdown-menu li {
-    position: relative;
-}
-.dropdown-submenu {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: -7px;
-}
-.dropdown-menu .dropdown-submenu-left {
-    right: 100%;
-    left: auto;
-}
-.dropdown-menu li:hover .dropdown-submenu {
-    display: block;
-}
 .header {
     height: 100vh;
     background-image: url("../img/hero-bubbles.png"),
         linear-gradient(128.28deg, #eb5757 5.72%, #ff3566 59.46%);
     background-repeat: no-repeat;
     background-position: center top;
+}
+.header__light{
+    height: auto;
+    background-image: none;
+    background-color: ;
 }
 .navbar {
     box-shadow: none;

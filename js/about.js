@@ -1,6 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $(".about_stats_title").counterUp({
         delay: 10,
-        time: 1500
-    })
+        time: 1500,
+        triggerOnce: true,
+    });
 });

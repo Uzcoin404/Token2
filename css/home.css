@@ -1,3 +1,4 @@
+@import url("./hero.css");
 @import url("./card.css");
 .home_main {
     margin-top: 500px;
@@ -82,65 +83,11 @@
 .features__btn:hover {
     color: #f23058;
 }
-.slider .splide__slide {
+
+.banner__slider{
+    margin-bottom: 60px;
+}
+.banner__slider .splide__slide {
     background-color: #777;
     height: 240px;
-}
-
-.subscribe {
-    background: #e1ddd9;
-    padding: 80px 0;
-    margin-top: 60px;
-}
-.subscribe .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.subscribe__title {
-    font-family: "Manrope";
-    font-weight: 800;
-    font-size: 38px;
-    line-height: 56px;
-    color: var(--black);
-}
-.subscribe__text {
-    font-family: "Open Sans";
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 33px;
-    color: var(--black);
-    max-width: 540px;
-}
-.subscribe__form {
-    display: flex;
-}
-.subscribe__form .input-group{
-    flex-wrap: nowrap;
-}
-.subscribe__input {
-    border: none;
-    background: #f2f2f2;
-}
-.subscribe__btn {
-    border: none;
-    font-family: "Manrope";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    width: 125px;
-    height: 54px;
-}
-.subscribe__input {
-    min-width: 320px !important;
-    height: 54px;
-    width: 100% !important;
-    font-size: 16px !important;
-}
-.subscribe__input, .subscribe__input::placeholder {
-    font-family: "Open Sans";
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--black);
 }

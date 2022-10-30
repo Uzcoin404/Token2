@@ -17,13 +17,13 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- styles -->
-    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../css/about.css">
     <script src="../js/jquery.min.js"></script>
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" style="max-height: 736px;">
         <!-- Import navbar using Jquery you can remove nav__loader during backend process -->
         <div class="nav__loader">
             <script>
@@ -66,7 +66,18 @@
                     </div>
                     <div class="about__box">
                         <div class="about_box_header">
-                            <h4 class="about_box_title">Token2 <span>TM</span></h4>
+                            <h4 class="about_box_title">Swiss Made Software</h4>
+                            <img src="../img/icon/SWISS_MADE.png" alt="" class="about_box_logo">
+                        </div>
+                        <p class="about_box_desc">
+                            Token2 is a member of swiss made software label. The swiss made software label is dedicated
+                            to promoting the Swiss software industry, both at home and abroad. It combines Swiss values
+                            such as quality, reliability and precision – especially in software development.
+                        </p>
+                    </div>
+                    <div class="about__box">
+                        <div class="about_box_header">
+                            <h4 class="about_box_title">Token2 <span class="tm">TM</span></h4>
                         </div>
                         <p class="about_box_desc">
                             TOKEN2 is a registered trademark of the TOKEN2 Multifactor authentication company
@@ -76,22 +87,12 @@
                     </div>
                     <div class="about__box">
                         <div class="about_box_header">
-                            <h4 class="about_box_title">FIDO - Allinace Member</h4>
-                            <img src="../img/icon/fido2.png" alt="" class="about_box_logo">
+                            <h4 class="about_box_title">Swiss Made Software</h4>
+                            <i class="fa-regular fa-circle-info" style="font-size: 22px   ;"></i>
                         </div>
                         <p class="about_box_desc">
-                            Token2 is a member of FIDO Alliance, and we implement the FIDO protocols (UAF, U2F, WebAuthN
-                            and CTAP) on our hardware security keys as well as our TOTPRadius appliance.
-                        </p>
-                    </div>
-                    <div class="about__box">
-                        <div class="about_box_header">
-                            <h4 class="about_box_title">Token2 <span>TM</span></h4>
-                        </div>
-                        <p class="about_box_desc">
-                            TOKEN2 is a registered trademark of the TOKEN2 Multifactor authentication company
-                            (registered by Geneva Cantonal Trade Register as CHE-218.895.438 ) at the Swiss Federal
-                            Institute of Intellectual Property. Registration number <a href="#">№ 743850.</a>
+                            TOKEN2 is listed as a featured hardware token vendor by companies like Microsoft, Untis, US
+                            Government, ISDecicions, Watchguard and many others.
                         </p>
                     </div>
                 </div>
@@ -118,6 +119,108 @@
                 <p class="about_stats_text">Satisfied customers</p>
             </div>
         </section>
+        <div class="container">
+            <section class="about__keys">
+                <div class="about_keys_item">
+                    <iframe width="428" height="340" src="https://www.youtube.com/embed/NaXQPLtZHMg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="about_keys_content">
+                    <h3 class="about_keys_title">FIDO2 and U2F Security Keys</h3>
+                    <p class="about_keys_desc">
+                        FIDO2 security keys are an unphishable standards-based passwordless authentication method that
+                        can come in any form factor. Token2 FIDO2 Security keys enable organizations and users to use a
+                        USB key to sign in without the need of entering a password (i.e. with Azure Passwordless) or can
+                        be used as a second factor (i.e. Google Accounts). Our USB keys also support U2F protocol for
+                        backward compatibility. Token2 is listed by Microsoft as a compatible FIDO2 security key
+                        provider for Azure AD Passwordless. <br> <br>
+
+                        Token2 security keys are certified by the FIDO® Alliance
+                        (Level1 certification)
+                    </p>
+                </div>
+            </section>
+            <section class="about__special">
+                <h3 class="about_special_title">Speciales</h3>
+                <div class="special__boxes">
+                    <div class="special__box">
+                        <h4 class="special_box_title">Classic hardware tokens</h4>
+                        <p class="special_box_text">
+                            We have designed and prototyped several models of OATH compliant <a href="#">hardware
+                                tokens</a>. We
+                            currently have agreements with a number of different factories that produce the equipment
+                            based on our design and algorithms. Our classic hardware tokens can be used in many systems
+                            supporting standard TOTP protocol, including <a href="#">WordPress, Azure MFA Server,
+                                WebUntis</a> and many
+                            others.
+                            Token2 is <a href="#">listed by Microsoft</a> as a recommended TOTP hardware token supplier
+                            for Azure MFA.
+                        </p>
+                    </div>
+                    <div class="special__box">
+                        <h4 class="special_box_title">Independent Compliance Check</h4>
+                        <p class="special_box_text">
+                            RFC6238 compliance confirmed by CertX, the first swiss accredited certification body for
+                            product certification in the scope of industrial cybersecurity and functional safety.
+                            TOKEN2 C202 TOTP hardware token - Independent Compliance Check report by CertX
+                        </p>
+                    </div>
+                    <div class="special__box">
+                        <h4 class="special_box_title">Programmable hardware tokens</h4>
+                        <p class="special_box_text">
+                            Token2 programmable card or keyfob tokens are "drop-in" replacement of OTP mobile apps (such
+                            as Google Authenticator or similar). They support authentication backends requiring TOTP
+                            tokens without the possibility of specifying the shared secret keys (i.e. keys are generated
+                            on server-side only) and are compatible with services such as Google, Facebook, Microsoft,
+                            Amazon, etc.
+                            We are the inventors and manufacturers of the world's first multi-profile programmable TOTP
+                            hardware token, Molto-1, and the first iPhone compatible programmable TOTP token, C301-i.
+                        </p>
+                        <p class="special_box_desc">
+                            Before buying, you can test integration and compatibility with your systems using our
+                            virtual token, an HTML5 app that fully emulates our classic TOTP tokens. This tool can also
+                            be used as a cross-platform TOTP application (for testing purposes only). Just launch the
+                            tool with your base32 seed value set as the "key" argument of the URL. The full source code
+                            of this tool is available under our GitHub repository
+                        </p>
+                    </div>
+                    <div class="special__box">
+                        <h4 class="special_box_title">TOTPRadius virtual appliance</h4>
+                        <p class="special_box_text">
+                            TOTPRadius is a 2FA authentication server deployed as a virtual appliance and designed to
+                            run on Hyper-V or VMWare hypervisors. This complements the variety of products offered by
+                            Token2, any hardware token sold by Token2 can be backed by TOTPRadius as the authentication
+                            service. Newer versions of TOTPRadius allow organizing access to corporate VPN using FIDO
+                            Security keys (legacy U2F or FIDO2) both via 2FA and Passwordless method. TOTPRadius is free
+                            for 5 users and more licenses can be purchased online if needed.
+                            Token2 TOTPRadius provides the RADIUS RFC-2865 for TOTP RFC-6238 based authentication. With
+                            TOTPRadius you can integrate a large variety of third-party products and systems with
+                            multi-factor authentication. A number of enterprise products and services like VPNs
+                            (including Meraki CVPN and Fortinet VPN), Citrix XenApp/XenDesktop, VMWare View, and many
+                            others provide support for RADIUS servers to validate the second factor of user
+                            authentications.
+                            TOTPRadius features many innovative approaches to multifactor authentication, such as
+                            self-service enrollment and FIDO security keys-based L2TP VPN access using VPN Portal. To
+                            ensure the security of the VPN Portal is at the highest level, we have contracted an
+                            independent security company, SySS GmbH , which has conducted the penetration testing and
+                            produced a security certificate available below. The TOTPRadius VPN Portal component is
+                            currently labeled as "Certified Website - Approved Security" by SySS Gmbh.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
+        <div class="subscribe__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.subscribe__loader').load("../components/subscribe.html");
+                });
+            </script>
+        </div>
+        <!--  -->
     </main>
 
     <!-- Import footer using Jquery you can remove footer__loader during backend process -->
@@ -129,6 +232,9 @@
         </script>
     </div>
     <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
         integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>

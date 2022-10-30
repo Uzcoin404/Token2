@@ -4,7 +4,8 @@ new Splide( '.products__slider', {
     pagination: false,
 }).mount();
 
-new Splide( '.slider', {
+new Splide( '.banner__slider', {
+    autoplay: true,
     perPage: 1,
     perMove: 1,
     gap: '3rem',

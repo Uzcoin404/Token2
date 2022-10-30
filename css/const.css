@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary: #F23058;
+    --secondary: #D70D36;
+    --tertiary: #F0F9FF;
+    --blue1: #194060;
+    --blue2: #607D94;
+    --blue3: #C9DCEC;
+    --black: #292D33;
+    --grey: #9497A1;
+    --background: #F3F3F3;
+    --red: #C14040;
+}
+body{
+    background-color: var(--background);
+}
+img{
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+}
+.btn__square {
+    width: 44px;
+    height: 44px;
+}
+li{
+    list-style: none;
+}
+p{
+    margin: 0;
+}
+a:hover{
+    color: inherit;
+}
