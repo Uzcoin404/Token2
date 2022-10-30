@@ -38,6 +38,13 @@
     border: 1px solid #eb5757;
     box-shadow: none;
     margin-right: 30px;
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.18);
+}
+.hero__play__btn{
+    border: 1px solid transparent;
+}
+.hero__play__btn:hover{
+    border: 1px solid #fff;
 }
 .hero__btn:hover {
     background-color: transparent;

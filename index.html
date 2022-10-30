@@ -13,9 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
         rel="stylesheet">
     <!-- Font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
@@ -26,82 +24,15 @@
 
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="img/icon/logo-white.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-mdb-toggle="dropdown" aria-expanded="false">
-                                Products
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li>
-                                    <a class="dropdown-item" href="#">FIDO2 Keys</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">
-                                        Classic Tokens &raquo;
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-submenu">
-                                        <li>
-                                            <a class="dropdown-item" href="#">Token2 c202 TOTP hardware token</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">Token2 c202 hardware token - 10 pack</a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item" href="#">Token2 c202 hardware token - 5 pack</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Programmable Tokens</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">TOTPRadius</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tools</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Guides</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacts</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="nav__actions">
-                    <button type="button" class="btn nav__btn btn__square me-2">
-                        <i class="fa-regular fa-user"></i>
-                    </button>
-                    <button type="button" class="btn nav__btn">
-                        <i class="fa-regular fa-cart-shopping me-1"></i> 30
-                    </button>
-                </div>
-                <!-- <button type="button" class="btn nav__btn btn__square">
-                <i class="fa-regular fa-arrow-right-from-bracket"></i>
-            </button> -->
-            </div>
-        </nav>
+        <!-- Import navbar using Jquery you can remove nav__loader if you use backend language -->
+        <div class="nav__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.nav__loader').load("components/nav.html");
+                });
+            </script>
+        </div>
+        <!--  -->
         <hero class="hero">
             <div class="container">
                 <div class="hero__content">
@@ -186,7 +117,7 @@
         </hero>
     </header>
 
-    <main class="main">
+    <main class="main home_main">
         <section class="best__selling">
             <div class="container">
                 <div class="main_section_header">
@@ -433,131 +364,15 @@
         </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__content">
-                <div class="footer__about">
-                    <div class="footer__logos">
-                        <img src="img/icon/logo-white.png" alt="">
-                        <img src="img/icon/fido.png" alt="">
-                    </div>
-                    <p class="footer_about_text">
-                        Token2 is a cybersecurity company specialized in the area of multifactor authentication. Founded
-                        by a team of researchers and graduates from the University of Geneva with years of experience in
-                        the field of strong security and multifactor authentication, Token2 has invented, designed and
-                        developed various hardware and software solutions for user-friendly and secure authentication.
-                        Token2 is headquartered in Geneva, Switzerland
-                    </p>
-                </div>
-                <ul class="footer__list">
-                    <li class="footer_list_item head__item">About</li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">Home</a>
-                    </li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">About us</a>
-                    </li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">Services</a>
-                    </li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">Solutions</a>
-                    </li>
-                </ul>
-                <ul class="footer__list">
-                    <li class="footer_list_item head__item">Information</li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">Contacts</a>
-                    </li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">Our team</a>
-                    </li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">Blog</a>
-                    </li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">FAQ</a>
-                    </li>
-                </ul>
-                <ul class="footer__list">
-                    <li class="footer_list_item head__item">Service</li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">Pages</a>
-                    </li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">Elements</a>
-                    </li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">Site map</a>
-                    </li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">Pricing</a>
-                    </li>
-                    <li class="footer_list_item">
-                        <a href="#" class="footer_list_link">FAQ</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__contact">
-                <div class="footer_contact_content">
-                    <h4 class="footer_contact_title">Contacts</h4>
-                    <div class="footer_contact_blog">
-                        <a href="tel:+41225196202" class="footer_contact_text">
-                            +41 22 519 62 02
-                        </a>
-                        <p class="footer_contact_text">La Voie-Creuse 3B, 1202 Geneva, SWITZERLAND</p>
-                        <a href="mailto:info@token2.com" class="footer_contact_link">
-                            info@token2.com
-                            <i class="fa-regular fa-right-long ms-2"></i>
-                        </a>
-                        <a href="#" class="footer_contact_link">
-                            Driving derections
-                            <i class="fa-regular fa-right-long ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer__social">
-                    <h4 class="footer_contact_title">Social</h4>
-                    <div class="socials">
-                        <a href="#" class="social__media">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="social__media">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social__media">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social__media">
-                            <i class="fa-brands fa-youtube"></i>
-                        </a>
-                        <a href="#" class="social__media">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                        <a href="#" class="social__media">
-                            <i class="fa-solid fa-envelope-open"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__terms">
-                <div class="footer_terms_blog">
-                    <a href="#" class="footer_contact_link">
-                        Privacy policy
-                        <i class="fa-regular fa-right-long ms-2"></i>
-                    </a>
-                    <a href="#" class="footer_contact_link">
-                        Terms of us
-                        <i class="fa-regular fa-right-long ms-2"></i>
-                    </a>
-                </div>
-                <p class="footer_terms_text">
-                    © 2022 TOKEN2 Sàrl. All Rights Reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
-
+    <!-- Import footer using Jquery you can remove footer__loader if you use backend language -->
+    <div class="footer__loader">
+        <script>
+            $(document).ready(function () {
+                $('.footer__loader').load("components/footer.html");
+            });
+        </script>
+    </div>
+    <!--  -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="js/splide.js"></script>
