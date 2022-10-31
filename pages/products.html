@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- styles -->
     <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/products.css">
     <script src="../js/jquery.min.js"></script>
 </head>
 
@@ -34,9 +35,150 @@
         <!--  -->
     </header>
 
-    Your code here
-
     <main>
+        <div class="container">
+            <section class="products__content">
+                <div class="products_content_header">
+                    <h2 class="products__title">Products</h2>
+                    <div class="products_content_header_blog">
+                        <span class="badge me-10">FIDO2 Keys</span>
+                        <p class="products_content_header_text">Classic Tokens</p>
+                        <p class="products_content_header_text">Programmable Tokens</p>
+                        <p class="products_content_header_text">TOTPRadius</p>
+                    </div>
+                </div>
+                <div class="products_content_item">
+                    <div class="products_content_card">
+                        <div class="fido_card_header">
+                            <h3 class="fido_card_title">FIDO - Allinace Member</h3>
+                            <img src="../img/icon/fido-certified.png" alt="">
+                        </div>
+                        <p class="fido_card_text">
+                            <span>FIDO2 reflects the industry’s answer to the global</span>
+                            password problem and addresses all of the issues of traditional authentication. A single
+                            security key that can work across thousands of accounts with no shared secrets. Strong
+                            single factor authentication using a hardware authenticator, eliminates the need for weak
+                            password-based authentication. Our security keys are certified by the FIDO® Alliance and
+                            Token2 is a member of the FIDO® Alliance.
+                        </p>
+                    </div>
+                    <div class="products_content_details">
+                        <div class="alert alert-success" role="alert">
+                            <h4 class="alert-heading "> Token2 is a verified Microsoft-compatible FIDO2 security key
+                                vendor</h4>
+                            <p>All Token2 FIDO2 security keys listed on this page are verified by Microsoft as
+                                compatible with the Azure Active Directory passwordless experience.</p>
+                        </div>
+                        <div class="alert alert-danger" role="alert">
+                            * - with Azure AD Free/Basic license you can use our programmable tokens
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="products">
+                <div class="products__header">
+                    <h5 class="products_header_title">FIDO2 Keys</h5>
+                    <button class="btn btn__square products_filter_btn white_to_red_btn" type="button"
+                        data-bs-toggle="tooltip" data-bs-placement="bottom"
+                        data-bs-title="This top tooltip is themed via CSS variables.">
+                        <i class="fa-regular fa-sliders"></i>
+                    </button>
+                </div>
+                <div class="products__cards">
+                    <!-- Looping products -->
+                    <div class="card">
+                        <div class="splide card_img_slider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="../img/products/card-product1.png" alt="" class="card__img">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="../img/products/card-product2.png" alt="" class="card__img">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="../img/products/card-product3.png" alt="" class="card__img">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <a href="#">
+                                <h3 class="card__title">C301-i programmable TOTP token</h3>
+                            </a>
+                            <p class="card__text">A keychain attachable programmable token. Drop-in
+                                replacement
+                                for Authenticator...</p>
+                            <a href="#" class="card__order">
+                                Order
+                                <i class="fa-regular fa-right-long ms-2"></i>
+                            </a>
+                            <div class="card__price">
+                                <p class="card_product_price">€12.</p>
+                                <span class="card_price_point">00</span>
+                            </div>
+                        </div>
+                        <div class="card__buttons">
+                            <button class="btn btn__square card__btn white_to_red_btn">
+                                <i class="fa-regular fa-cart-shopping"></i>
+                            </button>
+                            <button class="btn btn__square card__btn white_to_red_btn" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom"
+                                data-bs-title="This top tooltip is themed via CSS variables.">
+                                <i class="fa-light fa-triangle-exclamation"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- <script>
+                        for (let i = 0; i < 12; i++) {
+                            document.write(`<div class="card">
+                        <div class="splide card_img_slider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="../img/products/card-product1.png" alt="" class="card__img">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="../img/products/card-product2.png" alt="" class="card__img">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="../img/products/card-product3.png" alt="" class="card__img">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <a href="#">
+                                <h3 class="card__title">C301-i programmable TOTP token</h3>
+                            </a>
+                            <p class="card__text">A keychain attachable programmable token. Drop-in
+                                replacement
+                                for Authenticator...</p>
+                            <a href="#" class="card__order">
+                                Order
+                                <i class="fa-regular fa-right-long ms-2"></i>
+                            </a>
+                            <div class="card__price">
+                                <p class="card_product_price">€12.</p>
+                                <span class="card_price_point">00</span>
+                            </div>
+                        </div>
+                        <div class="card__buttons">
+                            <button class="btn btn__square card__btn white_to_red_btn">
+                                <i class="fa-regular fa-cart-shopping"></i>
+                            </button>
+                            <button class="btn btn__square card__btn white_to_red_btn ${i%3 != 0 ? 'd-none' : ''}"         data-bs-toggle="tooltip" data-bs-placement="top"
+        data-bs-custom-class="custom-tooltip"
+        data-bs-title="This top tooltip is themed via CSS variables.">
+                                <i class="fa-light fa-triangle-exclamation"></i>
+                            </button>
+                        </div>
+                    </div>`)
+                        }
+                    </script> -->
+                </div>
+            </section>
+        </div>
         <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
         <div class="subscribe__loader">
             <script>
@@ -58,7 +200,20 @@
     </div>
     <!--  -->
     <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/about.js"></script>
+    <script src="../js/splide.min.js"></script>
+    <script>
+        let splides = document.querySelectorAll('.card_img_slider');
+        if (splides.length) {
+            let splideOptions = {
+                perPage: 1, perMove: 1, arrows: false, autoplay: true, lazyLoad: 'nearby', resetProgress: true
+            }
+            for (let i = 0; i < splides.length; i++) {
+                let splideElement = splides[i];
+                let splide = new Splide(splideElement, splideOptions);
+                splide.mount();
+            }
+        }
+    </script>
 </body>
 
 </html>

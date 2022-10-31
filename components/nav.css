@@ -1,14 +1,14 @@
 .header {
+    position: relative;
     height: 100vh;
     background-image: url("../img/hero-bubbles.png"),
         linear-gradient(128.28deg, #eb5757 5.72%, #ff3566 59.46%);
     background-repeat: no-repeat;
     background-position: center top;
 }
-.header__light{
+.header__light {
     height: auto;
     background-image: none;
-    background-color: ;
 }
 .navbar {
     box-shadow: none;
@@ -23,9 +23,20 @@
     color: #f6335b;
     box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.18) !important;
     font-family: "Manrope";
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: #fff;
 }
-.nav__btn:hover {
-    color: #f6335b;
+.nav__light .nav__btn{
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #f6335b;
+    --bs-btn-hover-border-color: #f6335b;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #f6335b;
+    --bs-btn-active-border-color: #f6335b;
 }
 .navbar-nav {
     column-gap: 32px;
@@ -36,18 +47,36 @@
 .nav-link:hover {
     color: #eee;
 }
+.nav__light .nav-link {
+    color: var(--black);
+}
+.nav__light .nav-link:hover {
+    color: #000;
+}
 .nav-item {
     position: relative;
 }
 .nav-item::before {
     position: absolute;
     content: "";
-    transition: .3s;
+    transition: 0.3s;
     height: 1.5px;
     background-color: #fff;
     width: 0;
     bottom: 5px;
 }
-.nav-item:hover::before{
+.nav__light .nav-item::before {
+    background-color: var(--black);
+}
+.nav-item:hover::before {
     width: 100%;
+}
+.header__red .header__bubbles {
+    display: none;
+}
+.header__bubbles {
+    position: absolute;
+    left: 200px;
+    top: 0px;
+    z-index: -1;
 }

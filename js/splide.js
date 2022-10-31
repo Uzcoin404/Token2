@@ -1,21 +1,14 @@
-new Splide( '.products__slider', {
+new Splide(".products__slider", {
     perPage: 4,
-    gap: '10px',
+    gap: "10px",
     pagination: false,
 }).mount();
 
-new Splide( '.banner__slider', {
+new Splide(".banner__slider", {
     autoplay: true,
     perPage: 1,
     perMove: 1,
-    gap: '3rem',
+    gap: "3rem",
     heightRatio: 0.25,
-}).mount();
-
-new Splide( '.card_img_slider', {
-    perPage: 1,
-    perMove: 1,
-    arrows: false,
-    autoplay: true,
-    lazyLoad: 'nearby'
+    resetProgress: true,
 }).mount();
