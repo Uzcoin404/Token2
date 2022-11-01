@@ -9,6 +9,9 @@
     );
     border: none;
 }
+.products__slider .card{
+    max-width: 300px;
+}
 .card__content {
     position: relative;
     padding: 0 17px 17px 17px;
