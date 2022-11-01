@@ -44,7 +44,7 @@
                         dicta sunt explicabo.
                     </p>
                     <div class="hero__buttons">
-                        <a href="pages/about.html" class="btn btn-light hero__btn">Learn more</a>
+                        <a href="pages/about.html" class="btn hero__btn">Learn more</a>
                         <button class="btn hero__play__btn">
                             <i class="fa-regular fa-circle-play"></i>
                             Watch the demo
@@ -120,9 +120,9 @@
     <main class="main home_main">
         <section class="best__selling">
             <div class="container">
-                <div class="main_section_header">
+                <div class="main_section_header between_center">
                     <h3 class="main__title">Best-selling</h3>
-                    <a href="#" class="main_see_all">See all</a>
+                    <a href="pages/products.html" class="see__all">See all</a>
                 </div>
                 <div class="splide products__slider" role="group">
                     <div class="splide__track">
@@ -133,25 +133,28 @@
                                         <div class="splide__track">
                                             <ul class="splide__list">
                                                 <li class="splide__slide">
-                                                    <img src="img/products/card-product1.png" alt="" class="card__img">
+                                                    <img src="../img/products/card-product1.png" alt=""
+                                                        class="card__img">
                                                 </li>
                                                 <li class="splide__slide">
-                                                    <img src="img/products/card-product2.png" alt="" class="card__img">
+                                                    <img src="../img/products/card-product2.png" alt=""
+                                                        class="card__img">
                                                 </li>
                                                 <li class="splide__slide">
-                                                    <img src="img/products/card-product3.png" alt="" class="card__img">
+                                                    <img src="../img/products/card-product3.png" alt=""
+                                                        class="card__img">
                                                 </li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="card__content">
-                                        <a href="#">
+                                        <a href="pages/product.html">
                                             <h3 class="card__title">C301-i programmable TOTP token</h3>
                                         </a>
                                         <p class="card__text">A keychain attachable programmable token. Drop-in
                                             replacement
                                             for Authenticator...</p>
-                                        <a href="#" class="card__order">
+                                        <a href="#" class="card__link">
                                             Order
                                             <i class="fa-regular fa-right-long ms-2"></i>
                                         </a>
@@ -160,22 +163,49 @@
                                             <span class="card_price_point">00</span>
                                         </div>
                                     </div>
-                                    <button class="btn btn__square card__btn">
-                                        <i class="fa-regular fa-cart-shopping me-1"></i>
-                                    </button>
+                                    <div class="card__buttons">
+                                        <button class="btn btn__square card__btn white_to_red_btn">
+                                            <i class="fa-regular fa-cart-shopping"></i>
+                                        </button>
+                                        <!-- Button with tooltip -->
+                                        <button
+                                            class="btn btn__square card__btn white_to_red_btn"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="cannot be programmed using iPhone"
+                                            data-bs-custom-class="card_btn_tooltip">
+                                            <i class="fa-light fa-triangle-exclamation"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="card">
-                                    <img src="img/products/card-product2.png" alt="" class="card__img">
+                                    <div class="splide card_img_slider">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <img src="../img/products/card-product1.png" alt=""
+                                                        class="card__img">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="../img/products/card-product2.png" alt=""
+                                                        class="card__img">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="../img/products/card-product3.png" alt=""
+                                                        class="card__img">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div class="card__content">
-                                        <a href="#">
+                                        <a href="pages/product.html">
                                             <h3 class="card__title">C301-i programmable TOTP token</h3>
                                         </a>
                                         <p class="card__text">A keychain attachable programmable token. Drop-in
                                             replacement
                                             for Authenticator...</p>
-                                        <a href="#" class="card__order">
+                                        <a href="#" class="card__link">
                                             Order
                                             <i class="fa-regular fa-right-long ms-2"></i>
                                         </a>
@@ -184,22 +214,49 @@
                                             <span class="card_price_point">00</span>
                                         </div>
                                     </div>
-                                    <button class="btn btn__square card__btn">
-                                        <i class="fa-regular fa-cart-shopping me-1"></i>
-                                    </button>
+                                    <div class="card__buttons">
+                                        <button class="btn btn__square card__btn white_to_red_btn">
+                                            <i class="fa-regular fa-cart-shopping"></i>
+                                        </button>
+                                        <!-- Button with tooltip -->
+                                        <button
+                                            class="btn btn__square card__btn white_to_red_btn"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="cannot be programmed using iPhone"
+                                            data-bs-custom-class="card_btn_tooltip">
+                                            <i class="fa-light fa-triangle-exclamation"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="card">
-                                    <img src="img/products/card-product3.png" alt="" class="card__img">
+                                    <div class="splide card_img_slider">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <img src="../img/products/card-product1.png" alt=""
+                                                        class="card__img">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="../img/products/card-product2.png" alt=""
+                                                        class="card__img">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="../img/products/card-product3.png" alt=""
+                                                        class="card__img">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div class="card__content">
-                                        <a href="#">
+                                        <a href="pages/product.html">
                                             <h3 class="card__title">C301-i programmable TOTP token</h3>
                                         </a>
                                         <p class="card__text">A keychain attachable programmable token. Drop-in
                                             replacement
                                             for Authenticator...</p>
-                                        <a href="#" class="card__order">
+                                        <a href="#" class="card__link">
                                             Order
                                             <i class="fa-regular fa-right-long ms-2"></i>
                                         </a>
@@ -208,22 +265,49 @@
                                             <span class="card_price_point">00</span>
                                         </div>
                                     </div>
-                                    <button class="btn btn__square card__btn">
-                                        <i class="fa-regular fa-cart-shopping me-1"></i>
-                                    </button>
+                                    <div class="card__buttons">
+                                        <button class="btn btn__square card__btn white_to_red_btn">
+                                            <i class="fa-regular fa-cart-shopping"></i>
+                                        </button>
+                                        <!-- Button with tooltip -->
+                                        <button
+                                            class="btn btn__square card__btn white_to_red_btn"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="cannot be programmed using iPhone"
+                                            data-bs-custom-class="card_btn_tooltip">
+                                            <i class="fa-light fa-triangle-exclamation"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="card">
-                                    <img src="img/products/card-product4.png" alt="" class="card__img">
+                                    <div class="splide card_img_slider">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <img src="../img/products/card-product1.png" alt=""
+                                                        class="card__img">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="../img/products/card-product2.png" alt=""
+                                                        class="card__img">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="../img/products/card-product3.png" alt=""
+                                                        class="card__img">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div class="card__content">
-                                        <a href="#">
+                                        <a href="pages/product.html">
                                             <h3 class="card__title">C301-i programmable TOTP token</h3>
                                         </a>
                                         <p class="card__text">A keychain attachable programmable token. Drop-in
                                             replacement
                                             for Authenticator...</p>
-                                        <a href="#" class="card__order">
+                                        <a href="#" class="card__link">
                                             Order
                                             <i class="fa-regular fa-right-long ms-2"></i>
                                         </a>
@@ -232,22 +316,49 @@
                                             <span class="card_price_point">00</span>
                                         </div>
                                     </div>
-                                    <button class="btn btn__square card__btn">
-                                        <i class="fa-regular fa-cart-shopping me-1"></i>
-                                    </button>
+                                    <div class="card__buttons">
+                                        <button class="btn btn__square card__btn white_to_red_btn">
+                                            <i class="fa-regular fa-cart-shopping"></i>
+                                        </button>
+                                        <!-- Button with tooltip -->
+                                        <button
+                                            class="btn btn__square card__btn white_to_red_btn"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="cannot be programmed using iPhone"
+                                            data-bs-custom-class="card_btn_tooltip">
+                                            <i class="fa-light fa-triangle-exclamation"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </li>
                             <li class="splide__slide">
                                 <div class="card">
-                                    <img src="img/products/card-product4.png" alt="" class="card__img">
+                                    <div class="splide card_img_slider">
+                                        <div class="splide__track">
+                                            <ul class="splide__list">
+                                                <li class="splide__slide">
+                                                    <img src="../img/products/card-product1.png" alt=""
+                                                        class="card__img">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="../img/products/card-product2.png" alt=""
+                                                        class="card__img">
+                                                </li>
+                                                <li class="splide__slide">
+                                                    <img src="../img/products/card-product3.png" alt=""
+                                                        class="card__img">
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                     <div class="card__content">
-                                        <a href="#">
+                                        <a href="pages/product.html">
                                             <h3 class="card__title">C301-i programmable TOTP token</h3>
                                         </a>
                                         <p class="card__text">A keychain attachable programmable token. Drop-in
                                             replacement
                                             for Authenticator...</p>
-                                        <a href="#" class="card__order">
+                                        <a href="#" class="card__link">
                                             Order
                                             <i class="fa-regular fa-right-long ms-2"></i>
                                         </a>
@@ -256,9 +367,19 @@
                                             <span class="card_price_point">00</span>
                                         </div>
                                     </div>
-                                    <button class="btn btn__square card__btn">
-                                        <i class="fa-regular fa-cart-shopping me-1"></i>
-                                    </button>
+                                    <div class="card__buttons">
+                                        <button class="btn btn__square card__btn white_to_red_btn">
+                                            <i class="fa-regular fa-cart-shopping"></i>
+                                        </button>
+                                        <!-- Button with tooltip -->
+                                        <button
+                                            class="btn btn__square card__btn white_to_red_btn"
+                                            data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                            data-bs-title="cannot be programmed using iPhone"
+                                            data-bs-custom-class="card_btn_tooltip">
+                                            <i class="fa-light fa-triangle-exclamation"></i>
+                                        </button>
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -268,9 +389,9 @@
         </section>
         <section class="features">
             <div class="container">
-                <div class="main_section_header">
+                <div class="main_section_header between_center">
                     <h3 class="main__title">Features</h3>
-                    <a href="#" class="main_see_all">See all</a>
+                    <a href="pages/products.html" class="see__all">See all</a>
                 </div>
                 <div class="features__boxes">
                     <div class="features__box">
@@ -362,7 +483,11 @@
         </script>
     </div>
     <!--  -->
-    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script src="js/splide.js"></script>
+    <script src="js/card.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

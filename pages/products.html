@@ -76,60 +76,15 @@
                 </div>
             </section>
             <section class="products">
-                <div class="products__header">
+                <div class="products__header between_center">
                     <h5 class="products_header_title">FIDO2 Keys</h5>
-                    <button class="btn btn__square products_filter_btn white_to_red_btn" type="button"
-                        data-bs-toggle="tooltip" data-bs-placement="bottom"
-                        data-bs-title="This top tooltip is themed via CSS variables.">
+                    <button class="btn btn__square products_filter_btn white_to_red_btn" type="button">
                         <i class="fa-regular fa-sliders"></i>
                     </button>
                 </div>
                 <div class="products__cards">
                     <!-- Looping products -->
-                    <div class="card">
-                        <div class="splide card_img_slider">
-                            <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide">
-                                        <img src="../img/products/card-product1.png" alt="" class="card__img">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="../img/products/card-product2.png" alt="" class="card__img">
-                                    </li>
-                                    <li class="splide__slide">
-                                        <img src="../img/products/card-product3.png" alt="" class="card__img">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="card__content">
-                            <a href="#">
-                                <h3 class="card__title">C301-i programmable TOTP token</h3>
-                            </a>
-                            <p class="card__text">A keychain attachable programmable token. Drop-in
-                                replacement
-                                for Authenticator...</p>
-                            <a href="#" class="card__order">
-                                Order
-                                <i class="fa-regular fa-right-long ms-2"></i>
-                            </a>
-                            <div class="card__price">
-                                <p class="card_product_price">€12.</p>
-                                <span class="card_price_point">00</span>
-                            </div>
-                        </div>
-                        <div class="card__buttons">
-                            <button class="btn btn__square card__btn white_to_red_btn">
-                                <i class="fa-regular fa-cart-shopping"></i>
-                            </button>
-                            <button class="btn btn__square card__btn white_to_red_btn" data-bs-toggle="tooltip"
-                                data-bs-placement="bottom"
-                                data-bs-title="This top tooltip is themed via CSS variables.">
-                                <i class="fa-light fa-triangle-exclamation"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <!-- <script>
+                    <script>
                         for (let i = 0; i < 12; i++) {
                             document.write(`<div class="card">
                         <div class="splide card_img_slider">
@@ -148,14 +103,14 @@
                             </div>
                         </div>
                         <div class="card__content">
-                            <a href="#">
+                            <a href="./product.html">
                                 <h3 class="card__title">C301-i programmable TOTP token</h3>
                             </a>
                             <p class="card__text">A keychain attachable programmable token. Drop-in
                                 replacement
                                 for Authenticator...</p>
-                            <a href="#" class="card__order">
-                                Order
+                            <a href="#" class="card__link">
+                                Details
                                 <i class="fa-regular fa-right-long ms-2"></i>
                             </a>
                             <div class="card__price">
@@ -167,15 +122,16 @@
                             <button class="btn btn__square card__btn white_to_red_btn">
                                 <i class="fa-regular fa-cart-shopping"></i>
                             </button>
-                            <button class="btn btn__square card__btn white_to_red_btn ${i%3 != 0 ? 'd-none' : ''}"         data-bs-toggle="tooltip" data-bs-placement="top"
-        data-bs-custom-class="custom-tooltip"
-        data-bs-title="This top tooltip is themed via CSS variables.">
+                            <!-- Button with tooltip -->
+                            <button class="btn btn__square card__btn white_to_red_btn ${i % 3 != 0 ? 'd-none' : ''}" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" data-bs-title="cannot be programmed using iPhone"
+                                data-bs-custom-class="card_btn_tooltip">
                                 <i class="fa-light fa-triangle-exclamation"></i>
                             </button>
                         </div>
                     </div>`)
                         }
-                    </script> -->
+                    </script>
                 </div>
             </section>
         </div>
@@ -199,9 +155,11 @@
         </script>
     </div>
     <!--  -->
-    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/splide.min.js"></script>
     <script>
+        [...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
+            .forEach(el => new bootstrap.Tooltip(el))
         let splides = document.querySelectorAll('.card_img_slider');
         if (splides.length) {
             let splideOptions = {

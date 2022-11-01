@@ -2,11 +2,6 @@
     background: #e1ddd9;
     padding: 80px 0;
 }
-.subscribe .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 .subscribe__title {
     font-family: "Manrope";
     font-weight: 800;

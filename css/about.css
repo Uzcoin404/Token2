@@ -28,9 +28,6 @@
     height: max-content;
 }
 .about_box_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 12px;
 }
 .about_box_title, .about_box_title .tm {
@@ -50,11 +47,11 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #9497a1;
+    color: var(--grey);
     margin-bottom: 20px;
 }
 .about_box_desc a {
-    color: #f23058;
+    color: var(--primary);
 }
 .about_box_text {
     font-weight: 700;
@@ -86,9 +83,6 @@
 }
 
 .about__keys {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 25px 0 18px;
 }
 .about_keys_item {
@@ -111,7 +105,7 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #9497a1;
+    color: var(--grey);
 }
 
 .about_special_title {
@@ -128,7 +122,7 @@
 }
 .special__box {
     padding: 22px 24px 30px;
-    background: #ffffff;
+    background: #fff;
     border-radius: 6px;
     max-width: 540px;
     width: 100%;
@@ -140,10 +134,10 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #9497a1;
+    color: var(--grey);
 }
 .special_box_text a {
-    color: #f23058;
+    color: var(--primary);
 }
 .special_box_desc {
     padding: 18px 14px 8px;

@@ -1,11 +1,10 @@
 @import url("./hero.css");
+@import url("./card.css");
+@import url("./splide.min.css");
 .home_main {
     margin-top: 500px;
 }
 .main_section_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 25px;
 }
 .main__title {
@@ -15,30 +14,9 @@
     line-height: 30px;
     color: var(--black);
 }
-.main_see_all {
-    font-family: "Manrope";
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    color: #eb5757;
-}
-.main_see_all:hover {
-    color: #eb5757;
-}
 .products__slider {
     padding: 0 30px;
     margin-bottom: 60px;
-}
-.splide__arrow {
-    width: 60px;
-    height: 60px;
-    background: #fff;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.08);
-    border-radius: 20px;
-    opacity: 1 !important;
-}
-.splide__arrow svg {
-    fill: var(--black);
 }
 
 .features__boxes {
@@ -70,17 +48,17 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #9497a1;
+    color: var(--grey);
 }
 .features__btn {
     position: absolute;
     top: 10px;
     right: 10px;
-    color: #f23058;
+    color: var(--primary);
     background: #f6f7f9;
 }
 .features__btn:hover {
-    color: #f23058;
+    color: var(--primary);
 }
 
 .banner__slider{

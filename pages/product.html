@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token 2 Template</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">   
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header header__light">
+        <!-- Import navbar using Jquery you can remove nav__loader during backend process -->
+        <div class="nav__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.nav__loader').load("../components/nav-light.html");
+                });
+            </script>
+        </div>
+        <!--  -->
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="products__content">
+                <div class="products_content_header">
+                    <h2 class="products__title">Products</h2>
+                    <div class="products_content_header_blog">
+                        <span class="badge me-10">FIDO2 Keys</span>
+                        <p class="products_content_header_text">Classic Tokens</p>
+                        <p class="products_content_header_text">Programmable Tokens</p>
+                        <p class="products_content_header_text">TOTPRadius</p>
+                    </div>
+                </div>
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">FIDO2 Keys</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">T2F2-NFC-Slim FIDO2 Security key</li>
+                    </ol>
+                </nav>
+            </section>
+            <section class="product__about">
+                <div class="product__images">
+                    <div id="main-carousel" class="splide product_main_slide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="../img/products/card-product1.png" alt="" class="product_main_img">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="../img/products/card-product2.png" alt="" class="product_main_img">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="../img/products/card-product3.png" alt="" class="product_main_img">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="thumbnail-carousel" class="splide product_thumb_slide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img src="../img/products/card-product1.png" alt="" class="product_thumb_img">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="../img/products/card-product2.png" alt="" class="product_thumb_img">
+                                </li>
+                                <li class="splide__slide">
+                                    <img src="../img/products/card-product3.png" alt="" class="product_thumb_img">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__details">
+                    <div class="product_about_header between_center">
+                        <h3 class="product_about_title">T2F2-NFC-Slim FIDO2 Security key</h3>
+                        <div class="product_details_btns between_center">
+                            <button type="button"
+                                class="btn product_compare_btn white_to_red_btn btn-outline-danger btn-lg">COMPARE</button>
+                            <a href="#" class="btn product_checkout_box product_checkout_btn">
+                                <button class="btn btn-light btn__square white_to_red_btn">
+                                    <i class="fa-regular fa-cart-shopping"></i>
+                                </button>
+                                <p class="product__price">€36.<span>00</span></p>
+                            </a>
+                            <div class="shipping__costs__alert">
+                                <i class="fa-solid fa-truck"></i>
+                                <span>Shipping costs will be calculated at the checkout page</span>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="../img/icon/fido-certified.png" alt="">
+                    <p class="product_details_text">
+                        T2F2-NFC-Slim is an NFC-enabled FIDO2 Security key. Having an NFC
+                        chip onboard allows using this FIDO2 key with modern iPhones natively, directly in the browser
+                        (starting from iOS 13.3) as well as Android devices with NFC. T2F2-NFC-Slim model features a
+                        capacitive sensor-type integrated touch-button. T2F2-NFC is only 6 mm thick. <br> <br>
+                        FIDO security keys are small USB dongles that enable secure login to websites and applications
+                        supporting FIDO2 WebAuthn and classic FIDO (U2F) standards. <br> <br>
+                        Token2 T2F2-NFC-Slim security key combines hardware-based authentication, public-key
+                        cryptography, TOTP/HOTP, U2F, and FIDO2 protocols to protect your accounts. This type of
+                        security devices provides the highest level of multifactor authentication of user accounts with
+                        Twitter, Facebook, Gmail, GitHub, Dropbox, Dashlane, Salesforce, Duo, Centrify and hundreds more
+                        HOTP, U2F, and FIDO2 compatible services. No additional tools or applications are required, and
+                        the login process is simple and reliable. Just insert the Security Key into a USB-A slot and
+                        authenticate with a simple touch. We also sell a compact USB-A to Type-C adapter, so you can use
+                        the same key with devices with USB-Type-C slots. The T2F2-NFC-Slim security key does not require
+                        a battery nor network connectivity - it is always on and accessible.
+                    </p>
+                </div>
+            </section>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Nunc tincidunt</a></li>
+                    <li><a href="#tabs-2">Proin dolor</a></li>
+                    <li><a href="#tabs-3">Aenean lacinia</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec
+                        sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et
+                        lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis
+                        ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis
+                        aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci
+                        tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                </div>
+                <div id="tabs-2">
+                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus
+                        id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus
+                        eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse
+                        sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing.
+                        Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla.
+                        Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium
+                        posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et
+                        purus.</p>
+                </div>
+                <div id="tabs-3">
+                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
+                        vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante.
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                        Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula
+                        tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus.
+                        Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit.
+                        Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id
+                        euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut
+                        sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula
+                        velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus.
+                        Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                </div>
+            </div>
+            <section class="products">
+                <div class="products__header between_center">
+                    <h5 class="products_header_title">Other FIDO2 Keys Products</h5>
+                    <a href="#" class="see__all">See all</a>
+                </div>
+                <div class="products__cards">
+                    <!-- Looping products -->
+                    <script>
+                        for (let i = 0; i < 4; i++) {
+                            document.write(`<div class="card">
+                        <div class="splide card_img_slider">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="../img/products/card-product1.png" alt="" class="card__img">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="../img/products/card-product2.png" alt="" class="card__img">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="../img/products/card-product3.png" alt="" class="card__img">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <a href="./product.html">
+                                <h3 class="card__title">C301-i programmable TOTP token</h3>
+                            </a>
+                            <p class="card__text">A keychain attachable programmable token. Drop-in
+                                replacement
+                                for Authenticator...</p>
+                            <a href="#" class="card__link">
+                                Details
+                                <i class="fa-regular fa-right-long ms-2"></i>
+                            </a>
+                            <div class="card__price">
+                                <p class="card_product_price">€12.</p>
+                                <span class="card_price_point">00</span>
+                            </div>
+                        </div>
+                        <div class="card__buttons">
+                            <button class="btn btn__square card__btn white_to_red_btn">
+                                <i class="fa-regular fa-cart-shopping"></i>
+                            </button>
+                            <!-- Button with tooltip -->
+                            <button class="btn btn__square card__btn white_to_red_btn ${i % 3 != 0 ? 'd-none' : ''}" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" data-bs-title="cannot be programmed using iPhone"
+                                data-bs-custom-class="card_btn_tooltip">
+                                <i class="fa-light fa-triangle-exclamation"></i>
+                            </button>
+                        </div>
+                    </div>`)
+                        }
+                    </script>
+                </div>
+            </section>
+        </div>
+        <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
+        <div class="subscribe__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.subscribe__loader').load("../components/subscribe.html");
+                });
+            </script>
+        </div>
+        <!--  -->
+    </main>
+
+    <!-- Import footer using Jquery you can remove footer__loader during backend process -->
+    <div class="footer__loader">
+        <script>
+            $(document).ready(function () {
+                $('.footer__loader').load("../components/footer.html");
+            });
+        </script>
+    </div>
+    <!--  -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/splide.min.js"></script>
+    <script src="../js/card.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let main = new Splide('#main-carousel', {
+                rewind: true,
+                pagination: false,
+            });
+            let thumbnails = new Splide('#thumbnail-carousel', {
+                fixedWidth: 100,
+                gap: 10,
+                arrows: false,
+                isNavigation: true,
+                rewind: true,
+                pagination: false,
+            });
+
+            main.sync(thumbnails);
+            main.mount();
+            thumbnails.mount();
+        });
+        [...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
+            .forEach(el => new bootstrap.Tooltip(el))
+    </script>
+</body>
+
+</html>

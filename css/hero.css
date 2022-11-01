@@ -33,22 +33,20 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: #eb5757;
     border-radius: 6px;
-    border: 1px solid #eb5757;
     box-shadow: none;
     margin-right: 30px;
     box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.18);
-}
-.hero__play__btn{
-    border: 1px solid transparent;
-}
-.hero__play__btn:hover{
-    border: 1px solid #fff;
-}
-.hero__btn:hover {
-    background-color: transparent;
-    color: #fff;
+    --bs-btn-border-width: 2px;
+    --bs-btn-border-color: #fff;
+    --bs-btn-color: var(--secondary);
+    --bs-btn-bg: #fff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: #fff;
 }
 .hero__play__btn {
     font-family: "Manrope";
@@ -58,6 +56,7 @@
     color: #fff;
     display: flex;
     align-items: center;
+    --bs-btn-border-width: 2px;
 }
 .hero__play__btn i {
     font-size: 32px;
@@ -65,6 +64,7 @@
 }
 .hero__play__btn:hover {
     color: #fff;
+    border-color: #fff;
 }
 
 .hero__cards {
@@ -105,7 +105,7 @@
     font-size: 14px;
     line-height: 24px;
     margin: 16px 0;
-    color: #9497a1;
+    color: var(--grey);
 }
 .hero_card_desc {
     font-weight: 400;
@@ -116,13 +116,13 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
-    color: #eb5757;
+    color: var(--secondary);
     display: flex;
     align-items: center;
     margin-top: 12px;
 }
 .hero_card_link:hover {
-    color: #eb5757;
+    color: var(--secondary);
 }
 .hero_card_btn {
     width: 30px;
@@ -136,8 +136,8 @@
     background: #fff;
     box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.18);
     border-radius: 6px;
-    color: #EB5757;
+    color: var(--secondary);
 }
-.hero_card_btn:hover{
-    color: #eb5757;
+.hero_card_btn:hover {
+    color: var(--secondary);
 }

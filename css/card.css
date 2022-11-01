@@ -5,7 +5,7 @@
     background: radial-gradient(
         68.61% 68.61% at 38.82% 31.39%,
         rgba(255, 255, 255, 0) 0%,
-        #ffffff 100%
+        #fff 100%
     );
     border: none;
 }
@@ -31,20 +31,26 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #9497a1;
+    color: var(--grey);
     margin-bottom: 8px;
 }
-.card__order {
+.card__link {
     font-family: "Manrope";
     font-weight: 600;
     font-size: 14px;
     line-height: 24px;
     display: flex;
     align-items: center;
-    color: #eb5757;
+    color: var(--secondary);
 }
-.card__order:hover {
-    color: #eb5757;
+.card__link:hover {
+    color: var(--secondary);
+}
+.card__link i {
+    transition: .3s;
+}
+.card__link:hover i {
+    padding-left: 5px;
 }
 .card__price {
     position: absolute;
@@ -62,7 +68,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 30px;
-    color: #f23058;
+    color: var(--primary);
     margin: 0;
 }
 .card_price_point {
@@ -70,10 +76,10 @@
     font-weight: 700;
     font-size: 13px;
     line-height: 30px;
-    color: #f23058;
+    color: var(--primary);
     transform: translate(-4px, -4px);
 }
-.card__buttons{
+.card__buttons {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -81,29 +87,31 @@
     flex-direction: column;
     gap: 10px;
 }
-.card__btn{
-    background: #F6F7F9;
-    color: #F23058;
+.card__btn {
+    background: #f6f7f9;
+    color: var(--primary);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.card .presentation{
+.card .presentation {
     gap: 7px;
 }
-.card .splide__pagination__page{
+.card .splide__pagination__page {
     width: 7px;
     height: 7px;
     background-color: var(--black);
     border-radius: 7px;
 }
-.card .splide__pagination__page[aria-selected="true"]{
+.card .splide__pagination__page[aria-selected="true"] {
     width: 30px;
-    border: 1px solid #F23058;
+    border: 1px solid var(--primary);
     background-color: transparent;
     margin-left: 7px;
     margin-right: 7px;
     opacity: 1;
 }
-.card_btn_tooltip{
-    --bs-tooltip-bg: #FDFDFD;
+.card_btn_tooltip {
+    --bs-tooltip-bg: #ffe7e7;
+    --bs-tooltip-color: #bd5454;
+    --bs-tooltip-opacity: 1;
 }

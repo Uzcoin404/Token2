@@ -111,9 +111,6 @@
 }
 
 .footer__terms {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 40px 0;
 }
 .footer_terms_text {
