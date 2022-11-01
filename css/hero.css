@@ -141,3 +141,15 @@
 .hero_card_btn:hover {
     color: var(--secondary);
 }
+
+@media (max-width: 992px) {
+    .hero__cards{
+        flex: 2;
+    }
+}
+@media (max-width: 992px) {
+    
+}
+@media (max-width: 992px) {
+    
+}
