@@ -25,6 +25,9 @@ a {
 .btn__square {
     width: 44px;
     height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 li {
     list-style: none;

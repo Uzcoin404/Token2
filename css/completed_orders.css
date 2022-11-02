@@ -1,7 +1,7 @@
 .active-link {
     padding: 7px 27px;
     background-color: white;
-    color: #F23058;
+    color: var(--primary);
     border-radius: 6px;
 }
 
@@ -32,12 +32,12 @@
     width: 70%;
     height: 5px;
     border-radius: 5px;
-    background-color: #F23058;
+    background-color: var(--primary);
 }
 
 .line>li {
     z-index: 2;
-    background-color: #F23058;
+    background-color: var(--primary);
 }
 
 .line>li:last-child {
@@ -54,9 +54,14 @@
 
 }
 
+@media (max-width:1400px) {
+    .mt-encriment {
+        margin-top: -120px;
+    }
+}
 @media (max-width:1200px) {
     .mt-encriment {
-        margin-top: -230px;
+        margin-top: -200px;
     }
 }
 

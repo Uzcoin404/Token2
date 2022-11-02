@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
-        rel="stylesheet">   
+        rel="stylesheet">
     <!-- Font awesome -->
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <!-- Bootstrap -->
@@ -55,7 +55,7 @@
                 </nav>
             </section>
             <section class="product__about">
-                <div class="product__images">
+                <div class="section__content product__images">
                     <div id="main-carousel" class="splide product_main_slide">
                         <div class="splide__track">
                             <ul class="splide__list">
@@ -86,8 +86,188 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="product__info">
+                        <ul class="product_tab_nav nav nav-tabs mt-4">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#specifications"
+                                    id="specifications-tab" type="button">
+                                    Specifications
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#compatibility"
+                                    id="compatibility-tab" type="button">
+                                    Compatibility
+                                </button>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-2">
+                            <div class="tab-pane fade show active" role="tabpanel" id="specifications">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="product_table_th">Model Number</th>
+                                            <td class="product_table_tr">Token2 T2F2-NFC-Slim</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Button</th>
+                                            <td class="product_table_tr">Capacitive sensor-type integrated touch-button
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Functions</th>
+                                            <td class="product_table_tr">FIDO U2F + FIDO2 WebAuthn + HOTP (HID)+ TOTP
+                                                (with
+                                                Companion app)</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Embedded security algorithm</th>
+                                            <td class="product_table_tr">ECDSA , SHA256, AES, HMAC, ECDH</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Interface type</th>
+                                            <td class="product_table_tr">NFC, USB-A+ USB Type-C (with optional adapter)
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Firmware</th>
+                                            <td class="product_table_tr">1</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Maximum FIDO2.1 Resident keys</th>
+                                            <td class="product_table_tr">1</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Lifetime</th>
+                                            <td class="product_table_tr">1</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Programming cycles</th>
+                                            <td class="product_table_tr">1</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Communication protocol</th>
+                                            <td class="product_table_tr">1</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Working voltage</th>
+                                            <td class="product_table_tr">1</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Input Currency</th>
+                                            <td class="product_table_tr">1</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Power</th>
+                                            <td class="product_table_tr">1</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Working temperature</th>
+                                            <td class="product_table_tr">1</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Dimensions</th>
+                                            <td class="product_table_tr">1</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Storage temperature</th>
+                                            <td class="product_table_tr">1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" role="tabpanel" id="compatibility">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th class="product_table_th">
+                                                <i class="fa-brands fa-windows me-2"></i>
+                                                Azure Passwordless
+                                            </th>
+                                            <td class="product_table_tr">
+                                                <i class="fa-solid fa-check"></i>
+                                                fully compatible
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">
+                                                <i class="fa-brands fa-google me-2"></i>
+                                                Google Account
+                                            </th>
+                                            <td class="product_table_tr">
+                                                <i class="fa-solid fa-check"></i>
+                                                fully compatible
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">
+                                                <i class="fa-solid fa-user me-2"></i>
+                                                ISDecisions UserLock 11.0 or newer
+                                            </th>
+                                            <td class="product_table_tr">
+                                                <i class="fa-solid fa-check"></i>
+                                                fully compatible
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Stripe Account</th>
+                                            <td class="product_table_tr">
+                                                <i class="fa-solid fa-check"></i>
+                                                fully compatible
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Facebook Account</th>
+                                            <td class="product_table_tr">
+                                                <i class="fa-solid fa-check"></i>
+                                                fully compatible
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">GitHub Account</th>
+                                            <td class="product_table_tr">
+                                                <i class="fa-solid fa-check"></i>
+                                                fully compatible
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Application or system developed by you</th>
+                                            <td class="product_table_tr">
+                                                <i class="fa-solid fa-check"></i>
+                                                fully compatible
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th class="product_table_th">Not listed here</th>
+                                            <td class="product_table_tr">
+                                                <i class="fa-solid fa-check"></i>
+                                                fully compatible
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="alert alert-danger product_info_alert mt-2" role="alert">
+                            <i class="fa-light fa-triangle-exclamation"></i>
+                            <p>Please check product and platform compatibility before placing an order</p>
+                        </div>
+                        <div class="alert alert-danger product_info_alert product_alert_gray" role="alert">
+                            <i class="fa-light fa-triangle-exclamation"></i>
+                            <p>All pictures shown are for illustration purpose only. Actual product may slightly vary
+                                due to
+                                product enhancement or other reasons.</p>
+                        </div>
+                        <div class="alert alert-danger product_info_alert" role="alert">
+                            <i class="fa-light fa-triangle-exclamation"></i>
+                            <p>The price displayed on this page includes the cost of the hardware, license fees as well
+                                as
+                                support during the warranty period of each hardware token. Detailed repartition of costs
+                                will be shown on the final invoice.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="product__details">
+                <div class="section__content product__details">
                     <div class="product_about_header between_center">
                         <h3 class="product_about_title">T2F2-NFC-Slim FIDO2 Security key</h3>
                         <div class="product_details_btns between_center">
@@ -123,47 +303,48 @@
                         the same key with devices with USB-Type-C slots. The T2F2-NFC-Slim security key does not require
                         a battery nor network connectivity - it is always on and accessible.
                     </p>
+                    <div class="product__feature">
+                        <h5 class="product_nfc_title">NFC Chip position</h5>
+                        <p class="product_nfc_text product_details_text">
+                            The NFC chip is located on the front/top side of the device (the USB metal connectors'
+                            side).
+                            While for good quality NFC reader devices (i.e. an iPhone), both sides would work with no
+                            issues, on devices with weaker NFC signal, touching the reader area with the top side of the
+                            key
+                            would give better results.
+                        </p>
+                        <h5 class="product_nfc_title mt-4">TOTP Feature</h5>
+                        <p class="product_nfc_text product_details_text">T2F2-NFC-Slim Security key can securely store
+                            the
+                            secrets for your TOTP profiles, but requires a companion app (available for Android and
+                            Windows)
+                            to generate the OTPs. </p>
+                        <div class="product__guides">
+                            <div class="product_guide_item">
+                                <i class="fa-solid fa-share-from-square"></i>
+                                <div class="guide_item_content">
+                                    <h6 class="guide_item_title">IOS Support</h6>
+                                    <p class="guide_item_text">
+                                        Native support of NFC FIDO2 Keys in iPhone Safari
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="product_guide_item">
+                                <i class="fa-solid fa-share-from-square"></i>
+                                <div class="guide_item_content">
+                                    <h6 class="guide_item_title">Integration guides</h6>
+                                    <p class="guide_item_text">
+                                        Using Your T2F2 Security Key with Google
+                                        Passwordless authentication in Azure AD with Token2 FIDO2 keys
+                                        FIDO U2F security key for Stripe
+                                        Using FIDO2 USB keys under Linux
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-            <div id="tabs">
-                <ul>
-                    <li><a href="#tabs-1">Nunc tincidunt</a></li>
-                    <li><a href="#tabs-2">Proin dolor</a></li>
-                    <li><a href="#tabs-3">Aenean lacinia</a></li>
-                </ul>
-                <div id="tabs-1">
-                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec
-                        sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et
-                        lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis
-                        ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis
-                        aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci
-                        tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
-                </div>
-                <div id="tabs-2">
-                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus
-                        id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus
-                        eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse
-                        sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing.
-                        Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla.
-                        Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium
-                        posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et
-                        purus.</p>
-                </div>
-                <div id="tabs-3">
-                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel
-                        vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante.
-                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                        Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula
-                        tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
-                    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus.
-                        Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit.
-                        Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id
-                        euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut
-                        sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula
-                        velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus.
-                        Vivamus a libero vitae lectus hendrerit hendrerit.</p>
-                </div>
-            </div>
             <section class="products">
                 <div class="products__header between_center">
                     <h5 class="products_header_title">Other FIDO2 Keys Products</h5>

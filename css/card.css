@@ -107,7 +107,8 @@
 }
 .card .splide__pagination__page[aria-selected="true"] {
     width: 30px;
-    border: 1px solid var(--primary);
+    /* border: 1px solid var(--primary); */
+    background-color: var(--primary) !important;
     background-color: transparent;
     margin-left: 7px;
     margin-right: 7px;
