@@ -1,0 +1,45 @@
+.line>li {
+    z-index: 2;
+    background-color: #DADADA;
+}
+
+.line {
+    position: relative;
+    background-color: #DADADA;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.line::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 10%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #F23058;
+}
+.line-second>li {
+    z-index: 2;
+    background-color: #DADADA;
+}
+.line-second>li:nth-child(-n+2) {
+    background-color: #F23058;
+}
+
+.line-second {
+    position: relative;
+    background-color: #DADADA;
+    height: 5px;
+    border-radius: 5px;
+}
+
+.line-second::before {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 50%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #F23058;
+}
