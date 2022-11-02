@@ -2,3 +2,76 @@
 @import url('components/nav.css');
 @import url('components/subscribe.css');
 @import url('components/footer.css');
+
+a {
+    color: inherit;
+}
+
+.active-link {
+    padding: 7px 27px;
+    background-color: white;
+    color: #F23058;
+    border-radius: 6px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+.tabs>li {
+    cursor: pointer;
+}
+
+.bg-grey {
+    background-color: #f2f2f2;
+}
+
+.mt-encriment {
+    position: relative;
+    z-index: 1;
+    margin-top: -350px;
+}
+
+/* @media (max-width:1600px) {
+    .mt-encriment {
+        margin-top: -300px;
+    }
+}
+@media (max-width:1350px) {
+    .mt-encriment {
+        margin-top: -260px;
+    }
+} */
+@media (max-width:1200px) {
+    .mt-encriment {
+        margin-top: -330px;
+    }
+}
+
+@media (max-width:980px) {
+    .mt-encriment {
+        margin-top: -430px;
+    }
+}
+
+@media (max-width:440px) {
+    .mt-encriment {
+        margin-top: -350px;
+    }
+}
+
+@media (max-width:380px) {
+    .mt-encriment {
+        margin-top: -300px;
+    }
+}
+
+@media (max-width:340px) {
+    .mt-encriment {
+        margin-top: -180px;
+    }
+}

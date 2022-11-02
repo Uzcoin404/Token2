@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token 2 About</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/personal_information.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header header__red">
+        <!-- Import navbar using Jquery you can remove nav__loader during backend process -->
+        <div class="nav__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.nav__loader').load("../components/nav.html");
+                });
+            </script>
+        </div>
+        <!--Personal Page Personal Infos  -->
+        <main class="container">
+            <div class="row float-end mb-3">
+                <div class="col d-flex">
+                    <h2 class="text-white me-3">Hi! Chingiz Ahmadov</h2>
+                    <button type="button" class="btn nav__btn px-3 text-center">
+                        <i class="fa-regular fa-right-from-bracket"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <h1 class="text-white display-5 fw-bold mb-lg-5 mb-md-3 mb-2">Personal information</h1>
+                    <p class="lh-lg text-white mb-lg-5 mb-md-3 mb-3" style="text-align: justify;">We have solutions that can integrate with almost any system, below
+                        is the list of integration
+                        guides with different systems published so far, and it is far from being exhaustive. Feel free
+                        to contact us if you cannot find your desired product in the list below, we will check the
+                        compatibility and provide instructions.</p>
+                </div>
+
+                <!-- Personal Page Tabs -->
+                <ul class="col-12 text-white mb-lg-5 mb-md-3 mb-2 tabs">
+                    <li>
+                        <a href="../pages/processing_orders.html">
+                            Prosessing Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/completed_orders.html">
+                            Completed Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/canceled_orders.html">
+                            Canceled Orders
+                        </a>
+                    </li>
+                    <li class="active-link">
+                        <a href="../pages/personal_information.html">
+                            Personal Information
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/downloads.html">
+                            Downloads
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </header>
+    <!-- Personal Infos -->
+    <main class="container ">
+        <div class="row  mb-lg-3 mx-auto">
+            <div class="col mt-encriment rounded p-3 bg-white">
+                <!-- General Information -->
+                <h3 class="mb-3">General Information</h3>
+                <div class="row d-flex justify-content-start align-items-center mb-3">
+                    <div class="col-lg-2 mb-sm-1">
+                        <select name="type" id="type" class="form-select border border-0 bg-light py-2">
+                            <option value="mr">Mr</option>
+                            <option value="ms">Ms</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4  mb-sm-1">
+                        <input type="text" class="form-control border border-0 bg-light py-2" placeholder="Name"
+                            aria-label="Name">
+                    </div>
+                    <div class="col-lg-4  mb-sm-1">
+                        <input type="text" class="form-control border border-0 bg-light py-2 "
+                            placeholder="Surname" aria-label="Surname">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-start align-items-center">
+                    <div class="mb-3 col-lg-3">
+                        <input type="text" class="form-control border border-0 bg-light py-2  mb-sm-1"
+                            placeholder="Date of Birth" aria-label="Date of Birth">
+
+                    </div>
+                    <div class="mb-3 col-5">
+                        <select id="gender" name="gender" class="form-select border border-0 bg-light py-2  mb-sm-1">
+                            <option selected>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Registered Address -->
+                <h3 class="mb-3">Registered Address</h3>
+                <div class="row d-flex justify-content-start align-items-center mb-3">
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="text" class="form-control border border-0 bg-light py-2 " placeholder="Street"
+                            aria-label="Street">
+                    </div>
+                    <div class="col-lg-2 mb-sm-1">
+                        <input type="number" class="form-control border border-0 bg-light py-2 "
+                            placeholder="Number" aria-label="Number">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-start align-items-center  mb-3">
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="text" class="form-control border border-0 bg-light py-2 " placeholder="City"
+                            aria-label="City">
+                    </div>
+                    <div class="col-lg-2 mb-sm-1">
+                        <input type="number" class="form-control border border-0 bg-light py-2 " placeholder="ZIP"
+                            aria-label="ZIP">
+                    </div>
+                    <div class="col-lg-4 mb-sm-1">
+                        <select class="form-select border border-0 bg-light py-2 ">
+                            <option selected>Country</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Shipping Address -->
+                <h3 class="mb-3">Shipping Address</h3>
+                <div class="row d-flex justify-content-start align-items-center  mb-3">
+                    <div class="form-check ms-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Similar to Registered Address
+                        </label>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-start align-items-center  mb-3">
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="text" class="form-control border border-0 bg-light py-2 " placeholder="Street"
+                            aria-label="Street">
+                    </div>
+                    <div class="col-lg-2 mb-sm-1">
+                        <input type="number" class="form-control border border-0 bg-light py-2 "
+                            placeholder="Number" aria-label="Number">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-start align-items-center  mb-3">
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="text" class="form-control border border-0 bg-light py-2 " placeholder="City"
+                            aria-label="City">
+                    </div>
+                    <div class="col-lg-2 mb-sm-1">
+                        <input type="number" class="form-control border border-0 bg-light py-2 " placeholder="ZIP"
+                            aria-label="ZIP">
+                    </div>
+                    <div class="col-lg-4 mb-sm-1">
+                        <select class="form-select border border-0 bg-light py-2 ">
+                            <option selected>Country</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Password -->
+                <h3 class="mb-3">Password</h3>
+                <div class="row mb-3">
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="password" class="form-control border border-0 bg-light"
+                            placeholder="Current password" aria-label="Current password">
+                    </div>
+                </div>
+                <!-- Change Password? -->
+                <p class="mb-3 fs-6">Change Password?</p>
+                <div class="row mb-3">
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="password" class="form-control border border-0 bg-light" placeholder="New password"
+                            aria-label="New password">
+                    </div>
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="password" class="form-control border border-0 bg-light"
+                            placeholder="Confirm password" aria-label="Confirm password">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="main about__main">
+        <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
+        <div class="subscribe__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.subscribe__loader').load("../components/subscribe.html");
+                });
+            </script>
+        </div>
+        <!--  -->
+    </main>
+
+    <!-- Import footer using Jquery you can remove footer__loader during backend process -->
+    <div class="footer__loader">
+        <script>
+            $(document).ready(function () {
+                $('.footer__loader').load("../components/footer.html");
+            });
+        </script>
+    </div>
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/about.js"></script>
+</body>
+
+</html>
