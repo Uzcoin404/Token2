@@ -1,23 +1,3 @@
-.active-link {
-    padding: 7px 27px;
-    background-color: white;
-    color: var(--primary);
-    border-radius: 6px;
-}
-
-.tabs {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px 20px;
-}
-
-.tabs>li {
-    cursor: pointer;
-}
-
-
 .line {
     position: relative;
     background-color: #DADADA;
@@ -32,58 +12,14 @@
     width: 70%;
     height: 5px;
     border-radius: 5px;
-    background-color: var(--primary);
+    background-color: #F23058;
 }
 
 .line>li {
     z-index: 2;
-    background-color: var(--primary);
+    background-color: #F23058;
 }
 
 .line>li:last-child {
     background-color: #DADADA;
-}
-
-.bg-grey {
-    background-color: #f2f2f2;
-}
-
-.mt-encriment {
-    z-index: 1;
-    margin-top: -300px;
-
-}
-
-@media (max-width:1400px) {
-    .mt-encriment {
-        margin-top: -120px;
-    }
-}
-@media (max-width:1200px) {
-    .mt-encriment {
-        margin-top: -200px;
-    }
-}
-
-@media (max-width:980px) {
-    .mt-encriment {
-        margin-top: -330px;
-    }
-}
-
-@media (max-width:440px) {
-    .mt-encriment {
-        margin-top: -280px;
-    }
-}
-
-@media (max-width:380px) {
-    .mt-encriment {
-        margin-top: -230px;
-    }
-}
-@media (max-width:330px) {
-    .mt-encriment {
-        margin-top: -200px;
-    }
 }

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token 2 About</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/downloads.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header header__red">
+        <!-- Import navbar using Jquery you can remove nav__loader during backend process -->
+        <div class="nav__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.nav__loader').load("../components/nav.html");
+                });
+            </script>
+        </div>
+        <!--Personal Page Downloads -->
+        <main class="container">
+            <div class="row float-end mb-3">
+                <div class="col d-flex">
+                    <h2 class="text-white me-3">Hi! Chingiz Ahmadov</h2>
+                    <button type="button" class="btn nav__btn px-3 text-center">
+                        <i class="fa-regular fa-right-from-bracket"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row w-100">
+                <div class="col-sm-12 col-md-12 col-lg-6">
+                    <h1 class="text-white display-5 fw-bold mb-lg-5 mb-md-3 mb-2">Downloads</h1>
+                    <p class="lh-lg text-white mb-lg-5 mb-md-3 mb-3" style="text-align: justify;">We have solutions that
+                        can integrate with almost any system, below
+                        is the list of integration
+                        guides with different systems published so far, and it is far from being exhaustive. Feel free
+                        to contact us if you cannot find your desired product in the list below, we will check the
+                        compatibility and provide instructions.</p>
+                </div>
+
+                <!-- Personal Page Tabs -->
+                <ul class="col-12 text-white mb-lg-5 mb-md-3 mb-2 tabs">
+                    <li>
+                        <a href="../pages/processing_orders.html">
+                            Prosessing Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/completed_orders.html">
+                            Completed Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/canceled_orders.html">
+                            Canceled Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../pages/personal_information.html">
+                            Personal Information
+                        </a>
+                    </li>
+                    <li class="active-link">
+                        <a href="../pages/downloads.html">
+                            Downloads
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </header>
+    <!-- Downloads -->
+    <main class="container ">
+        <div class="row mb-lg-5 mb-md-3 mx-auto">
+            <div class="col mt-encriment rounded p-5 bg-white">
+                <span class="plus">+</span>
+                <!-- Available downloads -->
+                <h3 class="mb-3">Available downloads</h3>
+                <div class="row p-2 mb-4">
+                    <div class="col-lg-6 bg-blog">
+                        <p class="p-3">On this page you can access entitled software and tools that <br> are available
+                            only to Token2
+                            customers and partners. The list of available downloads depend on the products you have
+                            previously ordered with us <br> (i.e. the Python solution can be downloaded only if you have
+                            purchased <br> our Python-compatible NFC writer etc.)</p>
+                    </div>
+                </div>
+                <div class="row d-flex flex-column">
+                    <div class="col mb-lg-5">
+                        <h4 class="text-muted mb-3">Bulk activation script / EXE Version (public access)</h4>
+                        <p class="text-muted mb-3 fw-semibold">A solution to automate the activation of imported
+                            hardware tokens with Azure MFA. More information about this script is available here.</p>
+                        <a href="/" download class="btn btn-danger single quote">Download</a>
+                    </div>
+                    <div class="col mb-lg-5">
+                        <h4 class="text-muted mb-3">Bulk activation script / Powershell version (restricted access)</h4>
+                        <p class="text-muted mb-3 fw-semibold">A solution to automate the activation of imported
+                            hardware tokens with Azure MFA. More information about this script is available.</p>
+                        <a href="/" download class="btn btn-danger single quote">Download</a>
+                    </div>
+                    <div class="col mb-lg-5">
+                        <h4 class="text-muted mb-3">token2_config.py - Python script (restricted access)</h4>
+                        <p class="text-muted mb-3 fw-semibold">Burn and configure Token2 programmable TOTP tokens
+                            (second generation, single profile) under Windows, Linux and macOS. Check the installation
+                            and usage guide here.</p>
+                        <a href="/" download class="btn btn-danger single quote">Download</a>
+                    </div>
+                    <div class="col mb-lg-5">
+                        <h4 class="text-muted mb-3">Generate PKCS XML file for Watchguard AuthPoint Online (restricted
+                            access)</h4>
+                        <p class="text-muted mb-3 fw-semibold">This tool generates a seed file compatible with
+                            Watchguard AuthPoint based on an arbitrary base32 secret submitted by users. The use case
+                            for this tool is allowing using the same token in more than one system. For example, you can
+                            provision a token for Facebook or Google using our NFC Burner or USB Config tool, record the
+                            base32 code and then use the same secret to generate the pcks file for Authpoint.</p>
+                        <a href="/" download class="btn btn-danger single quote">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <main class="main about__main">
+        <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
+        <div class="subscribe__loader">
+            <script>
+                 $(document).ready(function () {
+                     $('.subscribe__loader').load("../components/subscribe.html");
+                 });
+            </script>
+        </div>
+        <!--  -->
+    </main>
+
+    <!-- Import footer using Jquery you can remove footer__loader during backend process -->
+    <div class="footer__loader">
+        <script>
+            $(document).ready(function () {
+                $('.footer__loader').load("../components/footer.html");
+            });
+        </script>
+    </div>
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/about.js"></script>
+</body>
+
+</html>

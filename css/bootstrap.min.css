@@ -6012,13 +6012,12 @@ textarea.form-control-lg {
 
 .tooltip {
     --bs-tooltip-zindex: 1080;
-    --bs-tooltip-max-width: 200px;
-    --bs-tooltip-padding-x: 0.5rem;
-    --bs-tooltip-padding-y: 0.25rem;
-    --bs-tooltip-margin: ;
-    --bs-tooltip-font-size: 0.875rem;
+    --bs-tooltip-max-width: 800px;
+    --bs-tooltip-padding-x: 1.5rem;
+    --bs-tooltip-padding-y: .5rem;
+    --bs-tooltip-font-size: 1rem;
     --bs-tooltip-color: #fff;
-    --bs-tooltip-bg: #000;
+    --bs-tooltip-bg: rgba(200,0,0,.15);
     --bs-tooltip-border-radius: 0.375rem;
     --bs-tooltip-opacity: 0.9;
     --bs-tooltip-arrow-width: 0.8rem;
@@ -6026,7 +6025,7 @@ textarea.form-control-lg {
     z-index: var(--bs-tooltip-zindex);
     display: block;
     padding: var(--bs-tooltip-arrow-height);
-    margin: var(--bs-tooltip-margin);
+    margin-bottom: 1rem;
     font-family: var(--bs-font-sans-serif);
     font-style: normal;
     font-weight: 400;

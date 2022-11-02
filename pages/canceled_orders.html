@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- styles -->
     <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../css/completed_orders.css">
+    <link rel="stylesheet" href="../css/canceled_orders.css">
     <script src="../js/jquery.min.js"></script>
 </head>
 
@@ -32,7 +32,7 @@
                 });
             </script>
         </div>
-        <!--Personal Page Completed Orders  -->
+        <!--Personal Page Canceled Orders  -->
         <main class="container">
             <div class="row float-end mb-3">
                 <div class="col d-flex">
@@ -44,8 +44,9 @@
             </div>
             <div class="row w-100">
                 <div class="col-sm-12 col-md-12 col-lg-6">
-                    <h1 class="text-white display-5 fw-bold mb-lg-5 mb-md-3 mb-2">Completed Orders</h1>
-                    <p class="lh-lg text-white mb-lg-5 mb-md-3 mb-3" style="text-align: justify;">We have solutions that can integrate with almost any system, below
+                    <h1 class="text-white display-5 fw-bold mb-lg-5 mb-md-3 mb-2">Canceled Orders</h1>
+                    <p class="lh-lg text-white mb-lg-5 mb-md-3 mb-3" style="text-align: justify;">We have solutions that
+                        can integrate with almost any system, below
                         is the list of integration
                         guides with different systems published so far, and it is far from being exhaustive. Feel free
                         to contact us if you cannot find your desired product in the list below, we will check the
@@ -59,12 +60,12 @@
                             Prosessing Orders
                         </a>
                     </li>
-                    <li class="active-link">
+                    <li>
                         <a href="../pages/completed_orders.html">
                             Completed Orders
                         </a>
                     </li>
-                    <li>
+                    <li class="active-link">
                         <a href="../pages/canceled_orders.html">
                             Canceled Orders
                         </a>
@@ -88,7 +89,7 @@
         <div class="container">
             <div class="row w-100 mx-auto">
                 <!-- Order N:1 -->
-                <div class="col-12 bg-white p-5 rounded mb-4 mt-encriment">
+                <div class="col-12 bg-white rounded mb-4 mt-encriment p-5">
                     <div class="row mb-4">
                         <h5 class="fw-bold">Order # 3456789</h5><!-- Order ID -->
                         <!-- Order Payment -->
@@ -100,7 +101,7 @@
                         <!-- Order Address -->
                         <div class="col-auto">
                             <p>Current Status: <b>Shipped by post (UPS F) Express Shipping</b></p>
-                            <p>Tracking Number:<b>#34567890987435</b></p>
+                            <p>Tracking Number:<b>-</b></p>
                         </div>
                     </div>
                     <div class="row d-flex justify-content-start align-items-center mb-5">
@@ -114,27 +115,33 @@
                                 </b></p>
                         </div>
                         <!-- Order Progress -->
-                        <ul class="ms-lg-5 col-lg-9 col-md-12 col-sm-12 line position-relative d-flex justify-content-evenly align-items-center">
-                            <li
+                        <ul
+                            class="ms-lg-5 col-lg-9 col-md-12 col-sm-12 line position-relative d-flex justify-content-evenly align-items-center">
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
+                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
                                 class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-check"></i>
                             </li>
-                            <li
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
+                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
                                 class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-barcode"></i>
                             </li>
-                            <li
+
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
+                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
                                 class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-truck"></i>
                             </li>
-                            <li
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
+                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
                                 class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-box-open"></i>
                             </li>
                         </ul>
                     </div>
                     <!-- Product List -->
-                    <div class="row d-flex flex-column mb-3">
+                    <div class="row d-flex flex-column  mb-3">
                         <!-- Table Headers -->
                         <div
                             class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-2">
@@ -181,7 +188,7 @@
                         </div>
                     </div>
                     <!-- Orders Price -->
-                    <div class="row d-flex flex-column">
+                    <div class="row d-flex flex-column ">
                         <!-- Orders Total Price -->
                         <div
                             class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
@@ -203,7 +210,7 @@
                     </div>
                 </div>
                 <!-- Order N:2 -->
-                <div class="col-12 bg-white p-5 rounded mb-4">
+                <div class="col-12 bg-white rounded mb-4 p-5">
                     <div class="row mb-4">
                         <h5 class="fw-bold">Order # 3456789</h5><!-- Order ID -->
                         <!-- Order Payment -->
@@ -229,27 +236,33 @@
                                 </b></p>
                         </div>
                         <!-- Order Progress -->
-                        <ul class="ms-lg-5 col-lg-9 col-md-12 col-sm-12 line position-relative d-flex justify-content-evenly align-items-center">
-                            <li
+                        <ul
+                            class="ms-lg-5 col-lg-9 col-md-12 col-sm-12 line-second position-relative d-flex justify-content-evenly align-items-center">
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
+                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
                                 class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-check"></i>
                             </li>
-                            <li
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
+                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
                                 class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-barcode"></i>
                             </li>
-                            <li
+
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
+                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
                                 class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-truck"></i>
                             </li>
-                            <li
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
+                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
                                 class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-box-open"></i>
                             </li>
                         </ul>
                     </div>
                     <!-- Product List -->
-                    <div class="row d-flex flex-column mb-3">
+                    <div class="row d-flex flex-column  mb-3">
                         <!-- Table Headers -->
                         <div
                             class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-2">
@@ -268,7 +281,7 @@
                         </div>
                     </div>
                     <!-- Orders Price -->
-                    <div class="row d-flex flex-column">
+                    <div class="row d-flex flex-column ">
                         <!-- Orders Total Price -->
                         <div
                             class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
@@ -323,5 +336,12 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/about.js"></script>
 </body>
+
+<script>
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        .forEach(tooltip => {
+            new bootstrap.Tooltip(tooltip)
+        })
+</script>
 
 </html>
