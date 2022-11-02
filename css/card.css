@@ -107,15 +107,19 @@
 }
 .card .splide__pagination__page[aria-selected="true"] {
     width: 30px;
-    /* border: 1px solid var(--primary); */
-    background-color: var(--primary) !important;
-    background-color: transparent;
+    background-color: var(--primary);
     margin-left: 7px;
     margin-right: 7px;
     opacity: 1;
+    transform: scale(1.1);
 }
 .card_btn_tooltip {
     --bs-tooltip-bg: #ffe7e7;
     --bs-tooltip-color: #bd5454;
     --bs-tooltip-opacity: 1;
+    max-width: 150px;
+    font-size: 10px;
+}
+.card_btn_tooltip .tooltip-inner{
+    padding: 12px 8px;
 }

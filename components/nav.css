@@ -1,5 +1,4 @@
 .header {
-    position: relative;
     height: 100vh;
     background-image: url("../img/hero-bubbles.png"),
         linear-gradient(128.28deg, #eb5757 5.72%, #ff3566 59.46%);
@@ -12,12 +11,13 @@
     max-width: 100vw;
 }
 .navbar {
-    position: relative;
     box-shadow: none;
+    padding: 30px 0;
 }
 .navbar .container {
     justify-content: space-between;
     column-gap: 15px;
+    align-items: start;
 }
 .nav__btn,
 .nav_menu_btn {
@@ -47,6 +47,9 @@
 }
 .navbar-nav {
     column-gap: 32px;
+}
+.navbar-brand{
+    margin-right: 80px;
 }
 .navbar .nav-link {
     --bs-nav-link-color: #fff;
@@ -88,13 +91,10 @@
 }
 .header__bubbles {
     position: absolute;
-    left: 200px;
+    /* left: 200px; */
     top: 0px;
     z-index: -1;
     width: 100%;
-    max-width: 100vw;
-    height: 100%;
-    overflow: hidden;
 }
 .navbar .dropdown-menu {
     border: none;
@@ -154,6 +154,12 @@
     .navbar-nav {
         column-gap: 20px;
     }
+    .navbar{
+        padding: 20px 0;
+    }
+    .navbar-brand{
+        margin-right: 40px;
+    }
 }
 /* ============ small devices ============ */
 @media (max-width: 991px) {
@@ -176,16 +182,22 @@
         --bs-nav-link-padding-y: 15px;
         border-bottom: 1px solid rgba(41, 45, 51, 0.5);
     }
+    .navbar .nav-item::before{
+        display: none;
+    }
+    .navbar-brand {
+        margin: 0;
+    }
 }
 @media (max-width: 450px) {
     .navbar-brand img {
         width: 120px;
     }
-    .navbar-brand {
-        margin: 0;
-    }
     .offcanvas {
         --bs-offcanvas-width: 100%;
+    }
+    .navbar{
+        padding: 8px 0;
     }
 }
 @media (max-width: 350px) {

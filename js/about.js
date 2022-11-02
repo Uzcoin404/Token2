@@ -5,3 +5,9 @@ $(document).ready(function () {
         triggerOnce: true,
     });
 });
+new Splide(".about__slider", {
+    perPage: 1,
+    perMove: 1,
+    gap: "3rem",
+    arrows: false,
+}).mount();
