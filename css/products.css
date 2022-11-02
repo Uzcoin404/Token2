@@ -130,12 +130,6 @@
     gap: 25px 30px;
 }
 
-.product__images {
-    max-width: 475px;
-    width: 100%;
-    margin-bottom: 30px;
-    margin-right: 15px;
-}
 .product_thumb_slide .splide__slide img {
     width: 100%;
     height: auto;
@@ -168,11 +162,12 @@
 }
 
 .product__about {
-    display: inline-flex;
-    /* flex-wrap: wrap; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 20px;
 }
-.product__details {
-    width: 100%;
+.section__content {
+    width: 48%;
 }
 .product_about_header {
     gap: 10px;
@@ -238,4 +233,82 @@
     line-height: 24px;
     color: var(--grey);
     margin: 16px 0;
+}
+
+.product_table_th,
+.product_table_tr {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--grey);
+    padding: 2px !important;
+}
+.product_table_th {
+    font-weight: 600;
+}
+.product_table_tr i {
+    margin-right: 8px;
+    color: #006811;
+    font-size: 10px;
+}
+.product_info_alert {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+.product_info_alert p {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 11px;
+    color: #bd5454;
+    margin-left: 12px;
+}
+.product_info_alert i {
+    color: var(--primary);
+    font-size: 16px;
+}
+.product_alert_gray p {
+    color: #808080;
+}
+.product_alert_gray {
+    background-color: #e8e8e8;
+    border-color: #d1d1d1;
+}
+
+.product__feature{
+    margin-top: 30px;
+}
+.product_nfc_title {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 30px;
+    color: var(--black);
+}
+.product__guides{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 20px;
+}
+.product_guide_item {
+    display: flex;
+    gap: 10px;
+    max-width: 250px;
+}
+.product_guide_item i {
+    font-size: 15px;
+    padding-top: 4px;
+}
+.guide_item_title, .guide_item_text {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 11px;
+    color: var(--black);
+}
+.guide_item_text{
+    font-weight: 400;
+    color: var(--primary);
 }

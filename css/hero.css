@@ -9,7 +9,7 @@
     align-items: center;
 }
 .hero__content {
-    max-width: 540px;
+    max-width: 600px;
 }
 .hero__title {
     font-family: "Manrope";
@@ -26,6 +26,8 @@
 }
 .hero__buttons {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
 }
 .hero__btn {
     padding: 13px 52px;
@@ -68,8 +70,8 @@
 }
 
 .hero__cards {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
     margin-top: 60px;
 }
@@ -83,7 +85,7 @@
     overflow-y: hidden;
 }
 .hero_card_content {
-    padding: 0 18px 24px;
+    padding: 5px 18px 24px;
 }
 .hero_card_img {
     width: 100%;
@@ -117,9 +119,9 @@
     font-size: 14px;
     line-height: 24px;
     color: var(--secondary);
-    display: flex;
-    align-items: center;
     margin-top: 12px;
+    vertical-align: middle;
+    margin-top: 4px;
 }
 .hero_card_link:hover {
     color: var(--secondary);
@@ -137,19 +139,35 @@
     box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.18);
     border-radius: 6px;
     color: var(--secondary);
+    --bs-btn-hover-color: var(--secondary);
+    --bs-btn-hover-bg: #fff;
+    --bs-btn-hover-border-color: #fff;
+    --bs-btn-active-color: var(--secondary);
+    --bs-btn-active-bg: #fff;
+    --bs-btn-active-border-color: #fff;
 }
-.hero_card_btn:hover {
-    color: var(--secondary);
-}
-
 @media (max-width: 992px) {
-    .hero__cards{
-        flex: 2;
+    .hero__cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin-top: 30px;
+    }
+    .home_main {
+        margin-top: 1050px !important;
     }
 }
-@media (max-width: 992px) {
-    
-}
-@media (max-width: 992px) {
-    
+@media (max-width: 550px) {
+    .hero__cards {
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+    }
+    .home_main {
+        margin-top: 1550px !important;
+    }
+    .hero__card {
+        max-width: 500px;
+    }
+    .hero__btn {
+        padding: 10px 40px;
+    }
 }

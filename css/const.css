@@ -25,6 +25,9 @@ a {
 .btn__square {
     width: 44px;
     height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 li {
     list-style: none;
@@ -62,10 +65,24 @@ a:hover {
     opacity: 1 !important;
 }
 .splide__arrow svg {
-    fill: var(--black);
+    fill: var(--black) !important;
 }
 .between_center{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@media (max-width: 576px) {
+    .splide__arrow{
+        width: 45px !important;
+        height: 45px !important;
+        border-radius: 15px !important;
+    }
+}
+@media (max-width: 425px) {
+    .splide__arrow{
+        width: 36px !important;
+        height: 36px !important;
+        border-radius: 10px !important;
+    }
 }
