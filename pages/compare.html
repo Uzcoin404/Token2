@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token 2 Template</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/compare.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header header__light">
+        <!-- Import navbar using Jquery you can remove nav__loader during backend process -->
+        <div class="nav__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.nav__loader').load("../components/nav-light.html");
+                });
+            </script>
+        </div>
+        <!--  -->
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="products__content">
+                <div class="products_content_header">
+                    <h2 class="products__title">Products</h2>
+                    <div class="products_content_header_blog">
+                        <span class="badge me-10">FIDO2 Keys</span>
+                        <p class="products_content_header_text">Classic Tokens</p>
+                        <p class="products_content_header_text">Programmable Tokens</p>
+                        <p class="products_content_header_text">TOTPRadius</p>
+                    </div>
+                </div>
+            </section>
+            <section class="compare">
+                <div class="products__header between_center mb-3">
+                    <h5 class="products_header_title">Compare Products</h5>
+                    <button class="btn btn__square products_filter_btn white_to_red_btn" type="button">
+                        <i class="fa-regular fa-sliders"></i>
+                    </button>
+                </div>
+                <div class="row gy-4">
+                    <script>
+                        for (let i = 0; i < 6; i++) {
+                            document.write(`
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 p-1 compare__card ${i!=0 ? '': 'active'} rounded-start">
+                        <div class="compare_selected_item rounded-top">
+                            Selected item
+                        </div>
+                        <div class="compare_card_content d-flex flex-column align-items-center ps-sm-3 ps-2 pe-2">
+                            <h6 class="fw-bold py-2 compare_card_title">
+                                C301-i programmable TOTP token
+                            </h6>
+                            <p class="compare_card_text mb-4">
+                                A keychain attachable programmable token. Drop-in replacement for Authenticator...
+                            </p>
+                            <img src="../img/products/card-product1.png" alt="" class="compare_card_img mb-3">
+                            <table class="table compare__table">
+                                <tbody>
+                                    <tr>
+                                        <th class="compare_table_th fw-normal">Azure Passwordless</th>
+                                        <td><i class="fa-solid fa-check compare_card_check rounded"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="compare_table_th fw-normal">Google Account</th>
+                                        <td><i class="fa-solid fa-check compare_card_check rounded"></i></td>
+                                    </tr>
+                                    <tr class="disable">
+                                        <th class="compare_table_th fw-normal">ISDecisions UserLock 11.0 or newer</th>
+                                        <td><i class="fa-solid fa-xmark compare_card_check rounded"></i></td>
+                                    </tr>
+                                    <tr class="disable">
+                                        <th class="compare_table_th fw-normal">Facebook Account</th>
+                                        <td><i class="fa-solid fa-xmark compare_card_check rounded"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="compare_table_th fw-normal">GitHub Account</th>
+                                        <td><i class="fa-solid fa-check compare_card_check rounded"></i></td>
+                                    </tr>
+                                    <tr class="disable">
+                                        <th class="compare_table_th fw-normal">ISDecisions UserLock 11.0 or newer</th>
+                                        <td><i class="fa-solid fa-xmark compare_card_check rounded"></i></td>
+                                    </tr>
+                                    <tr class="disable">
+                                        <th class="compare_table_th fw-normal">Application or system developed by you
+                                        </th>
+                                        <td><i class="fa-solid fa-xmark compare_card_check rounded"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="between_center mt-3 w-100">
+                                <span class="compare_price_text">Price</span>
+                                <div class="card__price">
+                                    <p class="card_product_price">€36.</p>
+                                    <span class="card_price_point">00</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn compare_btn w-100 my-2 text-start">
+                                Details 
+                                <i class="fa-solid fa-arrow-right-long ms-1 text-align-start"></i>
+                            </a>
+                        </div>
+                    </div>
+                            `);
+                        }
+                    </script>
+                </div>
+            </section>
+        </div>
+        <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
+        <div class="subscribe__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.subscribe__loader').load("../components/subscribe.html");
+                });
+            </script>
+        </div>
+        <!--  -->
+    </main>
+
+    <!-- Import footer using Jquery you can remove footer__loader during backend process -->
+    <div class="footer__loader">
+        <script>
+            $(document).ready(function () {
+                $('.footer__loader').load("../components/footer.html");
+            });
+        </script>
+    </div>
+    <!--  -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/splide.min.js"></script>
+    <script>
+        [...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
+            .forEach(el => new bootstrap.Tooltip(el))
+        let splides = document.querySelectorAll('.card_img_slider');
+        if (splides.length) {
+            let splideOptions = {
+                perPage: 1, perMove: 1, arrows: false, autoplay: true, lazyLoad: 'nearby', resetProgress: true
+            }
+            for (let i = 0; i < splides.length; i++) {
+                let splideElement = splides[i];
+                let splide = new Splide(splideElement, splideOptions);
+                splide.mount();
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,47 +1,6 @@
 @import url("../css/splide.min.css");
 @import url("../css/card.css");
 
-.products__content {
-    margin-top: 110px;
-    margin-bottom: 60px;
-}
-.products_content_header,
-.products_content_header_blog {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-}
-.products_content_header_blog {
-    gap: 10px 70px;
-    margin-bottom: 0;
-}
-.products__title {
-    font-family: "Manrope";
-    font-weight: 700;
-    font-size: 55px;
-    line-height: 83px;
-    color: var(--black);
-    margin-right: 20px;
-}
-.products_content_header .badge {
-    background: var(--primary);
-    border-radius: 6px;
-    font-family: "Manrope";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 3px 22px;
-    cursor: default;
-}
-.products_content_header_text {
-    font-family: "Manrope";
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    color: var(--black);
-}
-
 .products_content_item {
     display: flex;
     justify-content: space-between;
@@ -120,10 +79,6 @@
     font-size: 20px;
     line-height: 30px;
     color: var(--black);
-}
-.products_filter_btn {
-    background-color: #fff;
-    color: var(--primary);
 }
 .products__cards {
     display: flex;
@@ -328,12 +283,6 @@
     .products__cards {
         justify-content: center;
     }
-    .products__content {
-        margin-top: 30px;
-    }
-    .products__title {
-        font-size: 48px;
-    }
     .products_content_header_blog {
         gap: 15px 50px;
     }
@@ -342,12 +291,6 @@
     }
 }
 @media (max-width: 425px) {
-    .products__content {
-        margin-top: 20px;
-    }
-    .products__title {
-        font-size: 36px;
-    }
     .products_content_header_blog {
         gap: 12px 30px;
     }

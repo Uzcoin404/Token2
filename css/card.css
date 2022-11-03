@@ -55,33 +55,6 @@
 .card__link:hover i {
     padding-left: 5px;
 }
-.card__price {
-    position: absolute;
-    top: -60px;
-    right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(41, 45, 51, 0.05);
-    border-radius: 6px;
-    padding: 8px;
-}
-.card_product_price {
-    font-family: "Manrope";
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: var(--primary);
-    margin: 0;
-}
-.card_price_point {
-    font-family: "Manrope";
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 30px;
-    color: var(--primary);
-    transform: translate(-4px, -4px);
-}
 .card__buttons {
     position: absolute;
     top: 10px;
