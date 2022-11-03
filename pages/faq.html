@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token 2 About</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/faq.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header header__red">
+        <!-- Import navbar using Jquery you can remove nav__loader during backend process -->
+        <div class="nav__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.nav__loader').load("../components/nav.html");
+                });
+            </script>
+        </div>
+        <!-- FAQ Page  -->
+        <main class="container">
+            <div class="row my-5">
+                <div class="col-12 text-white">
+                    <h1>FAQ</h1>
+                </div>
+            </div>
+        </main>
+    </header>
+    <main class="container ">
+        <div class="row mb-lg-5 mb-md-3 mx-auto">
+            <div class="col mt-encriment">
+                <div class="row mb-3">
+                    <div class="accordion col-12" id="accordionHeader">
+                        <div class="accordion-item text-secondary  border border-1 border-muted">
+                            <h2 class="accordion-header" id="heading0">
+                                <div class="accordion-button bg-white" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                                    <span class=" d-flex justify-content-start align-items-start flex-column">
+                                        <p class="fs-4 fw-semibold mb-3 text-dark">NFC Burner applications</p>
+                                        <p class="text-secondary">Find the answers to frequently asked questions about
+                                            our
+                                            burner applications
+                                            below. </p>
+                                    </span>
+                                </div>
+                            </h2>
+                            <div id="collapse0" class="accordion-collapse collapse show" aria-labelledby="heading0"
+                                data-bs-parent="#accordionHeader">
+                                <div class="accordion-body">
+                                    <hr>
+                                    <p class="fs-5 fw-semibold mb-4">
+                                        What type of hardware is required?
+                                    </p>
+                                    <p>
+                                        Our programmable hardware tokens rely on NFC protocol for data transfer (seeds,
+                                        serial number, OTP etc.). Therefore the device to be used must have an NFC chip
+                                        to communicate. For Windows version of the burner application, we will also make
+                                        a USB NFC module available on our online shop.
+                                    </p>
+                                    <hr class=" my-4">
+                                    <p class="fs-5 fw-semibold mb-4">
+                                        Which platform?
+                                    </p>
+                                    <p>
+                                        All the models canbe programmed using our apps under Android and Windows (NFC
+                                        hardware required). Newer models (part numbers ending with " -i", i.e. "C301-i"
+                                        ) can be programmed using an iPhone 7 and newer running iOS v13 and higher </p>
+                                    <hr class="my-4">
+                                    <p class="fs-5 fw-semibold mb-4">
+                                        I am getting errors when trying to burn
+                                    </p>
+                                    <p class="mb-4">
+                                        Please have a look at this article, explaining the NFC stability issues.
+                                    </p>
+                                    <p class="mb-4">
+                                        Token2 Burner App for miniOTP-1 is using the following error codes:
+                                    </p>
+                                    <div class="row mb-4">
+                                        <p class="mb-4"><b>0x10040011 or 0x10030011</b>- means NFC
+                                            connectivity is unstable or cannot be
+                                            established. Before burning please make sure your phone sees the card by
+                                            using “get OTP” button.
+                                        </p>
+                                        <div class="col-lg-7 col-12">
+                                            <p class="mb-4">If NFC is still not working try changing the
+                                                position of the token to make sure antennas overlap - i.e. from vertical
+                                                to horizontal or vice versa. The exact location of the NFC antenna
+                                                depends on the phone model, but usually it is under the camera (see the
+                                                illustration of Samsug Galaxy S6 as an example).
+                                            </p>
+                                            <div class="row d-flex justify-content-start align-items-center">
+                                                <img src="../img/nfs2.svg" alt="nfs"
+                                                    class="me-4 mb-4 col-sm-12 text-center img-fluid">
+                                                <p class="col-sm-12 mb-4 w-100">The NFC antenna on the phone should
+                                                    ideally overlap
+                                                    with the NFC chip of the programmable token covering as larger
+                                                    surface of the NFC antenna as possible. The image below shows the
+                                                    location of the NFC chip of miniOTP-1 card.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5 text-center">
+                                            <img src="../img/nfs.svg" alt="nfs" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <p class="mb-4">
+                                        <b>0x10050012</b> - is shown if the seed length is higher than the maximum
+                                        allowed (40 chars in hex , 32 chars in base32 format)
+                                    </p>
+                                    <p class="mb-4">
+                                        Other possible errors:
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <p class="mb-3">0x10010010 Fail to read token info</p>
+                                            <p class="mb-3">0x10010015 Fail to read current OTP</p>
+                                            <p class="mb-3">0x10010018 Fail to burn seed</p>
+                                            <p class="mb-3">0x10010025 Fail to read SN</p>
+                                            <p class="mb-3">0x10020010 Invalid data format</p>
+                                            <p class="mb-3">0x10020011 Invalid data length</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 col-12">
+                                            <p class="mb-3">0x10020012 Invalid protocol head</p>
+                                            <p class="mb-3">0x10020013 Invalid data type</p>
+                                            <p class="mb-3">0x10020014 Incorrect check bits</p>
+                                            <p class="mb-3">0x10030011 Card reader operation failed</p>
+                                            <p class="mb-3">0x10030012 Card reader is not connected</p>
+                                            <p class="mb-3">0x10030013 Invalid card reader parameter</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <p class="mb-3">0x10030014 Communication error</p>
+                                            <p class="mb-3">0x10030015 Connection time out</p>
+                                            <p class="mb-3">0x10030016 Card is not detected</p>
+                                            <p class="mb-3">0x10050010 Transmission parameter error</p>
+                                            <p class="mb-3">0x10050011 SN mismatch</p>
+                                            <p class="mb-3">0x10050012 Invalid seed length of format</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row flex-wrap" id="accordionMain">
+                    <div class="col-lg-6 mb-3">
+                        <div class="accordion col-12 mb-3">
+                            <div class="accordion-item text-secondary  border border-1 border-muted">
+                                <h1 class="accordion-header" id="heading1">
+                                    <div class="accordion-button bg-white collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true"
+                                        aria-controls="collapse1">
+                                        <p class="fs-5 fw-semibold">
+                                            How is my credit card data stored and processed on your website?
+                                        </p>
+                                    </div>
+                                </h1>
+                                <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                                    data-bs-parent="#accordionMain">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion col-12 mb-3">
+                            <div class="accordion-item text-secondary  border border-1 border-muted">
+                                <h1 class="accordion-header" id="heading2">
+                                    <div class="accordion-button bg-white collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="true"
+                                        aria-controls="collapse2">
+                                        <p class="fs-5 fw-semibold">
+                                            Can I use the programmable tokens with AWS or Fortnite 2FA?
+                                        </p>
+                                    </div>
+                                </h1>
+                                <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2"
+                                    data-bs-parent="#accordionMain">
+                                    <div class="accordion-body">
+                                        Yes, our second-generation tokens support longer seeds generated by
+                                        AlibabaCloud, AWS, or Fortnite. Make sure you have the latest version (at least
+                                        NFC Burner 2.1 for Android or NFC Burner 0.1 Advanced for Windows). Previous
+                                        versions of the app do not support longer seeds.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion col-12 mb-3">
+                            <div class="accordion-item text-secondary  border border-1 border-muted">
+                                <h1 class="accordion-header" id="heading3">
+                                    <div class="accordion-button bg-white collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="true"
+                                        aria-controls="collapse3">
+                                        <p class="fs-5 fw-semibold">
+                                            Which of your tokens support Azure Cloud MFA?
+                                        </p>
+                                    </div>
+                                </h1>
+                                <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                                    data-bs-parent="#accordionMain">
+                                    <div class="accordion-body">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion col-12 mb-3">
+                            <div class="accordion-item text-secondary  border border-1 border-muted">
+                                <h1 class="accordion-header" id="heading4">
+                                    <div class="accordion-button bg-white collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="true"
+                                        aria-controls="collapse4">
+                                        <p class="fs-5 fw-semibold">
+                                            Can your tokens be used with DUO?
+                                        </p>
+                                    </div>
+                                </h1>
+                                <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                                    data-bs-parent="#accordionMain">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion col-12 mb-3">
+                            <div class="accordion-item text-secondary  border border-1 border-muted">
+                                <h1 class="accordion-header" id="heading5">
+                                    <div class="accordion-button bg-white collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="true"
+                                        aria-controls="collapse5">
+                                        <p class="fs-5 fw-semibold">
+                                            Do you ship to my country?
+                                        </p>
+                                    </div>
+                                </h1>
+                                <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                                    data-bs-parent="#accordionMain">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <div class="accordion col-12 mb-3">
+                            <div class="accordion-item text-secondary  border border-1 border-muted">
+                                <h1 class="accordion-header" id="heading6">
+                                    <div class="accordion-button bg-white collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="true"
+                                        aria-controls="collapse6">
+                                        <p class="fs-5 fw-semibold">
+                                            Do I need to register on your website to proceed with my order?
+                                        </p>
+                                    </div>
+                                </h1>
+                                <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                                    data-bs-parent="#accordionMain">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion col-12 mb-3">
+                            <div class="accordion-item text-secondary  border border-1 border-muted">
+                                <h1 class="accordion-header" id="heading7">
+                                    <div class="accordion-button bg-white collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="true"
+                                        aria-controls="collapse7">
+                                        <p class="fs-5 fw-semibold">
+                                            Can I get a free sample?
+                                        </p>
+                                    </div>
+                                </h1>
+                                <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                                    data-bs-parent="#accordionMain">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion col-12 mb-3">
+                            <div class="accordion-item text-secondary  border border-1 border-muted">
+                                <h1 class="accordion-header" id="heading8">
+                                    <div class="accordion-button bg-white collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="true"
+                                        aria-controls="collapse8">
+                                        <p class="fs-5 fw-semibold">
+                                            Can I use hardware tokens to implement Active <br> Directory login with <br>
+                                            two-factor authentication?
+                                        </p>
+                                    </div>
+                                </h1>
+                                <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                                    data-bs-parent="#accordionMain">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion col-12 mb-3">
+                            <div class="accordion-item text-secondary  border border-1 border-muted">
+                                <h1 class="accordion-header" id="heading9">
+                                    <div class="accordion-button bg-white collapsed" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="true"
+                                        aria-controls="collapse9">
+                                        <p class="fs-5 fw-semibold">
+                                            Can I get a discount?
+                                        </p>
+                                    </div>
+                                </h1>
+                                <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+                                    data-bs-parent="#accordionMain">
+                                    <div class="accordion-body">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mb-3 bg-black bg-opacity-10 rounded py-lg-5 px-lg-3 px-2 py-5">
+                            <h3 class="mx-2 mb-3">Didn’t found Your question?</h3>
+                            <div class="row">
+                                <div class="mb-3">
+                                    <input type="text" placeholder="Theme" class="form-control p-3">
+                                </div>
+                                <div class="mb-3">
+                                    <textarea cols="30" rows="5" class="form-control p-3"
+                                        placeholder="Your message"></textarea>
+                                </div>
+                            </div>
+                            <div class="row float-end me-1">
+                                <button type="submit" class="btn btn-light text-danger px-4">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="main about__main">
+        <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
+        <div class="subscribe__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.subscribe__loader').load("../components/subscribe.html");
+                });
+            </script>
+        </div>
+        <!--  -->
+    </main>
+
+    <!-- Import footer using Jquery you can remove footer__loader during backend process -->
+    <div class="footer__loader">
+        <script>
+            $(document).ready(function () {
+                $('.footer__loader').load("../components/footer.html");
+            });
+        </script>
+    </div>
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/about.js"></script>
+</body>
+
+</html>
