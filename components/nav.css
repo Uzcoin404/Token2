@@ -108,6 +108,7 @@
 }
 .header__red .header__bubbles {
     display: none;
+    height: auto;
 }
 .header__bubbles {
     position: absolute;

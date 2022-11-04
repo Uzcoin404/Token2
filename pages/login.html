@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token 2 About</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header header__red">
+        <!-- Import navbar using Jquery you can remove nav__loader during backend process -->
+        <div class="nav__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.nav__loader').load("../components/nav.html");
+                });
+            </script>
+        </div>
+        <!-- Login Page  -->
+        <main class="container">
+            <div class="row mt-5 p-lg-5 p-sm-3 pt-5 text-white">
+                <div class="col-lg-5 col-sm-12 d-flex flex-column mb-4">
+                    <h1 class="mb-lg-3">Not Registered yet?</h1>
+                    <h4 class="mb-lg-5 fw-light">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                        veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h4>
+                    <a href="./registry.html" class="fs-5 mb-lg-2">
+                        <button class="btn btn-light text-danger w-25">Sing UP</button>
+                    </a>
+                </div>
+                <form class="col-lg-6 offset-lg-1 col-12">
+                    <h1 class="mb-lg-5 mb-3">Login</h1>
+                    <div class="row d-flex mb-3">
+                        <div class="col-lg-10 col-sm-12">
+                            <input type="text" class="form-control py-2 bg-transparent text-white" placeholder="Username">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-lg-10 col-sm-12">
+                            <input type="password" class="form-control py-2 bg-transparent text-white" placeholder="Password">
+                        </div>
+                    </div>
+
+                    <div class="after__login">
+                        <div class="form-check mb-3">
+                            <input class="form-check-input bg-transparent text-white border-white" type="checkbox" value=""
+                                id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Remember me
+                            </label>
+                        </div>
+                        <div class="col-lg-10 pe-1 mb-2">
+                            <button type="submit" class="btn btn-light text-danger w-100 loginBtn">Sing IN</button>
+                        </div>
+                        <div class="col-lg-10 px-3 text-center mb-2">
+                            <p class="or">or</p>
+                        </div>
+                        <div class="col-lg-10 pe-1 mb-2">
+                            <button type="submit"
+                                class="btn btn-light d-flex justify-content-center align-items-center text-danger w-100">
+                                <img src="../img/microsoft.svg" alt="Microsoft logo" class="me-2"> Continue with
+                                Microsoft</button>
+                        </div>
+                    </div>
+
+                    <div class="verify d-none">
+                        <div class="row mb-lg-4 mb-4 mx-1">
+                            <div class="col-lg-10 bg-blog">
+                                <p class="p-3">Please complete the authentication process using the one-time
+                                    password(OTP)
+                                    that is sent to the registered email address</p>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-lg-10 col-sm-12">
+                                <input type="number" class="form-control py-2 bg-transparent text-white" placeholder="OTP">
+                            </div>
+                        </div>
+                        <div class="col-lg-10 pe-1 mb-2">
+                            <button type="submit" class="btn btn-light text-danger w-100">Verify</button>
+                        </div>
+
+
+                    </div>
+
+
+                </form>
+            </div>
+        </main>
+    </header>
+    <!-- Personal Infos -->
+    <main class="main about__main">
+        <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
+        <div class="subscribe__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.subscribe__loader').load("../components/subscribe.html");
+                });
+            </script>
+        </div>
+        <!--  -->
+    </main>
+
+    <!-- Import footer using Jquery you can remove footer__loader during backend process -->
+    <div class="footer__loader">
+        <script>
+            $(document).ready(function () {
+                $('.footer__loader').load("../components/footer.html");
+            });
+        </script>
+    </div>
+    <!--  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/login.js"></script>
+    <script src="../js/about.js"></script>
+</body>
+
+</html>
