@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Token 2 Template</title>
+    <title>Token2 Compare</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,7 +59,7 @@
                     <script>
                         for (let i = 0; i < 6; i++) {
                             document.write(`
-                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 p-1 compare__card ${i!=0 ? '': 'active'} rounded-start">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-2 p-1 compare__card ${i!=0 ? '': 'active'} rounded-start">
                         <div class="compare_selected_item rounded-top">
                             Selected item
                         </div>
@@ -144,22 +144,6 @@
     </div>
     <!--  -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="../js/splide.min.js"></script>
-    <script>
-        [...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
-            .forEach(el => new bootstrap.Tooltip(el))
-        let splides = document.querySelectorAll('.card_img_slider');
-        if (splides.length) {
-            let splideOptions = {
-                perPage: 1, perMove: 1, arrows: false, autoplay: true, lazyLoad: 'nearby', resetProgress: true
-            }
-            for (let i = 0; i < splides.length; i++) {
-                let splideElement = splides[i];
-                let splide = new Splide(splideElement, splideOptions);
-                splide.mount();
-            }
-        }
-    </script>
 </body>
 
 </html>

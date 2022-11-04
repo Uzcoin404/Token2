@@ -1,0 +1,117 @@
+.checkout__content {
+    margin-bottom: 70px;
+}
+.checkout_table_blog {
+    overflow-x: auto;
+}
+.checkout__table {
+    border-spacing: 0 2px;
+    border-collapse: separate;
+    overflow-x: auto;
+    min-width: 720px;
+}
+.checkout__table td,
+.checkout__table th {
+    background-color: #fff;
+    border: none;
+}
+.checkout__table th {
+    padding-left: 24px;
+}
+.checkout_table_th,
+.checkout_total_text {
+    line-height: 30px;
+    font-family: "Manrope";
+    color: var(--black);
+    vertical-align: middle;
+    padding-left: 20px;
+}
+.checkout_count_btn,
+.checkout_amount_input {
+    border: 1px solid rgba(41, 45, 51, 0.05);
+    color: var(--primary);
+}
+.checkout_trash_btn {
+    background: #f6f7f9;
+    color: rgba(0, 0, 0, 0.33);
+}
+.checkout_amount_input {
+    max-width: 125px;
+    min-width: 80px;
+    height: 44px;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.checkout__table td:first-child,
+.checkout__table th:first-child {
+    border-radius: 6px 0 0 6px;
+}
+.checkout__table td:last-child,
+.checkout__table th:last-child {
+    border-radius: 0 6px 6px 0;
+}
+.checkout__footer {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 6px;
+    margin-top: 24px;
+}
+.checkout__btn {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+}
+.checkout_pay_btn .pay_btn_points {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 30px;
+    margin-left: -3px;
+    padding-bottom: 5px;
+}
+.empty_bag_blog {
+    background-color: #fff;
+    padding-top: 45px;
+    padding-bottom: 60px;
+}
+.empty_bag_title {
+    font-family: "Manrope";
+    line-height: 30px;
+    max-width: 150px;
+}
+
+@media (min-width: 768px) {
+    .checkout_pay_btn {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+@media (max-width: 576px) {
+    .checkout__content {
+        margin-bottom: 40px;
+    }
+    .checkout_table_th {
+        font-size: 14px;
+    }
+    .checkout_amount_input {
+        max-width: 100px;
+        font-size: 1rem;
+    }
+    .checkout__table td,
+    .checkout__table th {
+        padding-top: 4px;
+        padding-bottom: 4px;
+    }
+    .checkout__table th,
+    .checkout_total_text {
+        padding-left: 8px;
+    }
+    .checkout__table {
+        min-width: 640px;
+    }
+}
