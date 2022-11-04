@@ -350,11 +350,11 @@
                     <h5 class="products_header_title">Other FIDO2 Keys Products</h5>
                     <a href="#" class="see__all">See all</a>
                 </div>
-                <div class="products__cards">
+                <div class="row products__cards  gx-3 g-4">
                     <!-- Looping products -->
                     <script>
                         for (let i = 0; i < 4; i++) {
-                            document.write(`<div class="card">
+                            document.write(`<div class="col-sm-12 col-md-6 col-lg-4 col-xl-3"><div class="card">
                         <div class="splide card_img_slider">
                             <div class="splide__track">
                                 <ul class="splide__list">
@@ -378,8 +378,8 @@
                                 replacement
                                 for Authenticator...</p>
                             <a href="#" class="card__link">
-                                Details
-                                <i class="fa-regular fa-right-long ms-2"></i>
+                                Order
+                                <i class="fa-regular fa-arrow-right-long ms-2"></i>
                             </a>
                             <div class="card__price">
                                 <p class="card_product_price">€12.</p>
@@ -397,7 +397,7 @@
                                 <i class="fa-light fa-triangle-exclamation"></i>
                             </button>
                         </div>
-                    </div>`)
+                    </div></div>`)
                         }
                     </script>
                 </div>
@@ -445,8 +445,6 @@
             main.mount();
             thumbnails.mount();
         });
-        [...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
-            .forEach(el => new bootstrap.Tooltip(el))
     </script>
 </body>
 

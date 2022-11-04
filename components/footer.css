@@ -18,6 +18,10 @@
     align-items: center;
     gap: 15px 32px;
 }
+.site__logo{
+    width: 135px;
+    height: 66px;
+}
 .footer_about_text {
     font-family: "Open Sans";
     font-weight: 400;

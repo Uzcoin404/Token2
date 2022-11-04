@@ -73,11 +73,8 @@
 .products__header {
     margin-bottom: 20px;
 }
-.products__cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 25px 30px;
+.products__cards .card {
+    max-width: 100%;
 }
 
 .product_thumb_slide .splide__slide img {
@@ -287,10 +284,10 @@
     .products_content_header_blog {
         gap: 12px 30px;
     }
-    .fido_card_text{
+    .fido_card_text {
         margin-top: 10px;
     }
-    .fido_card_text span{
+    .fido_card_text span {
         max-width: 100%;
     }
 }

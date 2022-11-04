@@ -23,14 +23,16 @@
                         <a class="nav-link dropdown-toggle" href="../pages/products.html" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Products
+                            <i class="fa-solid fa-chevron-down ms-1"></i>
                         </a>
                         <ul class="dropdown-menu" data-bs-popper="none">
                             <li><a class="dropdown-item" href="../pages/products.html">FIDO2 Keys</a></li>
-                            <li><a class="dropdown-item" href="../pages/products.html">
+                            <li class="dropdown">
+                                <a class="dropdown-item dropdown-toggle" href="../pages/products.html">
                                     Classic Tokens
-                                    <i class="fa-regular fa-right-long ms-2"></i>
+                                    <i class="fa-regular fa-arrow-right-long ms-3"></i>
                                 </a>
-                                <ul class="submenu dropdown-menu">
+                                <ul class="dropdown submenu dropdown-menu">
                                     <li><a class="dropdown-item" href="../pages/products.html">Token2 c202 TOTP hardware
                                             token</a></li>
                                     <li><a class="dropdown-item" href="../pages/products.html">Token2 c202 hardware
@@ -87,6 +89,9 @@
     // make it as accordion for smaller screens
     if (window.innerWidth < 992) {
         // close all inner dropdowns when parent is closed
+        $('.dropdown-toggle').click(function (e) {
+            e.preventDefault();
+        })
         document.querySelectorAll(".navbar .dropdown").forEach(function (everydropdown) {
             everydropdown.addEventListener(
                 "hidden.bs.dropdown",
@@ -104,7 +109,6 @@
         document.querySelectorAll(".dropdown-menu a").forEach(function (element) {
             element.addEventListener("click", function (e) {
                 let nextEl = this.nextElementSibling;
-                console.log(nextEl);
                 if (nextEl && nextEl.classList.contains("submenu")) {
                     // prevent opening link if link needs to open dropdown
                     e.preventDefault();
