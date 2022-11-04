@@ -13,6 +13,7 @@ new Splide(".products__slider", {
             perPage: 1,
         },
     },
+    rewind: true,
 }).mount();
 
 new Splide(".banner__slider", {
@@ -22,4 +23,5 @@ new Splide(".banner__slider", {
     gap: "3rem",
     heightRatio: 0.25,
     resetProgress: true,
+    rewind: true,
 }).mount();

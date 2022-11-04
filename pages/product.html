@@ -54,8 +54,8 @@
                     </ol>
                 </nav>
             </section>
-            <section class="product__about">
-                <div class="section__content product__images">
+            <section class="product__about row gx-4 mb-5">
+                <div class="product__images col-md-12 col-lg-6 section__content">
                     <div id="main-carousel" class="splide product_main_slide">
                         <div class="splide__track">
                             <ul class="splide__list">
@@ -86,8 +86,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="product__info">
-                        <ul class="product_tab_nav nav nav-tabs mt-4">
+                    <div class="product__info mt-5">
+                        <ul class="product_tab_nav nav nav-tabs">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#specifications"
                                     id="specifications-tab" type="button">
@@ -267,13 +267,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="section__content product__details">
-                    <div class="product_about_header between_center">
+                <div class="product__details col-md-12 col-lg-6 section__content mt-md-0 mt-4">
+                    <div class="product_about_header between_center position-sticky">
                         <h3 class="product_about_title">T2F2-NFC-Slim FIDO2 Security key</h3>
                         <div class="product_details_btns between_center">
-                            <button type="button"
-                                class="btn product_compare_btn white_to_red_btn btn-outline-danger btn-lg">COMPARE</button>
-                            <a href="#" class="btn product_checkout_box product_checkout_btn">
+                            <a href="./compare.html"
+                                class="btn product_compare_btn white_to_red_btn btn-outline-danger btn-lg">COMPARE</a>
+                            <a href="./checkout.html" class="btn product_checkout_box product_checkout_btn">
                                 <button class="btn btn-light btn__square white_to_red_btn">
                                     <i class="fa-regular fa-cart-shopping"></i>
                                 </button>
@@ -426,26 +426,7 @@
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/splide.min.js"></script>
     <script src="../js/card.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            let main = new Splide('#main-carousel', {
-                rewind: true,
-                pagination: false,
-            });
-            let thumbnails = new Splide('#thumbnail-carousel', {
-                fixedWidth: 100,
-                gap: 10,
-                arrows: false,
-                isNavigation: true,
-                rewind: true,
-                pagination: false,
-            });
-
-            main.sync(thumbnails);
-            main.mount();
-            thumbnails.mount();
-        });
-    </script>
+    <script src="../js/product.js"></script>
 </body>
 
 </html>

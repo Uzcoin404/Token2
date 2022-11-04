@@ -1,9 +1,14 @@
 .form-control::placeholder {
-    color: white;
+    color: #fff;
+}
+.header__red{
+    height: 600px;
 }
 
-@media (min-width:1000px) {
+@media (max-width: 992px) {
     .header__red {
-        height: 600px;
+        min-height: 600px;
+        height: 100%;
+        padding-bottom: 40px;
     }
 }

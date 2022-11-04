@@ -39,6 +39,7 @@ a:hover {
     color: inherit;
 }
 .white_to_red_btn {
+    --bs-btn-bg: #fff;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #f23058;
     --bs-btn-hover-border-color: #f23058;

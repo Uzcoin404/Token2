@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="../components/cookies.css">
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div class="toast cookies__toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+        <div class="position-relative">
+            <p class="toast__text fw-bold mb-2">
+                Für Ihren Standort in Deutschland bieten wir speziell abgestimmte lokale İnhalte.
+            </p>
+            <a href="#" class="btn btn-sm toast__btn">Learn more</a>
+            <button type="button" class="btn-close position-absolute" data-bs-dismiss="toast"
+                aria-label="Close"></button>
+        </div>
+    </div>
+
+    <div class="toast cookies__toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+        <p class="toast__text fw-bold mb-3">
+            We use cookies and other tracking technologies to improve your browsing experience on our website and to
+            organize order management process.
+        </p>
+        <div class="d-flex">
+            <button type="button" class="btn btn-danger btn-sm px-4" data-bs-dismiss="toast" id="cookies_agree_btn">I
+                agree</button>
+            <a href="#" class="btn btn-sm toast__btn ms-3">Change preferences</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    const cookiesShow = localStorage.getItem('cookies-show') == 'false' ? false : true;
+    const cookiesAgreeBtn = document.querySelector('#cookies_agree_btn');
+
+    cookiesAgreeBtn.addEventListener('click', function () {
+        localStorage.setItem('cookies-show', false);
+    });
+    if (cookiesShow) {
+        setTimeout(() => {
+            let toastElList = [].slice.call(document.querySelectorAll('.toast'))
+            let toastList = toastElList.map(function (toastEl) {
+                return new bootstrap.Toast(toastEl);
+            });
+            toastList.forEach(toast => toast.show());
+        }, 1000);
+    }
+
+</script>
