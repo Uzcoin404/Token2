@@ -1,0 +1,42 @@
+.blog{
+    margin-bottom: 50px;
+}
+.blog__card {
+    background: #fff;
+    box-shadow: 0px 4px 12px rgba(62, 62, 62, 0.1);
+    border-radius: 6px;
+}
+.blog_card_date,
+.blog_card_text {
+    font-family: "Open Sans";
+    font-size: 14px;
+    color: var(--grey);
+}
+.blog_card_title {
+    color: var(--black);
+    font-size: 22px;
+    font-family: "Manrope";
+}
+.blog_card_tag {
+    border: 1px solid #dbe0e4;
+    border-radius: 6px;
+    padding: 3px 11px;
+    font-family: "Manrope";
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--primary);
+    text-align: center;
+    cursor: default;
+}
+.blog_card_content {
+    padding: 30px 35px;
+}
+@media (max-width: 992px){
+    .blog_card_content{
+        padding: 15px;
+    }
+    .blog_card_title{
+        font-size: 20px;
+    }
+}

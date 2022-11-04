@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Token2 Checkout</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header header__light">
+        <!-- Import navbar using Jquery you can remove nav__loader during backend process -->
+        <div class="nav__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.nav__loader').load("../components/nav-light.html");
+                });
+            </script>
+        </div>
+        <!--  -->
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="products__content">
+                <div class="products_content_header">
+                    <h2 class="products__title me-5 pe-5">Blog</h2>
+                    <div class="products_content_header_blog">
+                        <span class="badge me-10">FIDO2 Keys</span>
+                        <p class="products_content_header_text">Classic Tokens</p>
+                        <p class="products_content_header_text">Programmable Tokens</p>
+                        <p class="products_content_header_text">TOTPRadius</p>
+                    </div>
+                </div>
+            </section>
+            <section class="blog">
+                <div class="row g-4">
+                    <script>
+                        for (let i = 0; i < 10; i++) {
+                            document.write(`
+                            <div class="col-sm-12 col-md-6">
+                        <div class="blog__card">
+                            <img src="../img/blog-card.png" alt="" class="blog_card_img w-100">
+                            <div class="blog_card_content">
+                                <p class="blog_card_date pb-2">04 November 2022</p>
+                                <h4 class="blog_card_title fw-bold pb-2">Sed ut perspiciatis unde omnis at vero blanditils</h4>
+                                <p class="blog_card_text fs-6 pb-3">
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel
+                                    eum iure...
+                                </p>
+                                <div class="d-flex flex-wrap gap">
+                                    <span class="blog_card_tag me-2">App</span>
+                                    <span class="blog_card_tag me-2">CIO</span>
+                                    <span class="blog_card_tag me-2">Future</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            `);
+                        }
+                    </script>
+                </div>
+            </section>
+        </div>
+        <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
+        <div class="subscribe__loader">
+            <script>
+                $(document).ready(function () {
+                    $('.subscribe__loader').load("../components/subscribe.html");
+                });
+            </script>
+        </div>
+        <!--  -->
+    </main>
+
+    <!-- Import footer using Jquery you can remove footer__loader during backend process -->
+    <div class="footer__loader">
+        <script>
+            $(document).ready(function () {
+                $('.footer__loader').load("../components/footer.html");
+            });
+        </script>
+    </div>
+    <!--  -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
