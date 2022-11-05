@@ -138,10 +138,14 @@
     .footer__contact{
         row-gap: 15px;
     }
+    .footer__logos img{
+        height: auto;
+        object-fit: fill;
+    }
 }
 @media (max-width: 425px) {
     .footer__logos img{
-        width: 80%;
+        width: 120px;
     }
     .footer__content{
         column-gap: 50px;

@@ -1,6 +1,22 @@
 @import url("./splide.min.css");
+.header-bg{
+    height: 100%;
+    max-height: 736px;
+}
 .about {
     margin-top: 120px;
+    position: relative;
+}
+.about::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    user-select: none;
+    background-color: #e1ddd9;
 }
 .about__title {
     font-family: "Manrope";
@@ -78,7 +94,7 @@
 }
 
 .about__stats {
-    padding: 180px 0 110px;
+    padding: 100px 30px;
     background: #e1ddd9;
     display: flex;
     justify-content: center;
@@ -192,9 +208,6 @@
     .about {
         margin-top: 100px;
     }
-    .about__stats {
-        padding-top: 240px;
-    }
 }
 @media (max-width: 1200px) {
     .special__box {
@@ -208,9 +221,6 @@
     }
     .about__boxes {
         gap: 20px;
-    }
-    .about__stats {
-        padding-top: 350px;
     }
 }
 @media (max-width: 992px) {
@@ -246,10 +256,6 @@
     .about__box:last-child {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
     }
-    .about__stats{
-        padding-top: 550px;
-        padding-bottom: 30px;
-    }
 }
 @media (max-width: 768px) {
     .about__boxes {
@@ -259,9 +265,7 @@
         max-width: 100%;
     }
     .about__stats{
-        padding-top: 900px;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 50px 15px;
     }
     .about__box:first-child {
         clip-path: polygon(0 0, 100% 0, 100% 97.5%, 0 100%);
@@ -281,17 +285,18 @@
 }
 @media (max-width: 480px) {
     .about__stats{
-        padding-top: 1000px;
-        gap: 20px 50px;
+        gap: 20px 30px;
     }
     .about{
         margin-top: 30px;
     }
+    .about_stats_title{
+        font-size: 36px;
+        margin-bottom: 0;
+        line-height: 60px;
+    }
 }
 @media (max-width: 425px) {
-    .about__stats{
-        padding-top: 1100px;
-    }
     .special__box{
         padding: 15px;
     }

@@ -7,6 +7,7 @@ if (splides.length) {
         autoplay: true,
         lazyLoad: "nearby",
         resetProgress: true,
+        rewind: true,
     };
     for (let i = 0; i < splides.length; i++) {
         let splideElement = splides[i];
@@ -14,5 +15,6 @@ if (splides.length) {
         splide.mount();
     }
 }
-[...document.querySelectorAll('[data-bs-toggle="tooltip"]')]
-            .forEach(el => new bootstrap.Tooltip(el))
+[...document.querySelectorAll('[data-bs-toggle="tooltip"]')].forEach(
+    (el) => new bootstrap.Tooltip(el)
+);

@@ -1,5 +1,12 @@
-.header {
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100vh;
+    z-index: -1;
+    user-select: none;
+    pointer-events: none;
     background-image: url("../img/hero-bubbles.png"),
         linear-gradient(128.28deg, #eb5757 5.72%, #ff3566 59.46%);
     background-repeat: no-repeat;
@@ -54,6 +61,7 @@
 .navbar-brand img{
     width: 135px;
     height: 66px;
+    object-fit: fill;
 }
 .navbar .nav-link {
     --bs-nav-link-color: #fff;
@@ -216,6 +224,7 @@
 @media (max-width: 450px) {
     .navbar-brand img {
         width: 120px;
+        height: auto;
     }
     .offcanvas {
         --bs-offcanvas-width: 100%;

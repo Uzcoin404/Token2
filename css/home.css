@@ -2,7 +2,7 @@
 @import url("./card.css");
 @import url("./splide.min.css");
 .home_main {
-    margin-top: 500px;
+    margin-top: 50px;
 }
 .main_section_header {
     margin-bottom: 25px;
@@ -19,18 +19,11 @@
     margin-bottom: 60px;
 }
 
-.features__boxes {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-bottom: 25px;
-}
 .features__box {
     position: relative;
     padding: 22px 22px 35px;
-    max-width: 620px;
     width: 100%;
+    height: 100%;
     background-color: #fff;
     border-radius: 6px;
 }
@@ -54,18 +47,22 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    background: #f6f7f9;
-}
-.features__btn:hover {
-    color: var(--primary);
 }
 
 .banner__slider {
     margin-bottom: 60px;
+    padding: 0 30px;
 }
 .banner__slider .splide__slide {
-    background-color: #777;
+    background-color: #999;
     height: 240px;
+    border-radius: 6px;
+}
+.banner__slider .splide__arrow--prev{
+    left: 0px;
+}
+.banner__slider .splide__arrow--next{
+    right: 0px;
 }
 .products__slider .splide__arrow--prev {
     left: 0px;
@@ -74,20 +71,7 @@
     right: 0px;
 }
 
-@media (max-width: 1400px) {
-    .features__box{
-        max-width: 540px;
-    }
-}
-@media (max-width: 1200px) {
-    .features__box{
-        max-width: 450px;
-    }
-}
 @media (max-width: 992px) {
-    .features__box{
-        max-width: 330px;
-    }
     .features__title{
         padding-right: 15px;
     }
@@ -95,9 +79,6 @@
 @media (max-width: 768px) {
     .products__slider {
         padding: 0 10px;
-    }
-    .features__box{
-        max-width: 100%;
     }
 }
 @media (max-width: 576px) {
@@ -114,11 +95,14 @@
     .hero {
         margin-top: 30px;
     }
+    .banner__slider{
+        padding: 0 15px;
+    }
+    .banner__slider .splide__slide {
+        height: 160px;
+    }
 }
 @media (max-width: 425px) {
-    .home_main {
-        margin-top: 1600px !important;
-    }
     .hero__btn {
         padding: 10px 40px;
     }
@@ -132,13 +116,5 @@
     }
     .hero_card_content{
         padding: 5px 15px 20px;
-    }
-    .features__box{
-        padding: 15px 15px 20px;
-    }
-}
-@media (max-width: 370px) {
-    .home_main {
-        margin-top: 1700px !important;
     }
 }

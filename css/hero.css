@@ -29,7 +29,9 @@
     flex-wrap: wrap;
     row-gap: 10px;
 }
-.hero__btn {
+.hero__btn,
+.hero__play__btn {
+    height: max-content;
     padding: 13px 52px;
     font-family: "Manrope";
     font-weight: 700;
@@ -51,33 +53,23 @@
     --bs-btn-active-border-color: #fff;
 }
 .hero__play__btn {
-    font-family: "Manrope";
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    color: #fff;
     display: flex;
     align-items: center;
+    height: 54px;
+    padding: 10px 25px;
     --bs-btn-border-width: 2px;
+    --bs-btn-border-color: transparent;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: transparent;
+    box-shadow: none;
 }
 .hero__play__btn i {
     font-size: 32px;
     margin-right: 10px;
 }
-.hero__play__btn:hover {
-    color: #fff;
-    border-color: #fff;
-}
 
-.hero__cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 30px;
-    margin-top: 60px;
-}
 .hero__card {
     position: relative;
-    max-width: 350px;
     width: 100%;
     background-color: #fff;
     /* border: 6px solid rgba(255, 255, 255, 0.12); */
@@ -147,26 +139,8 @@
     --bs-btn-active-border-color: #fff;
 }
 @media (max-width: 992px) {
-    .hero__cards {
-        grid-template-columns: 1fr 1fr;
-        gap: 15px;
-        margin-top: 30px;
-    }
-    .home_main {
-        margin-top: 1050px !important;
-    }
 }
 @media (max-width: 550px) {
-    .hero__cards {
-        grid-template-columns: 1fr;
-        margin-top: 30px;
-    }
-    .home_main {
-        margin-top: 1550px !important;
-    }
-    .hero__card {
-        max-width: 500px;
-    }
     .hero__btn {
         padding: 10px 40px;
     }

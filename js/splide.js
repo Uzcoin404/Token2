@@ -17,11 +17,10 @@ new Splide(".products__slider", {
 }).mount();
 
 new Splide(".banner__slider", {
+    type: "loop",
     autoplay: true,
     perPage: 1,
     perMove: 1,
     gap: "3rem",
-    heightRatio: 0.25,
     resetProgress: true,
-    rewind: true,
 }).mount();

@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <header class="header header__red" style="max-height: 736px;">
+    <header class="header header__red">
         <!-- Import navbar using Jquery you can remove nav__loader during backend process -->
         <div class="nav__loader">
             <script>
@@ -33,6 +33,9 @@
             </script>
         </div>
         <!--  -->
+    </header>
+
+    <main class="main about__main">
         <section class="about">
             <div class="container">
                 <h2 class="about__title">About us</h2>
@@ -99,24 +102,21 @@
                 </div>
             </div>
         </section>
-    </header>
-
-    <main class="main about__main">
         <section class="about__stats">
             <div class="about__counter">
-                <span class="about_stats_title">1830</span>
+                <span class="about_stats_title" data-count="1830"></span>
                 <p class="about_stats_text">Project executed</p>
             </div>
             <div class="about__counter">
-                <span class="about_stats_title">220</span>
+                <span class="about_stats_title" data-count="220"></span>
                 <p class="about_stats_text">Data analytics</p>
             </div>
             <div class="about__counter">
-                <span class="about_stats_title">390</span>
+                <span class="about_stats_title" data-count="390"></span>
                 <p class="about_stats_text">Data management</p>
             </div>
             <div class="about__counter">
-                <span class="about_stats_title">834</span>
+                <span class="about_stats_title" data-count="834"></span>
                 <p class="about_stats_text">Satisfied customers</p>
             </div>
         </section>
@@ -256,12 +256,6 @@
         </script>
     </div>
     <!--  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
-        integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
-        integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/splide.min.js"></script>
     <script src="../js/about.js"></script>
