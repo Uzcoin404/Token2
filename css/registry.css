@@ -1,5 +1,5 @@
 .form-control::placeholder {
-    color: white;
+    color: #fff;
 }
 
 .or {
@@ -15,7 +15,7 @@
     content: "";
     width: 45%;
     height: 1px;
-    background-color: white;
+    background-color: #fff;
 }
 
 .or::before {
@@ -24,13 +24,11 @@
     content: "";
     width: 45%;
     height: 1px;
-    background-color: white;
+    background-color: #fff;
 }
 
-@media (max-width:1200px) {
-    .header__red {
-        height: auto;
-    }
+.header-bg{
+    height: 100%;
 }
 
 @media (max-width:990px) {

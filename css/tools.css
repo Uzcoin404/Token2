@@ -33,13 +33,7 @@ thead>tr>th:first-child {
 .mtt-encriment {
     position: relative;
     z-index: 1;
-    margin-top: -70px;
-}
-
-@media (max-width:1000px) {
-    .mtt-encriment{
-        margin-top: -30px;
-    }
+    margin-top: -20px;
 }
 
 @media (min-width:1000px) {
@@ -48,31 +42,11 @@ thead>tr>th:first-child {
     }
 }
 
+.header-bg{
+    height: 100%;
+}
 .header {
     height: auto;
+    min-height: 100vh;
     padding-bottom: 30px;
-}
-
-@media (max-width:995px) {
-    .mt-encriment {
-        margin-top: -180px;
-    }
-}
-
-@media (max-width:768px) {
-    .mt-encriment {
-        margin-top: -80px;
-    }
-}
-
-@media (max-width:480px) {
-    .mt-encriment {
-        margin-top: -50px;
-    }
-}
-
-@media (max-width:450px) {
-    .mt-encriment {
-        margin-top: -10px;
-    }
 }

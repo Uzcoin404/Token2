@@ -12,10 +12,25 @@
     background-repeat: no-repeat;
     background-position: center top;
 }
+.header{
+    position: relative;
+}
 .header__light {
     height: auto;
     background-image: none;
-    max-width: 100vw;
+}
+.header__bubbles {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    user-select: none;
+    pointer-events: none;
+}
+.header__red .header__bubbles {
+    display: none;
+    height: auto;
 }
 .navbar {
     box-shadow: none;
@@ -112,17 +127,6 @@
     background-color: var(--black);
 }
 .navbar .nav-item:hover::before {
-    width: 100%;
-}
-.header__red .header__bubbles {
-    display: none;
-    height: auto;
-}
-.header__bubbles {
-    position: absolute;
-    /* left: 200px; */
-    top: 0px;
-    z-index: -1;
     width: 100%;
 }
 .navbar .dropdown-menu {

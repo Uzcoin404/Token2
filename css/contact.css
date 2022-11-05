@@ -4,6 +4,9 @@
 .header__red{
     height: 600px;
 }
+.header-bg{
+    height: 100%;
+}
 
 @media (max-width: 992px) {
     .header__red {

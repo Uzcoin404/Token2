@@ -26,11 +26,11 @@
 .form-control::placeholder {
     color: white;
 }
-
-@media (min-width: 1000px) {
-    .header__red {
-        height: 700px;
-    }
+.header__red {
+    min-height: 700px;
+}
+.header-bg{
+    height: 100%;
 }
 
 .bg-blog {
