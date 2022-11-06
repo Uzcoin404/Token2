@@ -1,38 +1,35 @@
 .bg-blog {
     position: relative;
-    background-color: #FFFBE7;
+    background-color: #fffbe7;
     border-radius: 10px;
-    color: #87744F;
-    filter: drop-shadow(0 0 0.1rem #87744F);
+    color: #87744f;
+    filter: drop-shadow(0 0 0.1rem #87744f);
 }
-
 .bg-blog::after {
     position: absolute;
     bottom: -20px;
     right: 45px;
-    background-color: #FFFBE7;
+    background-color: #fffbe7;
     content: "";
     width: 50px;
     height: 40px;
     border-radius: 50%;
 }
 
-.green, .green::after {
+.green,
+.green::after {
     color: green;
-    background-color: #E6FFED;
+    background-color: #e6ffed;
 }
 
-thead>tr>th {
+thead > tr > th {
     width: 230px;
 }
-
-thead>tr>th:first-child {
+thead > tr > th:first-child {
     width: 300px;
 }
 
-
-@media (min-width:1000px) {
-    .header__red {
-        min-height: 800px;
-    }
+.header__red,
+.header-bg {
+    min-height: 800px;
 }

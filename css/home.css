@@ -7,6 +7,9 @@
 .main_section_header {
     margin-bottom: 25px;
 }
+.header-bg{
+    height: 100vh;
+}
 .main__title {
     font-family: "Manrope";
     font-weight: 700;
