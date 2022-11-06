@@ -12,7 +12,7 @@
     width: 30%;
     height: 5px;
     border-radius: 5px;
-    background-color: #F23058;
+    background-color: var(--primary);
 }
 
 .line>li {
@@ -21,7 +21,7 @@
 }
 
 .line>li:first-child {
-    background-color: #F23058;
+    background-color: var(--primary);
 }
 
 .line-second>li {
@@ -29,7 +29,7 @@
     background-color: #DADADA;
 }
 .line-second>li:nth-child(-n+2) {
-    background-color: #F23058;
+    background-color: var(--primary);
 }
 
 .line-second {
@@ -46,5 +46,5 @@
     width: 50%;
     height: 5px;
     border-radius: 5px;
-    background-color: #F23058;
+    background-color: var(--primary);
 }

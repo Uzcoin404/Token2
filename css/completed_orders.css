@@ -12,12 +12,12 @@
     width: 70%;
     height: 5px;
     border-radius: 5px;
-    background-color: #F23058;
+    background-color: var(--primary);
 }
 
 .line>li {
     z-index: 2;
-    background-color: #F23058;
+    background-color: var(--primary);
 }
 
 .line>li:last-child {

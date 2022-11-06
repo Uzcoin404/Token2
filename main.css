@@ -32,9 +32,6 @@ a {
     position: relative;
     z-index: 1;
 }
-.form-control::placeholder {
-    color: white;
-}
 
 .contact__input {
     font-family: "Open Sans";

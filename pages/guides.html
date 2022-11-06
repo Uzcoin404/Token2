@@ -19,6 +19,17 @@
     <!-- styles -->
     <link rel="stylesheet" href="../main.css">
     <script src="../js/jquery.min.js"></script>
+    <style>
+        .form-control::-webkit-input-placeholder {
+            color: #fff;
+        }
+        .form-control::-moz-placeholder {
+            color: #fff;
+        }
+        .form-control::placeholder, .form-control {
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
@@ -43,10 +54,10 @@
                             free to contact us if you cannot find your desired product in the list below, we will check
                             the compatibility and provide instructions.</p>
                     </div>
-                    <div class="col-lg-4 col-md-8 col-12 d-flex">
-                        <input type="text" class="form-control contact__input w-75 bg-transparent me-2"
+                    <div class="col-lg-6 col-md-9 col-12 d-flex">
+                        <input type="text" class="form-control contact__input w-75 bg-transparent text-white me-2"
                             placeholder="Write here">
-                        <button class="btn btn-light text-danger w-25 contact__input">Search</button>
+                        <button class="btn btn-light text-danger w-25 contact__btn h-auto">Search</button>
                     </div>
                 </div>
             </div>

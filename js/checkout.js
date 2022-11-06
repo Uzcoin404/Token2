@@ -1,30 +1,29 @@
-let amountInput = $(".checkout_amount_input");
-let price = $("#product-price");
-let amountInputValue = Number(amountInput.val());
-let productPrice = 8;
+const amountInput = document.querySelectorAll(".checkout_amount_input");
+const price = document.querySelectorAll("#product-price");
+const plusBtn = document.querySelectorAll("#checkout-plus");
+const minusBtn = document.querySelectorAll("#checkout-minus");
+const productPrice = 8;
 
-$("#checkout-plus").click(function () {
-    priceCalculator(true);
-});
-$("#checkout-minus").click(function () {
-    priceCalculator(false);
-});
-function priceCalculator(isPlus) {
-    if (typeof isPlus == "boolean") {
-        if (isPlus) {
-            amountInputValue = Number(amountInputValue) + 1;
-        } else {
-            amountInputValue =
-                Number(amountInputValue) - 1 > 0
-                    ? Number(amountInputValue) - 1
-                    : 0;
-        }
-    } else {
-        amountInputValue = isPlus;
-    }
-    amountInput.val(amountInputValue);
-    price.text("€" + amountInputValue * productPrice + ".");
+for (let i = 0; i < plusBtn.length; i++) {
+    plusBtn[i].addEventListener("click", function () {
+        priceCalculator(this.getAttribute("data-toggle"), i);
+    });
+    minusBtn[i].addEventListener("click", function () {
+        priceCalculator(this.getAttribute("data-toggle"), i);
+    });
+    amountInput[i].addEventListener("change", function () {
+        priceCalculator(this.value, i);
+    });
 }
-amountInput.change(function () {
-    priceCalculator(amountInput.val());
-});
+function priceCalculator(type, index) {
+    let amount = Number(amountInput[index].value);
+    if (type == "plus") {
+        amount = Number(amount) + 1;
+    } else if (type == "minus") {
+        amount = Number(amount) - 1 > 0 ? Number(amount) - 1 : 0;
+    } else {
+        amount = type;
+    }
+    amountInput[index].value = amount;
+    price[index].innerHTML = "€" + amount * productPrice + ".";
+}

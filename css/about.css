@@ -48,7 +48,7 @@
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 .about__box:nth-child(4) {
-    clip-path: polygon(50% 88%, 100% 90%, 100% 0, 0 0, 0 90%);
+    clip-path: polygon(50% 89%, 100% 90%, 100% 0, 0 0, 0 90%);
 }
 .about__box:first-child::before {
     position: absolute;
