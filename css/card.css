@@ -2,11 +2,7 @@
     position: relative;
     max-width: 300px;
     border-radius: 6px;
-    background: radial-gradient(
-        68.61% 68.61% at 38.82% 31.39%,
-        rgba(255, 255, 255, 0) 0%,
-        #fff 100%
-    );
+    background: #fff;
     border: none;
 }
 .products__slider .card{
@@ -75,12 +71,13 @@
 .card .splide__pagination__page {
     width: 7px;
     height: 7px;
-    background-color: var(--black);
+    background-color: rgba(41, 45, 51, 0.2);
     border-radius: 7px;
 }
 .card .splide__pagination__page[aria-selected="true"] {
     width: 30px;
-    background-color: var(--primary);
+    background-color: transparent;
+    border: 1px solid rgba(41, 45, 51, 0.2);
     margin-left: 7px;
     margin-right: 7px;
     opacity: 1;
