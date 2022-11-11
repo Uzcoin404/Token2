@@ -2,7 +2,12 @@
     position: relative;
     max-width: 300px;
     border-radius: 6px;
-    background: #fff;
+    /* background: #fff; */
+    background: radial-gradient(
+        68.61% 68.61% at 38.82% 31.39%,
+        rgba(255, 255, 255, 0) 0%,
+        #fff 100%
+    );
     border: none;
 }
 .products__slider .card{
@@ -12,10 +17,12 @@
     position: relative;
     padding: 0 17px 17px 17px;
 }
+.card_img_slider .splide__slide{
+    background-color: #fff;
+}
 .card__img {
-    max-height: 200px;
     width: 100%;
-    object-fit: none;
+    height: auto;
 }
 .card__title {
     font-family: "Manrope";
