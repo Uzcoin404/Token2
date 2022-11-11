@@ -6,18 +6,7 @@
     filter: drop-shadow(0 0 0.1rem #87744F);
 }
 
-.bg-blog::after {
-    position: absolute;
-    bottom: -20px;
-    right: 45px;
-    background-color: #FFFBE7;
-    content: "";
-    width: 50px;
-    height: 40px;
-    border-radius: 50%;
-}
-
-.green, .green::after {
+.green {
     color: green;
     background-color: #E6FFED;
 }

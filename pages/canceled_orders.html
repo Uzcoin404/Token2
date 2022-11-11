@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Open+Sans:wght@400;600;700;800&display=swap"
+            rel="stylesheet">
     <!-- Font awesome -->
     <link rel="stylesheet" href="../css/font-awesome.min.css">
     <!-- Bootstrap -->
@@ -23,311 +23,309 @@
 </head>
 
 <body>
-    <header class="header header__red">
-        <!-- Import navbar using Jquery you can remove nav__loader during backend process -->
-        <div class="nav__loader">
-            <script>
-                $(document).ready(function () {
-                    $('.nav__loader').load("../components/nav.html");
-                });
-            </script>
-        </div>
-        <!--Personal Page Canceled Orders  -->
-        <main class="container">
-            <div class="row float-end mb-3">
-                <div class="col d-flex">
-                    <h2 class="text-white me-3">Hi! Chingiz Ahmadov</h2>
-                    <button type="button" class="btn nav__btn px-3 text-center">
-                        <i class="fa-regular fa-right-from-bracket"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="row w-100">
-                <div class="col-sm-12 col-md-12 col-lg-6">
-                    <h1 class="text-white display-5 fw-bold mb-lg-5 mb-md-3 mb-2">Canceled Orders</h1>
-                    <p class="lh-lg text-white mb-lg-4 mb-4 pb-sm-2" style="text-align: justify;">We have solutions that
-                        can integrate with almost any system, below
-                        is the list of integration
-                        guides with different systems published so far, and it is far from being exhaustive. Feel free
-                        to contact us if you cannot find your desired product in the list below, we will check the
-                        compatibility and provide instructions.</p>
-                </div>
-
-                <!-- Personal Page Tabs -->
-                <ul class="col-12 text-white mb-lg-5 mb-4 pb-sm-3 tabs">
-                    <li>
-                        <a href="../pages/processing_orders.html">
-                            Prosessing Orders
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../pages/completed_orders.html">
-                            Completed Orders
-                        </a>
-                    </li>
-                    <li class="active-link">
-                        <a href="../pages/canceled_orders.html">
-                            Canceled Orders
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../pages/personal_information.html">
-                            Personal Information
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../pages/downloads.html">
-                            Downloads
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </main>
-    </header>
-    <!-- Orders -->
-    <main class="my-4">
-        <div class="container">
-            <div class="row w-100 mx-auto">
-                <!-- Order N:1 -->
-                <div class="col-12 bg-white rounded mb-4 mt-encriment p-5">
-                    <div class="row mb-4">
-                        <h5 class="fw-bold">Order # 3456789</h5><!-- Order ID -->
-                        <!-- Order Payment -->
-                        <div class="col-lg-3 col-md-6 col-12 mb-lg-3 mb-md-2 mb-2">
-                            <p>Date: <b>12/07/2022</b></p>
-                            <p>Payment Method: <b>Visa ***7874</b></p>
-                            <p>Total: <b>€740.00</b></p>
-                        </div>
-                        <!-- Order Address -->
-                        <div class="col-auto">
-                            <p>Current Status: <b>Shipped by post (UPS F) Express Shipping</b></p>
-                            <p>Tracking Number:<b>-</b></p>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-start align-items-center mb-5">
-                        <!-- Buyeer -->
-                        <div class="col-lg-2 col-md-12 col-12 mb-5">
-                            <p>Receiver: <b>Ahmadov Chingiz,
-                                    Grosse Scharrnstr. 9,
-                                    +49 176 36357787,
-                                    Frankfurt Oder, 15230,
-                                    Germany
-                                </b></p>
-                        </div>
-                        <!-- Order Progress -->
-                        <ul
-                            class="ms-lg-5 col-lg-9 col-md-12 col-sm-12 line position-relative d-flex justify-content-evenly align-items-center">
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
-                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
-                                <i class="fs-lg-4 fs-6 fa-solid fa-check"></i>
-                            </li>
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
-                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
-                                <i class="fs-lg-4 fs-6 fa-solid fa-barcode"></i>
-                            </li>
-
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
-                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
-                                <i class="fs-lg-4 fs-6 fa-solid fa-truck"></i>
-                            </li>
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
-                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
-                                <i class="fs-lg-4 fs-6 fa-solid fa-box-open"></i>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Product List -->
-                    <div class="row d-flex flex-column  mb-3">
-                        <!-- Table Headers -->
-                        <div
-                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-2">
-                            <p class="w-50 text-start">Product Title</p>
-                            <p>Quantity</p>
-                            <p>Price</p>
-                            <p>Total</p>
-                        </div>
-                        <!-- Products -->
-                        <div
-                            class="col text-danger d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-1">
-                            <p class="text-start w-50">C301-i programmable TOTP token</p><!-- Product Name -->
-                            <p>5</p><!-- Product Count -->
-                            <p>€9.<sup>00</sup></p><!-- Product Price -->
-                            <p>€45.<sup>00</sup></p><!-- Product Total Price -->
-                        </div>
-                        <div
-                            class="col text-danger d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-1">
-                            <p class="text-start w-50">T2F2-NFC-Slim FIDO2 Security key</p><!-- Product Name -->
-                            <p>1</p><!-- Product Name -->
-                            <p>€36.<sup>00</sup></p><!-- Product Price -->
-                            <p>€36.<sup>00</sup></p><!-- Product Total Price -->
-                        </div>
-                        <div
-                            class="col text-danger d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-1">
-                            <p class="text-start w-50">C202 classic TOTP token</p><!-- Product Name -->
-                            <p>6</p><!-- Product Name -->
-                            <p>€20.<sup>00</sup></p><!-- Product Price -->
-                            <p>€120.<sup>00</sup></p><!-- ProductTotal Price -->
-                        </div>
-                        <div
-                            class="col text-danger d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-1">
-                            <p class="text-start w-50">USB Programmable TOTP Tokens</p><!-- Product Name -->
-                            <p>15</p><!-- Product Name -->
-                            <p>€20.<sup>00</sup></p><!-- Product Price -->
-                            <p>€300.<sup>00</sup></p><!-- ProductTotal Price -->
-                        </div>
-                        <div
-                            class="col text-danger d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-1">
-                            <p class="text-start w-50">T2F2-NFC-Slim FIDO2 Security key</p><!-- Product Name -->
-                            <p>5</p><!-- Product Name -->
-                            <p>€20.<sup>00</sup></p><!-- Product Price -->
-                            <p>€100.<sup>00</sup></p><!-- ProductTotal Price -->
-                        </div>
-                    </div>
-                    <!-- Orders Price -->
-                    <div class="row d-flex flex-column ">
-                        <!-- Orders Total Price -->
-                        <div
-                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
-                            <p>Subtotal</p>
-                            <p>€740.<sup>00</sup></p>
-                        </div>
-                        <!-- Shipping Price -->
-                        <div
-                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
-                            <p>Shipping & Handling </p>
-                            <p>€40.<sup>00</sup></p>
-                        </div>
-                        <!-- Total Price -->
-                        <div
-                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
-                            <p>Total</p>
-                            <p>€780.<sup>00</sup></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Order N:2 -->
-                <div class="col-12 bg-white rounded mb-4 p-5">
-                    <div class="row mb-4">
-                        <h5 class="fw-bold">Order # 3456789</h5><!-- Order ID -->
-                        <!-- Order Payment -->
-                        <div class="col-lg-3 col-md-6 col-12 mb-lg-3 mb-md-2 mb-2">
-                            <p>Date: <b>12/07/2022</b></p>
-                            <p>Payment Method: <b>Visa ***7874</b></p>
-                            <p>Total: <b>€740.00</b></p>
-                        </div>
-                        <!-- Order Address -->
-                        <div class="col-auto">
-                            <p>Current Status: <b>Shipped by post (UPS F) Express Shipping</b></p>
-                            <p>Tracking Number:<b>#34567890987435</b></p>
-                        </div>
-                    </div>
-                    <div class="row d-flex justify-content-start align-items-center mb-5">
-                        <!-- Buyeer -->
-                        <div class="col-lg-2 col-md-12 col-12 mb-5">
-                            <p>Receiver: <b>Ahmadov Chingiz,
-                                    Grosse Scharrnstr. 9,
-                                    +49 176 36357787,
-                                    Frankfurt Oder, 15230,
-                                    Germany
-                                </b></p>
-                        </div>
-                        <!-- Order Progress -->
-                        <ul
-                            class="ms-lg-5 col-lg-9 col-md-12 col-sm-12 line-second position-relative d-flex justify-content-evenly align-items-center">
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
-                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
-                                <i class="fs-lg-4 fs-6 fa-solid fa-check"></i>
-                            </li>
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
-                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
-                                <i class="fs-lg-4 fs-6 fa-solid fa-barcode"></i>
-                            </li>
-
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
-                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
-                                <i class="fs-lg-4 fs-6 fa-solid fa-truck"></i>
-                            </li>
-                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true"
-                                data-bs-title='<p class="text-danger"><i class="fa-light fa-triangle-exclamation me-2 text-danger"></i>Please check product and platform compatibility before placing an order.<a>Contact with us</a></p>'
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
-                                <i class="fs-lg-4 fs-6 fa-solid fa-box-open"></i>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Product List -->
-                    <div class="row d-flex flex-column  mb-3">
-                        <!-- Table Headers -->
-                        <div
-                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-2">
-                            <p class="w-50 text-start">Product Title</p>
-                            <p>Quantity</p>
-                            <p>Price</p>
-                            <p>Total</p>
-                        </div>
-                        <!-- Products -->
-                        <div
-                            class="col text-danger d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-1">
-                            <p class="text-start w-50">C301-i programmable TOTP token</p><!-- Product Name -->
-                            <p>5</p><!-- Product Count -->
-                            <p>€20.<sup>00</sup></p><!-- Product Price -->
-                            <p>€20.<sup>00</sup></p><!-- Product Total Price -->
-                        </div>
-                    </div>
-                    <!-- Orders Price -->
-                    <div class="row d-flex flex-column ">
-                        <!-- Orders Total Price -->
-                        <div
-                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
-                            <p>Subtotal</p>
-                            <p>€20.<sup>00</sup></p>
-                        </div>
-                        <!-- Shipping Price -->
-                        <div
-                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
-                            <p>Shipping & Handling </p>
-                            <p>€40.<sup>00</sup></p>
-                        </div>
-                        <!-- Total Price -->
-                        <div
-                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
-                            <p>Total</p>
-                            <p>€60.<sup>00</sup></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <main class="main about__main">
-        <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
-        <div class="subscribe__loader">
-            <script>
-                $(document).ready(function () {
-                    $('.subscribe__loader').load("../components/subscribe.html");
-                });
-            </script>
-        </div>
-        <!--  -->
-    </main>
-
-    <!-- Import footer using Jquery you can remove footer__loader during backend process -->
-    <div class="footer__loader">
+<header class="header header__red">
+    <!-- Import navbar using Jquery you can remove nav__loader during backend process -->
+    <div class="nav__loader">
         <script>
             $(document).ready(function () {
-                $('.footer__loader').load("../components/footer.html");
+                $('.nav__loader').load("../components/nav.html");
+            });
+        </script>
+    </div>
+    <!--Personal Page Canceled Orders  -->
+    <main class="container">
+        <div class="row float-end mb-3">
+            <div class="col d-flex">
+                <h2 class="text-white me-3">Hi! Chingiz Ahmadov</h2>
+                <button type="button" class="btn nav__btn px-3 text-center">
+                    <i class="fa-regular fa-right-from-bracket"></i>
+                </button>
+            </div>
+        </div>
+        <div class="row w-100">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <h1 class="text-white display-5 fw-bold mb-lg-5 mb-md-3 mb-2">Canceled Orders</h1>
+                <p class="lh-lg text-white mb-lg-4 mb-4 pb-sm-2 fw-normal" style="text-align: justify;">We have
+                    solutions that
+                    can integrate with almost any system, below
+                    is the list of integration
+                    guides with different systems published so far, and it is far from being exhaustive. Feel free
+                    to contact us if you cannot find your desired product in the list below, we will check the
+                    compatibility and provide instructions.</p>
+            </div>
+
+            <!-- Personal Page Tabs -->
+            <ul class="col-12 text-white mb-lg-5 mb-4 pb-sm-3 tabs">
+                <li>
+                    <a href="../pages/processing_orders.html">
+                        Prosessing Orders
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/completed_orders.html">
+                        Completed Orders
+                    </a>
+                </li>
+                <li class="active-link">
+                    <a href="../pages/canceled_orders.html">
+                        Canceled Orders
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/personal_information.html">
+                        Personal Information
+                    </a>
+                </li>
+                <li>
+                    <a href="../pages/downloads.html">
+                        Downloads
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+</header>
+<!-- Orders -->
+<main class="my-4">
+    <div class="container">
+        <div class="row w-100 mx-auto">
+            <!-- Order N:1 -->
+            <div class="col-12 bg-white rounded mb-4 mt-encriment p-5">
+                <div class="row mb-4">
+                    <h5 class="fw-bold">Order # 3456789</h5><!-- Order ID -->
+                    <!-- Order Payment -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-lg-3 mb-md-2 mb-2">
+                        <p>Date: <b>12/07/2022</b></p>
+                        <p>Payment Method: <b>Visa ***7874</b></p>
+                        <p>Total: <b>€740.00</b></p>
+                    </div>
+                    <!-- Order Address -->
+                    <div class="col-auto">
+                        <p>Current Status: <b>Shipped by post (UPS F) Express Shipping</b></p>
+                        <p>Tracking Number:<b>-</b></p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-start align-items-center mb-5">
+                    <!-- Buyeer -->
+                    <div class="col-lg-2 col-md-12 col-12 mb-5">
+                        <p>Receiver: <b>Ahmadov Chingiz,
+                            Grosse Scharrnstr. 9,
+                            +49 176 36357787,
+                            Frankfurt Oder, 15230,
+                            Germany
+                        </b></p>
+                    </div>
+                    <!-- Order Progress -->
+                    <ul
+                            class="ms-lg-5 mt-5 col-lg-9 col-md-12 col-sm-12 line position-relative d-flex justify-content-evenly align-items-center">
+                        <li class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <i class="fs-lg-4 fs-6 fa-solid fa-check"></i>
+                        </li>
+                        <li class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <div class="tooltip-rel">
+                                <p class="tooltip-abs px-lg-2 py-lg-2 px-md-2 py-md-2 px-2 py-1 rounded"><i
+                                        class="fa-light fa-triangle-exclamation me-2 text-danger""></i>Please
+                                    check product and platform compatibility before placing an order. <a href=""><ins>Contact with
+                                        us</ins></a>
+                                </p>
+                            </div>
+                            <i class="fs-lg-4 fs-6 fa-solid fa-barcode"></i>
+                        </li>
+
+                        <li class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <i class="fs-lg-4 fs-6 fa-solid fa-truck"></i>
+                        </li>
+                        <li class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <i class="fs-lg-4 fs-6 fa-solid fa-box-open"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Product List -->
+                <div class="row d-flex flex-column  mb-3">
+                    <!-- Table Headers -->
+                    <div
+                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-2">
+                        <p class="w-50 text-start">Product Title</p>
+                        <p>Quantity</p>
+                        <p>Price</p>
+                        <p>Total</p>
+                    </div>
+                    <!-- Products -->
+                    <div
+                            class="col text-danger d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-1">
+                        <p class="text-start w-50">C301-i programmable TOTP token</p><!-- Product Name -->
+                        <p>5</p><!-- Product Count -->
+                        <p>€9.<sup>00</sup></p><!-- Product Price -->
+                        <p>€45.<sup>00</sup></p><!-- Product Total Price -->
+                    </div>
+                    <div
+                            class="col text-danger d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-1">
+                        <p class="text-start w-50">T2F2-NFC-Slim FIDO2 Security key</p><!-- Product Name -->
+                        <p>1</p><!-- Product Name -->
+                        <p>€36.<sup>00</sup></p><!-- Product Price -->
+                        <p>€36.<sup>00</sup></p><!-- Product Total Price -->
+                    </div>
+                    <div
+                            class="col text-danger d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-1">
+                        <p class="text-start w-50">C202 classic TOTP token</p><!-- Product Name -->
+                        <p>6</p><!-- Product Name -->
+                        <p>€20.<sup>00</sup></p><!-- Product Price -->
+                        <p>€120.<sup>00</sup></p><!-- ProductTotal Price -->
+                    </div>
+                    <div
+                            class="col text-danger d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-1">
+                        <p class="text-start w-50">USB Programmable TOTP Tokens</p><!-- Product Name -->
+                        <p>15</p><!-- Product Name -->
+                        <p>€20.<sup>00</sup></p><!-- Product Price -->
+                        <p>€300.<sup>00</sup></p><!-- ProductTotal Price -->
+                    </div>
+                    <div
+                            class="col text-danger d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-1">
+                        <p class="text-start w-50">T2F2-NFC-Slim FIDO2 Security key</p><!-- Product Name -->
+                        <p>5</p><!-- Product Name -->
+                        <p>€20.<sup>00</sup></p><!-- Product Price -->
+                        <p>€100.<sup>00</sup></p><!-- ProductTotal Price -->
+                    </div>
+                </div>
+                <!-- Orders Price -->
+                <div class="row d-flex flex-column ">
+                    <!-- Orders Total Price -->
+                    <div
+                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
+                        <p>Subtotal</p>
+                        <p>€740.<sup>00</sup></p>
+                    </div>
+                    <!-- Shipping Price -->
+                    <div
+                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
+                        <p>Shipping & Handling </p>
+                        <p>€40.<sup>00</sup></p>
+                    </div>
+                    <!-- Total Price -->
+                    <div
+                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
+                        <p>Total</p>
+                        <p>€780.<sup>00</sup></p>
+                    </div>
+                </div>
+            </div>
+            <!-- Order N:2 -->
+            <div class="col-12 bg-white rounded mb-4 p-5">
+                <div class="row mb-4">
+                    <h5 class="fw-bold">Order # 3456789</h5><!-- Order ID -->
+                    <!-- Order Payment -->
+                    <div class="col-lg-3 col-md-6 col-12 mb-lg-3 mb-md-2 mb-2">
+                        <p>Date: <b>12/07/2022</b></p>
+                        <p>Payment Method: <b>Visa ***7874</b></p>
+                        <p>Total: <b>€740.00</b></p>
+                    </div>
+                    <!-- Order Address -->
+                    <div class="col-auto">
+                        <p>Current Status: <b>Shipped by post (UPS F) Express Shipping</b></p>
+                        <p>Tracking Number:<b>#34567890987435</b></p>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-start align-items-center mb-5">
+                    <!-- Buyeer -->
+                    <div class="col-lg-2 col-md-12 col-12 mb-5">
+                        <p>Receiver: <b>Ahmadov Chingiz,
+                            Grosse Scharrnstr. 9,
+                            +49 176 36357787,
+                            Frankfurt Oder, 15230,
+                            Germany
+                        </b></p>
+                    </div>
+                    <!-- Order Progress -->
+                    <ul class="ms-lg-5 mt-5 col-lg-9 col-md-12 col-sm-12 line-second position-relative d-flex justify-content-evenly align-items-center">
+                        <li class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <i class="fs-lg-4 fs-6 fa-solid fa-check"></i>
+                        </li>
+                        <li class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <i class="fs-lg-4 fs-6 fa-solid fa-barcode"></i>
+                        </li>
+
+                        <li class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <div class="tooltip-rel">
+                                <p class="tooltip-abs2 tooltip-abs2 px-lg-2 py-lg-2 px-md-2 py-md-2 px-2 py-1 rounded"><i
+                                        class="fa-light fa-triangle-exclamation me-2 text-danger""></i>Please
+                                    check product and platform compatibility before placing an order. <a href=""><ins>Contact with
+                                        us</ins></a>
+                                </p>
+                            </div>
+                            <i class="fs-lg-4 fs-6 fa-solid fa-truck"></i>
+                        </li>
+                        <li class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <i class="fs-lg-4 fs-6 fa-solid fa-box-open"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Product List -->
+                <div class="row d-flex flex-column  mb-3">
+                    <!-- Table Headers -->
+                    <div
+                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-2">
+                        <p class="w-50 text-start">Product Title</p>
+                        <p>Quantity</p>
+                        <p>Price</p>
+                        <p>Total</p>
+                    </div>
+                    <!-- Products -->
+                    <div
+                            class="col text-danger d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-1">
+                        <p class="text-start w-50">C301-i programmable TOTP token</p><!-- Product Name -->
+                        <p>5</p><!-- Product Count -->
+                        <p>€20.<sup>00</sup></p><!-- Product Price -->
+                        <p>€20.<sup>00</sup></p><!-- Product Total Price -->
+                    </div>
+                </div>
+                <!-- Orders Price -->
+                <div class="row d-flex flex-column ">
+                    <!-- Orders Total Price -->
+                    <div
+                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
+                        <p>Subtotal</p>
+                        <p>€20.<sup>00</sup></p>
+                    </div>
+                    <!-- Shipping Price -->
+                    <div
+                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
+                        <p>Shipping & Handling </p>
+                        <p>€40.<sup>00</sup></p>
+                    </div>
+                    <!-- Total Price -->
+                    <div
+                            class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
+                        <p>Total</p>
+                        <p>€60.<sup>00</sup></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<main class="main about__main">
+    <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
+    <div class="subscribe__loader">
+        <script>
+            $(document).ready(function () {
+                $('.subscribe__loader').load("../components/subscribe.html");
             });
         </script>
     </div>
     <!--  -->
-    <script src="../js/bootstrap.bundle.min.js"></script>
+</main>
+
+<!-- Import footer using Jquery you can remove footer__loader during backend process -->
+<div class="footer__loader">
+    <script>
+        $(document).ready(function () {
+            $('.footer__loader').load("../components/footer.html");
+        });
+    </script>
+</div>
+<!--  -->
+<script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 
 <script>

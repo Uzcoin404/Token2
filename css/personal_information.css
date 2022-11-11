@@ -1,0 +1,8 @@
+.confirmation>.col-12 {
+    padding: 80px 0;
+}
+
+.confirmation>.col-12>.fa-solid {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
