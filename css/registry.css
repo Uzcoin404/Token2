@@ -1,6 +1,12 @@
 .form-control::placeholder {
     color: #fff;
 }
+.register_content_text {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 33px;
+}
 
 .or {
     position: relative;
@@ -27,11 +33,11 @@
     background-color: #fff;
 }
 
-.header-bg{
+.header-bg {
     height: 100%;
 }
 
-@media (max-width:990px) {
+@media (max-width: 990px) {
     form {
         order: 2;
     }
@@ -40,10 +46,15 @@
         order: 1;
     }
 }
+@media (max-width: 576px) {
+    .reg_btn_item {
+        width: 100% !important;
+    }
+}
 
 .bg-blog {
     position: relative;
-    background-color: #FFFBE7;
+    background-color: #fffbe7;
     border-radius: 10px;
     color: #87744F;
     filter: drop-shadow(0 0 0.1rem #87744F);

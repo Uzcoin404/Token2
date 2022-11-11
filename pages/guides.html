@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Token 2 Guides</title>
+    <title>Token2 Guides</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,202 +33,206 @@
             </script>
         </div>
         <!-- Guides Page  -->
-        <main class="container">
+        <div class="container">
             <div class="row my-5">
                 <div class="col-12 text-white">
-                    <h1 class="mb-4">Integration guides</h1>
+                    <h1 class="mb-4 manrope fw-bolder">Integration guides</h1>
                     <div class="col-lg-5 col-md-10 col-12 mb-4">
-                        <p class="lh-lg">We have solutions that can integrate with almost any system, below is the list
+                        <p class="lh-lg open_sans">We have solutions that can integrate with almost any system, below is
+                            the list
                             of integration
                             guides with different systems published so far, and it is far from being exhaustive. Feel
                             free to contact us if you cannot find your desired product in the list below, we will check
                             the compatibility and provide instructions.</p>
                     </div>
-                    <div class="col-lg-4 col-md-8 col-12 d-flex">
-                        <input type="text" class="form-control contact__input w-75 bg-transparent me-2"
+                    <div class="col-lg-6 col-md-9 col-12 d-flex">
+                        <input type="text" class="form-control contact__input w-75 bg-transparent text-white me-2"
                             placeholder="Write here">
-                        <button class="btn btn-light text-danger w-25 contact__input">Search</button>
+                        <button class="btn btn-light text-danger w-25 contact__btn h-auto px-1 d-flex align-items-center justify-content-center">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <main class="container">
+            <div class="row mb-lg-5 mb-md-3 mx-auto">
+                <div class="col-12 mt-encriment bg-white rounded p-lg-4">
+                    <div class="table-responsive-xxl">
+                        <table class="table guides__table table-hover" style="min-width: 1200px;">
+                            <thead>
+                                <tr class="text-muted">
+                                    <th class="guides_table_th_title" scope="col">Product</th>
+                                    <th class="guides_table_th_title" scope="col">Integration guides and manuals</th>
+                                    <th class="guides_table_th_title" scope="col" class="text-nowrap">Hardware compatible</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="guides_table_title">Microsoft Office 365 / Azure MFA (with Azure AD Premium P1 or P2 license)</td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Integration guide</p>
+                                        <p class="btn btn-danger px-4 mb-2">FAQ</p>
+                                        <p class="btn btn-danger px-4 mb-2">Choose hardware token</p>
+                                        <p class="btn btn-danger px-4 mb-2">Generate CSV file for programmable tokens
+                                        </p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">Microsoft Office 365 / Azure MFA (without Azure AD Premium P1 or P2 license)
+                                    </td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Integration guide</p>
+                                        <p class="btn btn-danger px-4 mb-2">FAQ</p>
+                                        <p class="btn btn-danger px-4 mb-2">Choose hardware token</p>
+                                        <p class="btn btn-danger px-4 mb-2">Provisioning programmable tokens remotely
+                                        </p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">Using programmable hardware tokens with Azure AD B2C (TOTP MFA method)</td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Provisioning guide</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">Microsoft Office 365 / Azure Passwordless
+                                        (Windows workstation login)</td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Integration guide</p>
+                                        <p class="btn btn-danger px-4 mb-2">FAQ</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">Microsoft Azure MFA on-premises server</td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Configuration guide</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">Google Account (security keys)</td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Integration guide</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">Nextcloud Passwordless with FIDO2 Keys</td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Integration guide</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">Google Account (TOTP tokens)</td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Integration guide</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">Google Authenticator</td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Migration toolset</p>
+                                        <p class="btn btn-danger px-4 mb-2">Online Service</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">UserLock with programmable tokens
+                                        (Windows workstation/server login) </td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Integration guide</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">UserLock with USB Security keys
+                                        (Windows workstation/server login) </td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Integration guide</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">Google Account (TOTP tokens)</td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Integration guide</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">Google Authenticator</td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Integration guide</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">UserLock with programmable tokens
+                                        (Windows workstation/server login) </td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Integration guide</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="guides_table_title">UserLock with USB Security keys
+                                        (Windows workstation/server login) </td>
+                                    <td>
+                                        <p class="btn btn-danger px-4 mb-2">Integration guide</p>
+                                    </td>
+                                    <td class="text-end">
+                                        <a href="#" class="btn btn-danger px-4">Download</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="12" class="border-0">
+                                        <div class="d-flex justify-content-end align-items-center">
+                                            <p class="me-3 guides_table_title">Want a product to be listed here?</p>
+                                            <p class="btn btn-danger px-3 mb-2">Write us</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
         </main>
-    </header>
-    <main class="container ">
-        <div class="row mb-lg-5 mb-md-3 mx-auto">
-            <div class="col-12 mt-encriment bg-white rounded p-lg-4">
-                <div class="table-responsive-xxl">
-                    <table class="table table-hover" style="min-width: 1200px;">
-                        <thead>
-                            <tr class="text-muted">
-                                <th scope="col">Product</th>
-                                <th scope="col">Integration guides and manuals</th>
-                                <th scope="col" class="text-nowrap">Hardware compatible</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Microsoft Office 365 / Azure MFA (with Azure AD Premium P1 or P2 license)</td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Integration guide</p>
-                                    <p class="btn btn-danger px-4 mb-2">FAQ</p>
-                                    <p class="btn btn-danger px-4 mb-2">Choose hardware token</p>
-                                    <p class="btn btn-danger px-4 mb-2">Generate CSV file for programmable tokens</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Microsoft Office 365 / Azure MFA (without Azure AD Premium P1 or P2 license)</td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Integration guide</p>
-                                    <p class="btn btn-danger px-4 mb-2">FAQ</p>
-                                    <p class="btn btn-danger px-4 mb-2">Choose hardware token</p>
-                                    <p class="btn btn-danger px-4 mb-2">Provisioning programmable tokens remotely</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Using programmable hardware tokens with Azure AD B2C (TOTP MFA method)</td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Provisioning guide</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Microsoft Office 365 / Azure Passwordless
-                                    (Windows workstation login)</td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Integration guide</p>
-                                    <p class="btn btn-danger px-4 mb-2">FAQ</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Microsoft Azure MFA on-premises server</td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Configuration guide</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Google Account (security keys)</td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Integration guide</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Nextcloud Passwordless with FIDO2 Keys</td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Integration guide</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Google Account (TOTP tokens)</td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Integration guide</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Google Authenticator</td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Migration toolset</p>
-                                    <p class="btn btn-danger px-4 mb-2">Online Service</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>UserLock with programmable tokens
-                                    (Windows workstation/server login) </td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Integration guide</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>UserLock with USB Security keys
-                                    (Windows workstation/server login) </td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Integration guide</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Google Account (TOTP tokens)</td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Integration guide</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Google Authenticator</td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Integration guide</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>UserLock with programmable tokens
-                                    (Windows workstation/server login) </td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Integration guide</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>UserLock with USB Security keys
-                                    (Windows workstation/server login) </td>
-                                <td>
-                                    <p class="btn btn-danger px-4 mb-2">Integration guide</p>
-                                </td>
-                                <td class="text-end">
-                                    <button class="btn btn-danger px-4">Download</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="12" class="border-0">
-                                    <div class="d-flex justify-content-end align-items-center">
-                                        <p class="me-3">Want a product to be listed here?</p>
-                                        <p class="btn btn-danger px-3 mb-2">Write us</p>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </main>
-    <main class="main about__main">
         <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
         <div class="subscribe__loader">
             <script>

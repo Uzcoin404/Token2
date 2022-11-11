@@ -6,3 +6,32 @@
     font-size: 50px;
     margin-bottom: 10px;
 }
+.ps__info .form-control,
+.ps__info .form-select {
+    height: 54px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.ps__info .form-control::placeholder,
+.ps__info .form-select {
+    color: rgba(41, 45, 51, 0.5);
+}
+.ps__info .date__input {
+    color: rgba(41, 45, 51, 0.5);
+}
+.ps__title {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--black);
+}
+
+@media (max-width: 576px) {
+    .ps__info .form-control,
+    .ps__info .form-select {
+        height: 54px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

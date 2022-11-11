@@ -1,3 +1,23 @@
-.form-control::placeholder {
-    color: white;
+.form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+.form-control::-moz-placeholder {
+    color: #fff;
+}
+.form-control::placeholder,
+.form-control {
+    color: #fff;
+}
+.guides__table tbody .btn {
+    display: inline-flex;
+}
+.guides_table_title, .guides_table_th_title {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--grey);
+}
+.guides_table_th_title{
+    font-weight: 700;
 }

@@ -47,10 +47,14 @@
                         <p class="products_content_header_text">TOTPRadius</p>
                     </div>
                 </div>
-                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">FIDO2 Keys</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">T2F2-NFC-Slim FIDO2 Security key</li>
+                        <li class="breadcrumb-item"><a href="#" class="fs-5">
+                                FIDO2 Keys
+                                <i class="fa-regular fa-chevron-right ms-1"></i>
+                            </a></li>
+                        <li class="breadcrumb-item active fs-5" aria-current="page">T2F2-NFC-Slim FIDO2 Security key
+                        </li>
                     </ol>
                 </nav>
             </section>
@@ -89,21 +93,21 @@
                     <div class="product__info mt-5">
                         <ul class="product_tab_nav nav nav-tabs">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#specifications"
-                                    id="specifications-tab" type="button">
+                                <button class="nav-link product_tab_btn active" data-bs-toggle="tab"
+                                    data-bs-target="#specifications" id="specifications-tab" type="button">
                                     Specifications
                                 </button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link" data-bs-toggle="tab" data-bs-target="#compatibility"
-                                    id="compatibility-tab" type="button">
+                                <button class="nav-link product_tab_btn" data-bs-toggle="tab"
+                                    data-bs-target="#compatibility" id="compatibility-tab" type="button">
                                     Compatibility
                                 </button>
                             </li>
                         </ul>
                         <div class="tab-content mt-2">
                             <div class="tab-pane fade show active" role="tabpanel" id="specifications">
-                                <table class="table">
+                                <table class="table product__table">
                                     <tbody>
                                         <tr>
                                             <th class="product_table_th">Model Number</th>
@@ -177,11 +181,11 @@
                                 </table>
                             </div>
                             <div class="tab-pane fade" role="tabpanel" id="compatibility">
-                                <table class="table">
+                                <table class="table product__table">
                                     <tbody>
                                         <tr>
+                                            <td><i class="fa-brands fa-windows"></i></td>
                                             <th class="product_table_th">
-                                                <i class="fa-brands fa-windows me-2"></i>
                                                 Azure Passwordless
                                             </th>
                                             <td class="product_table_tr">
@@ -190,8 +194,8 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td><i class="fa-brands fa-google"></i></td>
                                             <th class="product_table_th">
-                                                <i class="fa-brands fa-google me-2"></i>
                                                 Google Account
                                             </th>
                                             <td class="product_table_tr">
@@ -200,8 +204,8 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td><i class="fa-solid fa-user"></i></td>
                                             <th class="product_table_th">
-                                                <i class="fa-solid fa-user me-2"></i>
                                                 ISDecisions UserLock 11.0 or newer
                                             </th>
                                             <td class="product_table_tr">
@@ -210,6 +214,7 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td></td>
                                             <th class="product_table_th">Stripe Account</th>
                                             <td class="product_table_tr">
                                                 <i class="fa-solid fa-check"></i>
@@ -217,6 +222,7 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td></td>
                                             <th class="product_table_th">Facebook Account</th>
                                             <td class="product_table_tr">
                                                 <i class="fa-solid fa-check"></i>
@@ -224,6 +230,7 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td></td>
                                             <th class="product_table_th">GitHub Account</th>
                                             <td class="product_table_tr">
                                                 <i class="fa-solid fa-check"></i>
@@ -231,6 +238,7 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td></td>
                                             <th class="product_table_th">Application or system developed by you</th>
                                             <td class="product_table_tr">
                                                 <i class="fa-solid fa-check"></i>
@@ -238,10 +246,10 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <td></td>
                                             <th class="product_table_th">Not listed here</th>
                                             <td class="product_table_tr">
-                                                <i class="fa-solid fa-check"></i>
-                                                fully compatible
+                                                <a href="#" class="btn table_writeus_btn">Write us</a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -267,7 +275,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product__details col-md-12 col-lg-6 section__content mt-md-0 mt-4">
+                <div class="product__details col-md-12 col-lg-6 section__content mt-md-0 mt-4 pe-md-4">
                     <div class="product_about_header between_center position-sticky">
                         <h3 class="product_about_title">T2F2-NFC-Slim FIDO2 Security key</h3>
                         <div class="product_details_btns between_center">
@@ -303,7 +311,7 @@
                         the same key with devices with USB-Type-C slots. The T2F2-NFC-Slim security key does not require
                         a battery nor network connectivity - it is always on and accessible.
                     </p>
-                    <div class="product__feature">
+                    <div class="product__feature pb-4">
                         <h5 class="product_nfc_title">NFC Chip position</h5>
                         <p class="product_nfc_text product_details_text">
                             The NFC chip is located on the front/top side of the device (the USB metal connectors'

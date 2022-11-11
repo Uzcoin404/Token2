@@ -15,6 +15,9 @@
     background-color: #fff;
     border: none;
 }
+.checkout__table td > * {
+    width: max-content;
+}
 .checkout__table th {
     padding-left: 24px;
 }
@@ -61,10 +64,26 @@
     font-family: "Manrope";
     font-weight: 700;
     font-size: 16px;
-    line-height: 30px;
     display: flex;
     align-items: center;
-    vertical-align: middle;
+    --bs-btn-color: var(--primary);
+    --bs-btn-bg: transparent;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-border-color: var(--primary);
+    --bs-btn-hover-bg: var(--primary);
+    --bs-btn-hover-border-color: var(--primary);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--primary);
+    --bs-btn-active-border-color: var(--primary);
+    --bs-btn-disabled-color: rgba(37, 37, 37, 0.5);
+    --bs-btn-disabled-bg: #e8eaee;
+    --bs-btn-disabled-border-color: #e8eaee;
+    letter-spacing: 0.5px;
+    height: 53px;
+}
+.red__btn {
+    --bs-btn-bg: var(--primary);
+    --bs-btn-color: #fff;
 }
 .checkout_pay_btn .pay_btn_points {
     font-family: "Manrope";

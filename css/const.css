@@ -38,6 +38,33 @@ p {
 a:hover {
     color: inherit;
 }
+.open_sans {
+    font-family: "Open Sans";
+}
+.manrope, .btn, button {
+    font-family: "Manrope";
+}
+.fs-14{
+    font-size: 14px;
+}
+
+.bg-danger{
+    background-color: var(--primary) !important;
+}
+.text-danger{
+    color: var(--primary) !important;
+}
+.btn-danger {
+    --bs-btn-bg: var(--primary);
+    --bs-btn-border-color: var(--primary);
+    --bs-btn-hover-bg: var(--primary);
+    --bs-btn-hover-border-color: var(--primary);
+    --bs-btn-active-bg: var(--primary);
+    --bs-btn-active-border-color: var(--primary);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #d15763;
+    --bs-btn-disabled-border-color: #d15763;
+}
 .white_to_red_btn {
     --bs-btn-bg: #fff;
     --bs-btn-hover-color: #fff;
@@ -114,7 +141,7 @@ a:hover {
     margin-bottom: 20px;
 }
 .products_content_header_blog {
-    gap: 10px 70px;
+    gap: 10px 0;
     margin-bottom: 0;
 }
 .products__title {
@@ -149,9 +176,25 @@ a:hover {
     line-height: 24px;
     color: var(--black);
 }
+.products_content_header_text:nth-child(2) {
+    margin-left: 40px;
+    margin-right: 70px;
+}
+.products_content_header_text:nth-child(3) {
+    margin-right: 70px;
+}
 .products_filter_btn {
     background-color: #fff;
     color: var(--primary);
+}
+.tools__table tbody .btn, .guides__table tbody .btn {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 14px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    width: max-content;
 }
 
 @media (max-width: 768px) {
@@ -160,6 +203,13 @@ a:hover {
     }
     .products__content {
         margin: 30px 0;
+    }
+    .products_content_header_text:nth-child(2) {
+        margin-left: 20px;
+        margin-right: 30px;
+    }
+    .products_content_header_text:nth-child(3) {
+        margin-right: 30px;
     }
 }
 @media (max-width: 576px) {
@@ -171,7 +221,7 @@ a:hover {
     .products__title {
         font-size: 36px;
     }
-    .card_product_price{
+    .card_product_price {
         font-size: 18px;
     }
 }

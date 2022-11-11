@@ -1,0 +1,7 @@
+.faq_card_title {
+    font-family: "Manrope";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--black);
+}

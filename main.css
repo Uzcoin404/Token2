@@ -42,6 +42,8 @@ a {
     line-height: 24px;
     padding: 15px 25px;
     height: 54px;
+    box-shadow: none !important;
+    border-color: #fff !important;
 }
 
 .contact__btn {
@@ -100,4 +102,27 @@ a {
 
 .lh-lg {
     font-family: "Open Sans";
+}
+
+.contact__btn {
+    font-family: "Manrope";
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    height: 44px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media (max-width: 992px) {
+    .header-bg {
+        min-height: 100vh;
+        height: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact__input {
+        height: 44px;
+    }
 }

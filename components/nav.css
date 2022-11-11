@@ -234,7 +234,7 @@
         --bs-offcanvas-width: 100%;
     }
     .navbar{
-        padding: 8px 0;
+        padding: 15px 0;
     }
 }
 @media (max-width: 350px) {

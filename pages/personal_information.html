@@ -33,7 +33,7 @@
             </script>
         </div>
         <!--Personal Page Personal Infos  -->
-        <main class="container">
+        <div class="container">
             <div class="row float-end mb-3">
                 <div class="col d-flex">
                     <h2 class="text-white me-3">Hi! Chingiz Ahmadov</h2>
@@ -82,7 +82,7 @@
                     </li>
                 </ul>
             </div>
-        </main>
+        </div>
     </header>
     <!-- Personal Infos -->
     <main class="container ">
@@ -122,6 +122,15 @@
                         <input type="text" class="form-control contact__input border border-0 bg-light py-2  mb-sm-1"
                             placeholder="Date of Birth" aria-label="Date of Birth">
 
+                        </div>
+                        <div class="mb-3 col-5">
+                            <select id="gender" name="gender"
+                                class="form-select border border-0 bg-light py-2  mb-sm-1">
+                                <option selected>Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="mb-3 col-5">
                         <select id="gender" name="gender"
@@ -159,15 +168,17 @@
                             <option value="usa">USA</option>
                         </select>
                     </div>
-                </div>
-                <!-- Shipping Address -->
-                <h3 class="mb-3">Shipping Address</h3>
-                <div class="row d-flex justify-content-start align-items-center  mb-3">
-                    <div class="form-check ms-3">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Similar to Registered Address
-                        </label>
+                    <!-- Change Password? -->
+                    <p class="mb-3 fs-6">Change Password?</p>
+                    <div class="row mb-3">
+                        <div class="col-lg-4 mb-sm-1">
+                            <input type="password" class="form-control border border-0 bg-light"
+                                placeholder="New password" aria-label="New password">
+                        </div>
+                        <div class="col-lg-4 mb-sm-1">
+                            <input type="password" class="form-control border border-0 bg-light"
+                                placeholder="Confirm password" aria-label="Confirm password">
+                        </div>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-start align-items-center  mb-3">
@@ -221,9 +232,6 @@
                 </div>
             </div>
         </div>
-    </main>
-
-    <main class="main about__main">
         <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
         <div class="subscribe__loader">
             <script>
