@@ -41,17 +41,19 @@ a:hover {
 .open_sans {
     font-family: "Open Sans";
 }
-.manrope, .btn, button {
+.manrope,
+.btn,
+button {
     font-family: "Manrope";
 }
-.fs-14{
+.fs-14 {
     font-size: 14px;
 }
 
-.bg-danger{
+.bg-danger {
     background-color: var(--primary) !important;
 }
-.text-danger{
+.text-danger {
     color: var(--primary) !important;
 }
 .btn-danger {
@@ -187,7 +189,8 @@ a:hover {
     background-color: #fff;
     color: var(--primary);
 }
-.tools__table tbody .btn, .guides__table tbody .btn {
+.tools__table tbody .btn,
+.guides__table tbody .btn {
     font-family: "Manrope";
     font-weight: 700;
     font-size: 14px;
@@ -195,6 +198,60 @@ a:hover {
     display: flex;
     align-items: center;
     width: max-content;
+}
+
+.order_steps_blog{
+    overflow-x: auto;
+    overflow-y:auto;
+    display: flex;
+    align-items: center;
+}
+.order__steps {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 600px;
+    min-height: 150px;
+}
+
+.order__steps::before, .order_steps_line{
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #dadada;
+}
+.order_steps_line {
+    background-color: var(--primary);
+}
+
+.order__step {
+    position: relative;
+    z-index: 2;
+    background-color: #dadada;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+}
+.order__step.active {
+    background-color: var(--primary);
+}
+.order_steps_text {
+    position: absolute;
+    top: 120%;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 11px;
+    color: var(--black);
+    white-space: nowrap;
 }
 
 @media (max-width: 768px) {
@@ -223,6 +280,10 @@ a:hover {
     }
     .card_product_price {
         font-size: 18px;
+    }
+    .order__step {
+        width: 40px;
+        height: 40px;
     }
 }
 @media (max-width: 425px) {

@@ -36,8 +36,8 @@
         <div class="container">
             <div class="row float-end mb-3">
                 <div class="col d-flex">
-                    <h2 class="text-white me-3">Hi! Chingiz Ahmadov</h2>
-                    <button type="button" class="btn nav__btn px-3 text-center">
+                    <h2 class="text-white me-3 manrope">Hi! Chingiz Ahmadov</h2>
+                    <button type="button" class="btn nav__btn btn__square px-3 text-center">
                         <i class="fa-regular fa-right-from-bracket"></i>
                     </button>
                 </div>
@@ -45,7 +45,8 @@
             <div class="row w-100">
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <h1 class="text-white display-5 fw-bold mb-lg-5 mb-md-3 mb-2">Prosessing Orders</h1>
-                    <p class="lh-lg text-white mb-lg-4 mb-4 pb-sm-2 fw-normal" style="text-align: justify;">We have solutions that can integrate with almost any system, below
+                    <p class="lh-lg text-white mb-lg-4 mb-4 pb-sm-2 fw-normal" style="text-align: justify;">We have
+                        solutions that can integrate with almost any system, below
                         is the list of integration
                         guides with different systems published so far, and it is far from being exhaustive. Feel free
                         to contact us if you cannot find your desired product in the list below, we will check the
@@ -85,10 +86,10 @@
     </header>
     <!-- Orders -->
     <main class="main">
-        <div class="container my-4">
+        <div class="container my-4 gx-sm-4 gx-0">
             <div class="row w-100 mx-auto">
                 <!-- Order N:1 -->
-                <div class="col-12 bg-white p-5 rounded mb-4 mt-encriment">
+                <div class="col-12 bg-white p-md-5 p-3 rounded mb-4 mt-encriment">
                     <div class="row mb-4">
                         <h5 class="fw-bold">Order # 3456789</h5><!-- Order ID -->
                         <!-- Order Payment -->
@@ -103,9 +104,9 @@
                             <p>Tracking Number:<b>#34567890987435</b></p>
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-start align-items-center mb-5">
+                    <div class="row order_steps_blog mb-4">
                         <!-- Buyeer -->
-                        <div class="col-lg-2 col-md-12 col-12 mb-5">
+                        <div class="col-lg-3 col-md-12 col-12 mb-4">
                             <p>Receiver: <b>Ahmadov Chingiz,
                                     Grosse Scharrnstr. 9,
                                     +49 176 36357787,
@@ -114,28 +115,29 @@
                                 </b></p>
                         </div>
                         <!-- Order Progress -->
-                        <ul
-                            class="ms-lg-5 col-lg-9 col-md-12 col-sm-12 line position-relative d-flex justify-content-evenly align-items-center">
-                            <li
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                        <ul class="order__steps col-lg-9 col-md-12 col-sm-12">
+                            <!-- red line -->
+                            <div class="order_steps_line" style="width: 5%;"></div>
+                            <li class="order__step">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-check"></i>
+                                <span class="order_steps_text">Ready for dispatch</span>
                             </li>
-                            <li
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <li class="order__step">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-barcode"></i>
+                                <span class="order_steps_text">Order preparation</span>
                             </li>
-                            <li
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <li class="order__step ">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-truck"></i>
+                                <span class="order_steps_text">Order shipped</span>
                             </li>
-                            <li
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <li class="order__step ">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-box-open"></i>
+                                <span class="order_steps_text">Order delivered</span>
                             </li>
                         </ul>
                     </div>
                     <!-- Product List -->
-                    <div class="row d-flex flex-column  mb-3">
+                    <div class="row d-flex flex-column mb-3 manrope">
                         <!-- Table Headers -->
                         <div
                             class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-2">
@@ -182,7 +184,7 @@
                         </div>
                     </div>
                     <!-- Orders Price -->
-                    <div class="row d-flex flex-column ">
+                    <div class="row d-flex flex-column manrope">
                         <!-- Orders Total Price -->
                         <div
                             class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">
@@ -204,7 +206,7 @@
                     </div>
                 </div>
                 <!-- Order N:2 -->
-                <div class="col-12 bg-white p-5 rounded mb-4">
+                <div class="col-12 bg-white p-md-5 p-3 rounded mb-4">
                     <div class="row mb-4">
                         <h5 class="fw-bold">Order # 3456789</h5><!-- Order ID -->
                         <!-- Order Payment -->
@@ -219,9 +221,9 @@
                             <p>Tracking Number:<b>#34567890987435</b></p>
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-start align-items-center mb-5">
+                    <div class="row order_steps_blog mb-4">
                         <!-- Buyeer -->
-                        <div class="col-lg-2 col-md-12 col-12 mb-5">
+                        <div class="col-lg-3 col-md-12 col-12 mb-4">
                             <p>Receiver: <b>Ahmadov Chingiz,
                                     Grosse Scharrnstr. 9,
                                     +49 176 36357787,
@@ -230,28 +232,29 @@
                                 </b></p>
                         </div>
                         <!-- Order Progress -->
-                        <ul
-                            class="ms-lg-5 col-lg-9 col-md-12 col-sm-12 line-second position-relative d-flex justify-content-evenly align-items-center">
-                            <li
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                        <ul class="order__steps col-lg-9 col-md-12 col-sm-12">
+                            <!-- red line -->
+                            <div class="order_steps_line w-50"></div>
+                            <li class="order__step active">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-check"></i>
+                                <span class="order_steps_text">Ready for dispatch</span>
                             </li>
-                            <li
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <li class="order__step active">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-barcode"></i>
+                                <span class="order_steps_text">Order preparation</span>
                             </li>
-                            <li
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <li class="order__step ">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-truck"></i>
+                                <span class="order_steps_text">Order shipped</span>
                             </li>
-                            <li
-                                class="rounded-circle p-lg-3 p-2 text-white d-flex justify-content-center align-items-center">
+                            <li class="order__step ">
                                 <i class="fs-lg-4 fs-6 fa-solid fa-box-open"></i>
+                                <span class="order_steps_text">Order delivered</span>
                             </li>
                         </ul>
                     </div>
                     <!-- Product List -->
-                    <div class="row d-flex flex-column  mb-3">
+                    <div class="row d-flex flex-column mb-3 manrope">
                         <!-- Table Headers -->
                         <div
                             class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-light p-3 mb-2">
@@ -270,7 +273,7 @@
                         </div>
                     </div>
                     <!-- Orders Price -->
-                    <div class="row d-flex flex-column ">
+                    <div class="row d-flex flex-column manrope">
                         <!-- Orders Total Price -->
                         <div
                             class="col d-flex justify-content-between align-items-start fw-bolder w-100 rounded bg-grey p-3 mb-1">

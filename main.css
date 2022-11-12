@@ -55,29 +55,22 @@ a {
     padding: 10px 14px;
 }
 
-.tooltip-rel {
-    position: relative;
-}
-.tooltip-abs::after,
-.tooltip-abs2::after {
+.order_step_tooltip::before {
     z-index: -1;
     position: absolute;
-    transform: rotate(45deg);
-    right: 135px;
-    bottom: -5px;
+    transform: rotate(45deg) translateX(-50%);
+    left: 50%;
+    bottom: -16px;
     content: "";
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     background: #FFE7E7;
 }
-
-.tooltip-abs,
-.tooltip-abs2 {
-    z-index: 1;
-    width: 450px;
+.order_step_tooltip {
+    width: 400px;
+    height: max-content;
     position: absolute;
-    top: -80px;
-    left: -300px;
+    top: -75px;
     font-size: 12px;
     display: flex;
     justify-content: flex-start;
@@ -86,9 +79,7 @@ a {
     background-color: #FFE7E7;
     filter: drop-shadow(0 0 1px #bd5454);
 }
-
-.tooltip-abs>i,
-.tooltip-abs2>i {
+.order_step_tooltip i{
     font-size: 22px;
 }
 
@@ -116,5 +107,9 @@ a {
 @media (max-width: 576px) {
     .contact__input {
         height: 44px;
+    }
+    .order_step_tooltip{
+        width: 330px;
+        top: -65px;
     }
 }

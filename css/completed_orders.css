@@ -1,34 +1,7 @@
-.line {
-    position: relative;
-    background-color: #DADADA;
-    height: 5px;
-    border-radius: 5px;
-}
-
-.line::before {
-    position: absolute;
-    left: 0;
-    content: '';
-    width: 70%;
-    height: 5px;
-    border-radius: 5px;
-    background-color: var(--primary);
-}
-
-.line>li {
-    z-index: 2;
-    background-color: var(--primary);
-}
-
-.line>li:last-child {
-    background-color: #DADADA;
-}
-
 .order,
 .order2 {
     position: relative;
 }
-
 
 .print {
     position: absolute;
