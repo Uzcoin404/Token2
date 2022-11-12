@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Token 2 Personal Information</title>
+    <title>Token2 Personal Information</title>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,21 +84,31 @@
             </div>
         </div>
     </header>
+    <div class="modal profile_form_modal" tabindex="-1" id="successModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <i class="fa-solid modal__icon text-success fa-circle-check"></i>
+                    <p class="fw-bold fs-5 manrope mt-2">Your Information has been <br> SAVED!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal profile_form_modal" tabindex="-1" id="failModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <i class="fa-solid modal__icon text-danger fa-circle-xmark"></i>
+                    <p class="fw-bold fs-5 manrope mt-2">Your Information NOT been <br> SAVED!</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Personal Infos -->
     <main class="container ">
         <div class="row  mb-lg-3 mx-auto">
             <div class="col mt-encriment rounded p-5 bg-white">
                 <!-- Confirmation modals -->
-                <div class="col-lg-6 col-10 confirmation">
-                    <div class="col-12 bg-white shadow mb-5 text-center rounded">
-                        <i class="fa-solid text-success fa-circle-check"></i>
-                        <p class="fw-bold fs-5">Your Information has been <br> SAVED!</p>
-                    </div>
-                    <div class="col-12 bg-white shadow text-center rounded">
-                        <i class="fa-solid text-danger fa-circle-xmark"></i>
-                        <p class="fw-bold fs-5">Your Information NOT been <br> SAVED!</p>
-                    </div>
-                </div>
                 <!-- General Information -->
                 <h3 class="mb-3">General Information</h3>
                 <div class="row d-flex justify-content-start align-items-center mb-3">
@@ -122,115 +132,117 @@
                         <input type="text" class="form-control contact__input border border-0 bg-light py-2  mb-sm-1"
                             placeholder="Date of Birth" aria-label="Date of Birth">
 
-                        </div>
-                        <div class="mb-3 col-5">
-                            <select id="gender" name="gender"
-                                class="form-select border border-0 bg-light py-2  mb-sm-1">
-                                <option selected>Gender</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
-                        </div>
                     </div>
                     <div class="mb-3 col-5">
-                        <select id="gender" name="gender"
-                            class="form-select contact__input border border-0 bg-light py-2  mb-sm-1">
+                        <select id="gender" name="gender" class="form-select border border-0 bg-light py-2  mb-sm-1">
                             <option selected>Gender</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                         </select>
                     </div>
                 </div>
-                <!-- Registered Address -->
-                <h3 class="mb-3">Registered Address</h3>
-                <div class="row d-flex justify-content-start align-items-center mb-3">
-                    <div class="col-lg-4 mb-sm-1">
-                        <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
-                            placeholder="Street" aria-label="Street">
-                    </div>
-                    <div class="col-lg-2 mb-sm-1">
-                        <input type="number" class="form-control contact__input border border-0 bg-light py-2 "
-                            placeholder="Number" aria-label="Number">
-                    </div>
+                <div class="mb-3 col-5">
+                    <select id="gender" name="gender"
+                        class="form-select contact__input border border-0 bg-light py-2  mb-sm-1">
+                        <option selected>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
                 </div>
-                <div class="row d-flex justify-content-start align-items-center  mb-3">
-                    <div class="col-lg-4 mb-sm-1">
-                        <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
-                            placeholder="City" aria-label="City">
-                    </div>
-                    <div class="col-lg-2 mb-sm-1">
-                        <input type="number" class="form-control contact__input border border-0 bg-light py-2 "
-                            placeholder="ZIP" aria-label="ZIP">
-                    </div>
-                    <div class="col-lg-4 mb-sm-1">
-                        <select class="form-select contact__input border border-0 bg-light py-2 ">
-                            <option selected>Country</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </div>
-                    <!-- Change Password? -->
-                    <p class="mb-3 fs-6">Change Password?</p>
-                    <div class="row mb-3">
-                        <div class="col-lg-4 mb-sm-1">
-                            <input type="password" class="form-control border border-0 bg-light"
-                                placeholder="New password" aria-label="New password">
-                        </div>
-                        <div class="col-lg-4 mb-sm-1">
-                            <input type="password" class="form-control border border-0 bg-light"
-                                placeholder="Confirm password" aria-label="Confirm password">
-                        </div>
-                    </div>
+            </div>
+            <!-- Registered Address -->
+            <h3 class="mb-3">Registered Address</h3>
+            <div class="row d-flex justify-content-start align-items-center mb-3">
+                <div class="col-lg-4 mb-sm-1">
+                    <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
+                        placeholder="Street" aria-label="Street">
                 </div>
-                <div class="row d-flex justify-content-start align-items-center  mb-3">
-                    <div class="col-lg-4 mb-sm-1">
-                        <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
-                            placeholder="Street" aria-label="Street">
-                    </div>
-                    <div class="col-lg-2 mb-sm-1">
-                        <input type="number" class="form-control contact__input border border-0 bg-light py-2 "
-                            placeholder="Number" aria-label="Number">
-                    </div>
+                <div class="col-lg-2 mb-sm-1">
+                    <input type="number" class="form-control contact__input border border-0 bg-light py-2 "
+                        placeholder="Number" aria-label="Number">
                 </div>
-                <div class="row d-flex justify-content-start align-items-center  mb-3">
-                    <div class="col-lg-4 mb-sm-1">
-                        <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
-                            placeholder="City" aria-label="City">
-                    </div>
-                    <div class="col-lg-2 mb-sm-1">
-                        <input type="number" class="form-control contact__input border border-0 bg-light py-2 "
-                            placeholder="ZIP" aria-label="ZIP">
-                    </div>
-                    <div class="col-lg-4 mb-sm-1">
-                        <select class="form-select contact__input border border-0 bg-light py-2 ">
-                            <option selected>Country</option>
-                            <option value="usa">USA</option>
-                        </select>
-                    </div>
+            </div>
+            <div class="row d-flex justify-content-start align-items-center  mb-3">
+                <div class="col-lg-4 mb-sm-1">
+                    <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
+                        placeholder="City" aria-label="City">
                 </div>
-                <!-- Password -->
-                <h3 class="mb-3">Password</h3>
-                <div class="row mb-3">
-                    <div class="col-lg-4 mb-sm-1">
-                        <input type="password" class="form-control contact__input border border-0 bg-light"
-                            placeholder="Current password" aria-label="Current password">
-                    </div>
+                <div class="col-lg-2 mb-sm-1">
+                    <input type="number" class="form-control contact__input border border-0 bg-light py-2 "
+                        placeholder="ZIP" aria-label="ZIP">
+                </div>
+                <div class="col-lg-4 mb-sm-1">
+                    <select class="form-select contact__input border border-0 bg-light py-2 ">
+                        <option selected>Country</option>
+                        <option value="usa">USA</option>
+                    </select>
                 </div>
                 <!-- Change Password? -->
                 <p class="mb-3 fs-6">Change Password?</p>
                 <div class="row mb-3">
                     <div class="col-lg-4 mb-sm-1">
-                        <input type="password" class="form-control contact__input border border-0 bg-light"
-                            placeholder="New password" aria-label="New password">
+                        <input type="password" class="form-control border border-0 bg-light" placeholder="New password"
+                            aria-label="New password">
                     </div>
                     <div class="col-lg-4 mb-sm-1">
-                        <input type="password" class="form-control contact__input border border-0 bg-light"
+                        <input type="password" class="form-control border border-0 bg-light"
                             placeholder="Confirm password" aria-label="Confirm password">
                     </div>
                 </div>
-                <div class="row float-end">
-                    <button class="btn btn-danger px-5 contact__btn">Save</button>
+            </div>
+            <div class="row d-flex justify-content-start align-items-center  mb-3">
+                <div class="col-lg-4 mb-sm-1">
+                    <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
+                        placeholder="Street" aria-label="Street">
+                </div>
+                <div class="col-lg-2 mb-sm-1">
+                    <input type="number" class="form-control contact__input border border-0 bg-light py-2 "
+                        placeholder="Number" aria-label="Number">
                 </div>
             </div>
+            <div class="row d-flex justify-content-start align-items-center  mb-3">
+                <div class="col-lg-4 mb-sm-1">
+                    <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
+                        placeholder="City" aria-label="City">
+                </div>
+                <div class="col-lg-2 mb-sm-1">
+                    <input type="number" class="form-control contact__input border border-0 bg-light py-2 "
+                        placeholder="ZIP" aria-label="ZIP">
+                </div>
+                <div class="col-lg-4 mb-sm-1">
+                    <select class="form-select contact__input border border-0 bg-light py-2 ">
+                        <option selected>Country</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </div>
+            </div>
+            <!-- Password -->
+            <h3 class="mb-3">Password</h3>
+            <div class="row mb-3">
+                <div class="col-lg-4 mb-sm-1">
+                    <input type="password" class="form-control contact__input border border-0 bg-light"
+                        placeholder="Current password" aria-label="Current password">
+                </div>
+            </div>
+            <!-- Change Password? -->
+            <p class="mb-3 fs-6">Change Password?</p>
+            <div class="row mb-3">
+                <div class="col-lg-4 mb-sm-1">
+                    <input type="password" class="form-control contact__input border border-0 bg-light"
+                        placeholder="New password" aria-label="New password">
+                </div>
+                <div class="col-lg-4 mb-sm-1">
+                    <input type="password" class="form-control contact__input border border-0 bg-light"
+                        placeholder="Confirm password" aria-label="Confirm password">
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <button class="btn profile_save_btn btn-danger px-5 contact__btn" data-bs-toggle="modal"
+                    data-bs-target="#successModal">Save</button>
+                <button class="btn profile_save_btn btn-danger px-5 contact__btn" data-bs-toggle="modal"
+                    data-bs-target="#failModal">Fail modal</button>
+            </div>
+        </div>
         </div>
         <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
         <div class="subscribe__loader">

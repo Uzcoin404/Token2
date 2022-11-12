@@ -1,8 +1,8 @@
-.confirmation>.col-12 {
+.confirmation > .col-12 {
     padding: 80px 0;
 }
 
-.confirmation>.col-12>.fa-solid {
+.confirmation > .col-12 > .fa-solid {
     font-size: 50px;
     margin-bottom: 10px;
 }
@@ -25,6 +25,28 @@
     font-size: 20px;
     line-height: 30px;
     color: var(--black);
+}
+.profile_save_btn {
+    width: max-content;
+    display: flex;
+    align-items: center;
+}
+.profile_form_modal .modal-content {
+    box-shadow: 0px 0px 64px rgba(0, 0, 0, 0.12);
+    border: none;
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+}
+.profile_form_modal .modal-dialog {
+    max-width: 540px;
+    width: 100%;
+}
+.profile_form_modal .modal-body {
+    flex: none;
+}
+.modal__icon{
+    font-size: 50px;
 }
 
 @media (max-width: 576px) {

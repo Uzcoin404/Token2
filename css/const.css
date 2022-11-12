@@ -57,10 +57,10 @@ a:hover {
 .btn-danger {
     --bs-btn-bg: var(--primary);
     --bs-btn-border-color: var(--primary);
-    --bs-btn-hover-bg: var(--primary);
-    --bs-btn-hover-border-color: var(--primary);
-    --bs-btn-active-bg: var(--primary);
-    --bs-btn-active-border-color: var(--primary);
+    --bs-btn-hover-bg: #ff1544;
+    --bs-btn-hover-border-color: #ff1544;
+    --bs-btn-active-bg: #ff1544;
+    --bs-btn-active-border-color: #ff1544;
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: #d15763;
     --bs-btn-disabled-border-color: #d15763;

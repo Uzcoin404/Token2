@@ -58,7 +58,6 @@ a {
 .tooltip-rel {
     position: relative;
 }
-
 .tooltip-abs::after,
 .tooltip-abs2::after {
     z-index: -1;
@@ -79,7 +78,7 @@ a {
     position: absolute;
     top: -80px;
     left: -300px;
-    font-size: 8px;
+    font-size: 12px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -91,13 +90,6 @@ a {
 .tooltip-abs>i,
 .tooltip-abs2>i {
     font-size: 22px;
-}
-
-.confirmation {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .lh-lg {
