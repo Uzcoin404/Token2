@@ -56,6 +56,6 @@
     position: relative;
     background-color: #fffbe7;
     border-radius: 10px;
-    color: #87744f;
-    filter: drop-shadow(0 0 0.1rem #87744f);
+    color: #87744F;
+    filter: drop-shadow(0 0 0.1rem #87744F);
 }

@@ -45,8 +45,8 @@
             <div class="row w-100">
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <h1 class="text-white display-5 fw-bold mb-lg-5 mb-md-3 mb-2">Personal information</h1>
-                    <p class="lh-lg text-white mb-lg-4 mb-4 pb-sm-2" style="text-align: justify;">We have solutions that
-                        can integrate with almost any system, below
+                    <p class="lh-lg text-white mb-lg-4 mb-4 pb-sm-2 fw-normal" style="text-align: justify;">We have
+                        solutions that can integrate with almost any system, below
                         is the list of integration
                         guides with different systems published so far, and it is far from being exhaustive. Feel free
                         to contact us if you cannot find your desired product in the list below, we will check the
@@ -85,32 +85,42 @@
         </div>
     </header>
     <!-- Personal Infos -->
-    <main class="main">
-        <div class="container">
-            <div class="ps__info row  mb-lg-3 mx-auto">
-                <div class="col mt-encriment rounded p-5 bg-white">
-                    <!-- General Information -->
-                    <h3 class="ps__title mb-3">General Information</h3>
-                    <div class="row d-flex justify-content-start align-items-center mb-3">
-                        <div class="col-lg-2 mb-sm-1">
-                            <select name="type" id="type" class="form-select border border-0 bg-light py-2">
-                                <option value="mr">Mr</option>
-                                <option value="ms">Ms</option>
-                            </select>
-                        </div>
-                        <div class="col-lg-4  mb-sm-1">
-                            <input type="text" class="form-control border border-0 bg-light py-2" placeholder="Name"
-                                aria-label="Name">
-                        </div>
-                        <div class="col-lg-4  mb-sm-1">
-                            <input type="text" class="form-control border border-0 bg-light py-2 " placeholder="Surname"
-                                aria-label="Surname">
-                        </div>
+    <main class="container ">
+        <div class="row  mb-lg-3 mx-auto">
+            <div class="col mt-encriment rounded p-5 bg-white">
+                <!-- Confirmation modals -->
+                <div class="col-lg-6 col-10 confirmation">
+                    <div class="col-12 bg-white shadow mb-5 text-center rounded">
+                        <i class="fa-solid text-success fa-circle-check"></i>
+                        <p class="fw-bold fs-5">Your Information has been <br> SAVED!</p>
                     </div>
-                    <div class="row d-flex justify-content-start align-items-center">
-                        <div class="mb-3 col-lg-3">
-                            <input type="date" class="date__input form-control border border-0 bg-light py-2  mb-sm-1"
-                                placeholder="Date of Birth" aria-label="Date of Birth">
+                    <div class="col-12 bg-white shadow text-center rounded">
+                        <i class="fa-solid text-danger fa-circle-xmark"></i>
+                        <p class="fw-bold fs-5">Your Information NOT been <br> SAVED!</p>
+                    </div>
+                </div>
+                <!-- General Information -->
+                <h3 class="mb-3">General Information</h3>
+                <div class="row d-flex justify-content-start align-items-center mb-3">
+                    <div class="col-lg-2 mb-sm-1">
+                        <select name="type" id="type" class="form-select contact__input border border-0 bg-light py-2">
+                            <option value="mr">Mr</option>
+                            <option value="ms">Ms</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-4  mb-sm-1">
+                        <input type="text" class="form-control contact__input border border-0 bg-light py-2"
+                            placeholder="Name" aria-label="Name">
+                    </div>
+                    <div class="col-lg-4  mb-sm-1">
+                        <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
+                            placeholder="Surname" aria-label="Surname">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-start align-items-center">
+                    <div class="mb-3 col-lg-3">
+                        <input type="text" class="form-control contact__input border border-0 bg-light py-2  mb-sm-1"
+                            placeholder="Date of Birth" aria-label="Date of Birth">
 
                         </div>
                         <div class="mb-3 col-5">
@@ -122,77 +132,41 @@
                             </select>
                         </div>
                     </div>
-                    <!-- Registered Address -->
-                    <h3 class="ps__title mb-3">Registered Address</h3>
-                    <div class="row d-flex justify-content-start align-items-center mb-3">
-                        <div class="col-lg-4 mb-sm-1">
-                            <input type="text" class="form-control border border-0 bg-light py-2 " placeholder="Street"
-                                aria-label="Street">
-                        </div>
-                        <div class="col-lg-2 mb-sm-1">
-                            <input type="number" class="form-control border border-0 bg-light py-2 "
-                                placeholder="Number" aria-label="Number">
-                        </div>
+                    <div class="mb-3 col-5">
+                        <select id="gender" name="gender"
+                            class="form-select contact__input border border-0 bg-light py-2  mb-sm-1">
+                            <option selected>Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
                     </div>
-                    <div class="row d-flex justify-content-start align-items-center  mb-3">
-                        <div class="col-lg-4 mb-sm-1">
-                            <input type="text" class="form-control border border-0 bg-light py-2 " placeholder="City"
-                                aria-label="City">
-                        </div>
-                        <div class="col-lg-2 mb-sm-1">
-                            <input type="number" class="form-control border border-0 bg-light py-2 " placeholder="ZIP"
-                                aria-label="ZIP">
-                        </div>
-                        <div class="col-lg-4 mb-sm-1">
-                            <select class="form-select border border-0 bg-light py-2 ">
-                                <option selected>Country</option>
-                                <option value="usa">USA</option>
-                            </select>
-                        </div>
+                </div>
+                <!-- Registered Address -->
+                <h3 class="mb-3">Registered Address</h3>
+                <div class="row d-flex justify-content-start align-items-center mb-3">
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
+                            placeholder="Street" aria-label="Street">
                     </div>
-                    <!-- Shipping Address -->
-                    <h3 class="ps__title mb-3">Shipping Address</h3>
-                    <div class="row d-flex justify-content-start align-items-center  mb-3">
-                        <div class="form-check ms-3">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Similar to Registered Address
-                            </label>
-                        </div>
+                    <div class="col-lg-2 mb-sm-1">
+                        <input type="number" class="form-control contact__input border border-0 bg-light py-2 "
+                            placeholder="Number" aria-label="Number">
                     </div>
-                    <div class="row d-flex justify-content-start align-items-center  mb-3">
-                        <div class="col-lg-4 mb-sm-1">
-                            <input type="text" class="form-control border border-0 bg-light py-2 " placeholder="Street"
-                                aria-label="Street">
-                        </div>
-                        <div class="col-lg-2 mb-sm-1">
-                            <input type="number" class="form-control border border-0 bg-light py-2 "
-                                placeholder="Number" aria-label="Number">
-                        </div>
+                </div>
+                <div class="row d-flex justify-content-start align-items-center  mb-3">
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
+                            placeholder="City" aria-label="City">
                     </div>
-                    <div class="row d-flex justify-content-start align-items-center  mb-3">
-                        <div class="col-lg-4 mb-sm-1">
-                            <input type="text" class="form-control border border-0 bg-light py-2 " placeholder="City"
-                                aria-label="City">
-                        </div>
-                        <div class="col-lg-2 mb-sm-1">
-                            <input type="number" class="form-control border border-0 bg-light py-2 " placeholder="ZIP"
-                                aria-label="ZIP">
-                        </div>
-                        <div class="col-lg-4 mb-sm-1">
-                            <select class="form-select border border-0 bg-light py-2 ">
-                                <option selected>Country</option>
-                                <option value="usa">USA</option>
-                            </select>
-                        </div>
+                    <div class="col-lg-2 mb-sm-1">
+                        <input type="number" class="form-control contact__input border border-0 bg-light py-2 "
+                            placeholder="ZIP" aria-label="ZIP">
                     </div>
-                    <!-- Password -->
-                    <h3 class="ps__title mb-3">Password</h3>
-                    <div class="row mb-3">
-                        <div class="col-lg-4 mb-sm-1">
-                            <input type="password" class="form-control border border-0 bg-light"
-                                placeholder="Current password" aria-label="Current password">
-                        </div>
+                    <div class="col-lg-4 mb-sm-1">
+                        <select class="form-select contact__input border border-0 bg-light py-2 ">
+                            <option selected>Country</option>
+                            <option value="usa">USA</option>
+                        </select>
                     </div>
                     <!-- Change Password? -->
                     <p class="mb-3 fs-6">Change Password?</p>
@@ -206,9 +180,55 @@
                                 placeholder="Confirm password" aria-label="Confirm password">
                         </div>
                     </div>
-                    <div class="d-flex justify-content-end mt-sm-5 mt-4">
-                        <button type="submit" class="btn btn-danger px-5 py-2">Save</button>
+                </div>
+                <div class="row d-flex justify-content-start align-items-center  mb-3">
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
+                            placeholder="Street" aria-label="Street">
                     </div>
+                    <div class="col-lg-2 mb-sm-1">
+                        <input type="number" class="form-control contact__input border border-0 bg-light py-2 "
+                            placeholder="Number" aria-label="Number">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-start align-items-center  mb-3">
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="text" class="form-control contact__input border border-0 bg-light py-2 "
+                            placeholder="City" aria-label="City">
+                    </div>
+                    <div class="col-lg-2 mb-sm-1">
+                        <input type="number" class="form-control contact__input border border-0 bg-light py-2 "
+                            placeholder="ZIP" aria-label="ZIP">
+                    </div>
+                    <div class="col-lg-4 mb-sm-1">
+                        <select class="form-select contact__input border border-0 bg-light py-2 ">
+                            <option selected>Country</option>
+                            <option value="usa">USA</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Password -->
+                <h3 class="mb-3">Password</h3>
+                <div class="row mb-3">
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="password" class="form-control contact__input border border-0 bg-light"
+                            placeholder="Current password" aria-label="Current password">
+                    </div>
+                </div>
+                <!-- Change Password? -->
+                <p class="mb-3 fs-6">Change Password?</p>
+                <div class="row mb-3">
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="password" class="form-control contact__input border border-0 bg-light"
+                            placeholder="New password" aria-label="New password">
+                    </div>
+                    <div class="col-lg-4 mb-sm-1">
+                        <input type="password" class="form-control contact__input border border-0 bg-light"
+                            placeholder="Confirm password" aria-label="Confirm password">
+                    </div>
+                </div>
+                <div class="row float-end">
+                    <button class="btn btn-danger px-5 contact__btn">Save</button>
                 </div>
             </div>
         </div>

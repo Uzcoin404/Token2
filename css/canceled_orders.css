@@ -28,6 +28,7 @@
     z-index: 2;
     background-color: #DADADA;
 }
+
 .line-second>li:nth-child(-n+2) {
     background-color: var(--primary);
 }
@@ -47,4 +48,92 @@
     height: 5px;
     border-radius: 5px;
     background-color: var(--primary);
+}
+
+@media (max-width:460px) {
+
+    .tooltip-abs>i,
+    .tooltip-abs2>i {
+        font-size: 14px;
+    }
+}
+
+@media (max-width:1180px) {
+    .tooltip-abs {
+        left: -250px;
+    }
+
+    .tooltip-abs::after {
+        right: 185px;
+    }
+}
+
+@media (max-width:990px) {
+    .tooltip-abs {
+        left: -240px;
+    }
+
+    .tooltip-abs::after {
+        left: 240px;
+    }
+}
+
+@media (max-width:768px) {
+    .tooltip-abs {
+        width: 360px;
+        left: -170px;
+    }
+
+    .tooltip-abs::after {
+        left: 170px;
+    }
+
+    .tooltip-abs2 {
+        left: -250px;
+    }
+
+    .tooltip-abs2::after {
+        right: 180px;
+    }
+}
+
+@media (max-width:460px) {
+    .tooltip-abs {
+        top: -70px;
+        left: -130px;
+    }
+
+    .tooltip-abs::after {
+        left: 130px;
+    }
+
+    .tooltip-abs2 {
+        width: 330px;
+        left: -190px;
+    }
+
+    .tooltip-abs2::after {
+        right: 125px;
+    }
+}
+
+@media (max-width:410px) {
+
+    .tooltip-abs {
+        left: -110px;
+        width: 300px;
+    }
+
+    .tooltip-abs::after {
+        left: 110px;
+    }
+
+    .tooltip-abs2 {
+        left: -170px;
+        width: 300px;
+    }
+
+    .tooltip-abs2::after {
+        right: 115px;
+    }
 }

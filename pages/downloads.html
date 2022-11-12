@@ -45,7 +45,8 @@
             <div class="row w-100">
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <h1 class="text-white display-5 fw-bold mb-lg-5 mb-md-3 mb-2">Downloads</h1>
-                    <p class="lh-lg text-white mb-lg-4 mb-4 pb-sm-2" style="text-align: justify;">We have solutions that
+                    <p class="lh-lg text-white mb-lg-4 mb-4 pb-sm-2 fw-normal" style="text-align: justify;">We have
+                        solutions that
                         can integrate with almost any system, below
                         is the list of integration
                         guides with different systems published so far, and it is far from being exhaustive. Feel free
@@ -85,24 +86,73 @@
         </div>
     </header>
     <!-- Downloads -->
-
-    <main class="main">
-        <main class="container">
-            <div class="row mb-lg-5 mb-md-3 mx-auto">
-                <div class="col mt-encriment rounded p-5 bg-white">
-                    <span class="plus">+</span>
-                    <!-- Available downloads -->
-                    <h3 class="mb-3">Available downloads</h3>
-                    <div class="row p-2 mb-4">
-                        <div class="col-lg-6 bg-blog">
-                            <p class="p-3">On this page you can access entitled software and tools that <br> are
-                                available
-                                only to Token2
-                                customers and partners. The list of available downloads depend on the products you have
-                                previously ordered with us <br> (i.e. the Python solution can be downloaded only if you
-                                have
-                                purchased <br> our Python-compatible NFC writer etc.)</p>
+    <main class="container ">
+        <div class="row mb-lg-5 mb-md-3 mx-auto">
+            <!-- Available downloads -->
+            <div class="accordion mt-encriment col-12" id="accordionHeader">
+                <div class="accordion-item text-secondary border border-1 border-muted">
+                    <h2 class="accordion-header" id="heading0">
+                        <div class="accordion-button bg-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse0" aria-expanded="true" aria-controls="collapse0">
+                            <span class=" d-flex justify-content-start align-items-start flex-column">
+                                <h3 class="fs-4 fw-semibold text-dark">Available downloads</h3>
+                            </span>
                         </div>
+                    </h2>
+                    <div id="collapse0" class="accordion-collapse collapse show" aria-labelledby="heading0"
+                        data-bs-parent="#accordionHeader">
+                        <div class="accordion-body">
+                            <div class="row p-2 mb-4">
+                                <div class="col-lg-6 bg-blog">
+                                    <p class="p-3">On this page you can access entitled software and tools that <br> are available
+                                        only to Token2
+                                        customers and partners. The list of available downloads depend on the products you have
+                                        previously ordered with us <br> (i.e. the Python solution can be downloaded only if you have
+                                        purchased <br> our Python-compatible NFC writer etc.)</p>
+                                </div>
+                            </div>
+                            <div class="row d-flex flex-column">
+                                <div class="col mb-lg-5">
+                                    <h4 class="text-muted mb-3">Bulk activation script / EXE Version (public access)</h4>
+                                    <p class="text-muted mb-3 fw-semibold">A solution to automate the activation of imported
+                                        hardware tokens with Azure MFA. More information about this script is available here.</p>
+                                    <a href="/" download class="btn btn-danger single quote">Download</a>
+                                </div>
+                                <div class="col mb-lg-5">
+                                    <h4 class="text-muted mb-3">Bulk activation script / Powershell version (restricted access)</h4>
+                                    <p class="text-muted mb-3 fw-semibold">A solution to automate the activation of imported
+                                        hardware tokens with Azure MFA. More information about this script is available.</p>
+                                    <a href="/" download class="btn btn-danger single quote">Download</a>
+                                </div>
+                                <div class="col mb-lg-5">
+                                    <h4 class="text-muted mb-3">token2_config.py - Python script (restricted access)</h4>
+                                    <p class="text-muted mb-3 fw-semibold">Burn and configure Token2 programmable TOTP tokens
+                                        (second generation, single profile) under Windows, Linux and macOS. Check the installation
+                                        and usage guide here.</p>
+                                    <a href="/" download class="btn btn-danger single quote">Download</a>
+                                </div>
+                                <div class="col mb-lg-2">
+                                    <h4 class="text-muted mb-3">Generate PKCS XML file for Watchguard AuthPoint Online (restricted
+                                        access)</h4>
+                                    <p class="text-muted mb-3 fw-semibold">This tool generates a seed file compatible with
+                                        Watchguard AuthPoint based on an arbitrary base32 secret submitted by users. The use case
+                                        for this tool is allowing using the same token in more than one system. For example, you can
+                                        provision a token for Facebook or Google using our NFC Burner or USB Config tool, record the
+                                        base32 code and then use the same secret to generate the pcks file for Authpoint.</p>
+                                    <a href="/" download class="btn btn-danger single quote">Download</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="row p-2 mb-4">
+                    <div class="col-lg-6 bg-blog">
+                        <p class="p-3">On this page you can access entitled software and tools that <br> are available
+                            only to Token2
+                            customers and partners. The list of available downloads depend on the products you have
+                            previously ordered with us <br> (i.e. the Python solution can be downloaded only if you have
+                            purchased <br> our Python-compatible NFC writer etc.)</p>
                     </div>
                     <div class="row d-flex flex-column">
                         <div class="col mb-lg-5">
@@ -142,9 +192,11 @@
                             <a href="/" download class="btn btn-danger single quote">Download</a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </main>
+                </div> -->
+        </div>
+    </main>
+
+    <main class="main about__main">
         <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
         <div class="subscribe__loader">
             <script>

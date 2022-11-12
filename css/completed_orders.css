@@ -23,3 +23,15 @@
 .line>li:last-child {
     background-color: #DADADA;
 }
+
+.order,
+.order2 {
+    position: relative;
+}
+
+
+.print {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}

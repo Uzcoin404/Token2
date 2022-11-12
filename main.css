@@ -6,6 +6,7 @@
 a {
     color: inherit;
 }
+
 .active-link {
     padding: 7px 27px;
     background-color: white;
@@ -20,7 +21,8 @@ a {
     flex-wrap: wrap;
     gap: 20px;
 }
-.tabs > li {
+
+.tabs>li {
     cursor: pointer;
 }
 
@@ -43,7 +45,66 @@ a {
     box-shadow: none !important;
     border-color: #fff !important;
 }
-.contact__btn{
+
+.contact__btn {
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 24px;
+    height: 44px;
+    padding: 10px 14px;
+}
+
+.tooltip-rel {
+    position: relative;
+}
+
+.tooltip-abs::after,
+.tooltip-abs2::after {
+    z-index: -1;
+    position: absolute;
+    transform: rotate(45deg);
+    right: 135px;
+    bottom: -5px;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: #FFE7E7;
+}
+
+.tooltip-abs,
+.tooltip-abs2 {
+    z-index: 1;
+    width: 450px;
+    position: absolute;
+    top: -80px;
+    left: -300px;
+    font-size: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #bd5454;
+    background-color: #FFE7E7;
+    filter: drop-shadow(0 0 1px #bd5454);
+}
+
+.tooltip-abs>i,
+.tooltip-abs2>i {
+    font-size: 22px;
+}
+
+.confirmation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lh-lg {
+    font-family: "Open Sans";
+}
+
+.contact__btn {
     font-family: "Manrope";
     font-size: 16px;
     font-weight: 700;
@@ -52,12 +113,14 @@ a {
     padding-left: 40px;
     padding-right: 40px;
 }
+
 @media (max-width: 992px) {
     .header-bg {
         min-height: 100vh;
         height: 100%;
     }
 }
+
 @media (max-width: 576px) {
     .contact__input {
         height: 44px;
