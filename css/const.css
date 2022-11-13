@@ -50,6 +50,9 @@ button {
     font-size: 14px;
 }
 
+.text_primary {
+    color: var(--black);
+}
 .bg-danger {
     background-color: var(--primary) !important;
 }
@@ -103,6 +106,44 @@ button {
     align-items: center;
 }
 
+.basket__modal {
+    --bs-modal-width: 700px;
+}
+.basket__modal .table {
+    border-spacing: 0 3px;
+    border-collapse: separate;
+    min-width: 700px;
+}
+.basket__modal .table th,
+.basket__modal .table td {
+    background-color: rgba(0, 0, 0, 0.03);
+    padding: 12px 24px;
+}
+.basket__modal .table th:first-child,
+.basket__modal .table td:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.basket__modal .table th:last-child,
+.basket__modal .table td:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.basket_modal_total{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.modal_clear_btn{
+    height: 53px;
+    font-family: "Manrope";
+    background: #F6F7F9;
+    border-color: #F6F7F9;
+    color: rgba(41, 45, 51, 0.5);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.price__sup {
+    left: -5px;
+}
 .card__price {
     position: absolute;
     top: -60px;
@@ -200,9 +241,9 @@ button {
     width: max-content;
 }
 
-.order_steps_blog{
+.order_steps_blog {
     overflow-x: auto;
-    overflow-y:auto;
+    overflow-y: auto;
     display: flex;
     align-items: center;
 }
@@ -215,7 +256,8 @@ button {
     min-height: 150px;
 }
 
-.order__steps::before, .order_steps_line{
+.order__steps::before,
+.order_steps_line {
     position: absolute;
     left: 0;
     content: "";
@@ -267,6 +309,13 @@ button {
     }
     .products_content_header_text:nth-child(3) {
         margin-right: 30px;
+    }
+    .basket__modal {
+        --bs-modal-width: 100%;
+    }
+    .basket__modal .modal-dialog {
+        margin-left: 15px;
+        margin-right: 15px;
     }
 }
 @media (max-width: 576px) {

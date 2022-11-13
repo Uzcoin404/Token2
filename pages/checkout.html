@@ -205,15 +205,66 @@
                     <div class="checkout__footer between_center flex-wrap gap-2">
                         <h6 class="checkout_total_text fw-bold m-0">Total</h6>
                         <div class="d-flex flex-wrap gap-2">
-                            <a href="./products.html"
-                                class="btn checkout__btn px-md-5 btn-lg">Continue
+                            <a href="./products.html" class="btn checkout__btn px-md-5 btn-lg">Continue
                                 shopping</a>
-                            <button class="btn checkout__btn checkout_pay_btn red__btn btn-lg">Pay: €740.
+                            <button class="btn checkout__btn checkout_pay_btn red__btn btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#checkoutModal">Pay: €740.
                                 <span class="pay_btn_points">00</span></button>
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="modal basket__modal fade" id="checkoutModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content manrope  border-0">
+                        <div class="modal-header border-0">
+                            <h1 class="modal-title fs-5 fw-bold manrope">Shopping Basket</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text_primary">
+                            <div class="table-responsive">
+                                <table class="table table-borderless fw-bold">
+                                    <thead>
+                                        <tr>
+                                            <th>Product Title</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-danger">C301-i programmable TOTP token</td>
+                                            <td>5</td>
+                                            <td>€9. <sup class="price__sup">00</sup></td>
+                                            <td>€45. <sup class="price__sup">00</sup></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-danger">C301-i programmable TOTP token</td>
+                                            <td>5</td>
+                                            <td>€9. <sup class="price__sup">00</sup></td>
+                                            <td>€45. <sup class="price__sup">00</sup></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="basket_modal_total between_center px-4 py-3 rounded">
+                                    <p class="fs-6 fw-bold">Sub Total</p>
+                                    <p class="fs-6 fw-bold">€45. <sup class="price__sup">00</sup></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer border-0 justify-content-start">
+                            <button type="button" class="btn btn-secondary modal_clear_btn fs-16 fw-bold"
+                                data-bs-dismiss="modal">Clear</button>
+                            <a href="./products.html" class="btn checkout__btn px-md-5 btn-lg">Continue
+                                shopping</a>
+                            <button class="btn checkout__btn checkout_pay_btn red__btn btn-lg" data-bs-toggle="modal"
+                                data-bs-target="#checkoutModal">Pay: €740.
+                                <span class="pay_btn_points">00</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Import subscribe using Jquery you can remove subscribe__loader during backend process  -->
         <div class="subscribe__loader">
