@@ -112,7 +112,7 @@ button {
 .basket__modal .table {
     border-spacing: 0 3px;
     border-collapse: separate;
-    min-width: 700px;
+    min-width: 640px;
 }
 .basket__modal .table th,
 .basket__modal .table td {
