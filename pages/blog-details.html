@@ -48,39 +48,39 @@
                     </div>
                 </div>
             </section>
-            <section class="blog">
-                <div class="row g-4">
-                    <script>
-                        for (let i = 0; i < 10; i++) {
-                            document.write(`<div class="col-sm-12 col-md-6">
-                        <div class="blog__card">
-                            <a href="../pages/blog-details.html"><img src="../img/blog-card.png" alt=""
-                                    class="blog_card_img w-100"></a>
-                            <div class="blog_card_content">
-                                <p class="blog_card_date pb-2">04 November 2022</p>
-                                <h4 class="blog_card_title fw-bold pb-2">Sed ut perspiciatis unde omnis at vero
-                                    blanditils</h4>
-                                <p class="blog_card_text fs-6 pb-3">
-                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                                    praesentium voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel
-                                    eum iure...
-                                </p>
-                                <div class="between_center flex-wrap">
-                                    <div class="d-flex flex-wrap">
-                                        <span class="blog_card_tag me-2">App</span>
-                                        <span class="blog_card_tag me-2">CIO</span>
-                                        <span class="blog_card_tag me-2">Future</span>
-                                    </div>
-                                    <a href="../pages/blog-details.html" class="see__all">
-                                        Read more
-                                        <i class="fa-regular fa-arrow-right-long ms-2"></i>
-                                    </a>
-                                </div>
-                            </div>
+            <section class="blog__details bg-white rounded">
+                <div class="row blog__content mb-4 pb-2 g-sm-0">
+                    <div class="blog__items col-lg-6 col-sm-12">
+                        <a href="../pages/blog.html" class="see__all mb-3">
+                            <i class="fa-regular fa-arrow-left-long me-2"></i>
+                            Back
+                        </a>
+                        <h1 class="blog__title mt-2 mb-4">Sed ut perspiciatis unde omnis at vero blanditils</h1>
+                        <p class="blog_card_date pb-2">04 November 2022</p>
+                        <div class="blog__text mt-2 mb-3">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas. Quis autem vel eum iure...
                         </div>
-                    </div>`);
-                        }
-                    </script>
+                    </div>
+                    <img src="../img/blog-card.png" alt="" class="rounded col-lg-6 col-sm-12">
+                </div>
+                <p class="blog__text">
+                    On August 16th, 2022, Microsoft announced TOTP-based MFA for Azure AD B2C as generally available.
+                    The name used for this authentication method is "OATH software tokens", which is another name for
+                    TOTP authentication apps like Google Authenticator or Microsoft Authenticator. <br> <br>
+                    This means that, unfortunately, classic OATH tokens that are currently available with Azure AD
+                    (still in preview), cannot be used for Azure AD B2C. <br> <br>
+                    Luckily, you can still benefit from Token2 Programmable tokens as they act as a drop-in replacement
+                    for TOTP Apps - the only additional step required in this case is transferring the TOTP secret key
+                    (shown as a QR code during the MFA enrollment) onto the hardware token using one of our apps (NFC
+                    Burner or USB Config tool, depending on the hardware token model you have).
+                    The guide below will provide basic instructions on how to provision a hardware token for Azure AD
+                    B2C MFA.
+                </p>
+                <div class="d-flex flex-wrap mt-4">
+                    <span class="blog_card_tag me-2">App</span>
+                    <span class="blog_card_tag me-2">CIO</span>
+                    <span class="blog_card_tag me-2">Future</span>
                 </div>
             </section>
         </div>
