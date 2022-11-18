@@ -1,14 +1,9 @@
 .checkout__content {
     margin-bottom: 70px;
 }
-.checkout_table_blog {
-    overflow-x: auto;
-}
 .checkout__table {
     border-spacing: 0 2px;
     border-collapse: separate;
-    overflow-x: auto;
-    min-width: 640px;
 }
 .checkout__table td,
 .checkout__table th {
@@ -94,6 +89,10 @@
     margin-left: -3px;
     padding-bottom: 5px;
 }
+.checkout_pay_btn {
+    padding-left: 90px;
+    padding-right: 90px;
+}
 .empty_bag_blog {
     background-color: #fff;
     padding-top: 45px;
@@ -105,13 +104,24 @@
     max-width: 150px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .checkout_pay_btn {
-        padding-left: 90px;
-        padding-right: 90px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
-    .checkout_table_th{
+    .checkout__table{
         table-layout: fixed;
+    }
+    .checkout__table th:first-child{
+        width: 100%;
+    }
+    .checkout__table tr{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 6px;
+        padding: 5px 2px 0;
+        border-radius: 6px;
+        background-color: #fff;
     }
 }
 @media (max-width: 576px) {
@@ -122,19 +132,18 @@
         font-size: 14px;
     }
     .checkout_amount_input {
-        max-width: 100px;
+        max-width: 80px;
         font-size: 1rem;
+        margin: 0;
+        box-shadow: none !important;
     }
     .checkout__table td,
     .checkout__table th {
-        padding-top: 4px;
-        padding-bottom: 4px;
+        padding-top: 0px;
+        padding-bottom: 5px;
     }
     .checkout__table th,
     .checkout_total_text {
         padding-left: 8px;
-    }
-    .checkout__table {
-        min-width: 550px;
     }
 }

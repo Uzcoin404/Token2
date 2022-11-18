@@ -21,3 +21,21 @@
 .guides_table_th_title{
     font-weight: 700;
 }
+.guides__table{
+    min-width: 1000px;
+}
+@media (max-width: 991px) {
+    .guides__table{
+        min-width: 850px;
+    }
+}
+@media (max-width: 767px) {
+    .guides__table{
+        min-width: 700px;
+    }
+}
+@media (max-width: 576px) {
+    .guides__table{
+        min-width: 550px;
+    }
+}
