@@ -24,13 +24,6 @@
     color: var(--grey);
 }
 
-thead > tr > th {
-    width: 230px;
-}
-thead > tr > th:first-child {
-    width: 300px;
-}
-
 .tools_table_selects th .form-select {
     font-family: "Open Sans";
     font-weight: 700;
@@ -43,11 +36,22 @@ thead > tr > th:first-child {
 }
 .form_select_primary {
     border-color: var(--primary);
-    width: 220px;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/></svg>");
+    min-width: 160px;
 }
 
+.tools__table {
+    min-width: 900px;
+}
 .tools__table thead th {
     border: none;
+    min-width: 200px;
+    vertical-align: middle;
+}
+.tools__table tbody td:first-child,
+.tools__table thead th:first-child {
+    font-size: 14px;
+    color: var(--grey);
 }
 .tools__table th,
 .tools__table td {
@@ -55,4 +59,35 @@ thead > tr > th:first-child {
 }
 .tools__table tr .btn {
     margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    .tools__table {
+        font-size: 14px;
+        table-layout: fixed;
+    }
+    .tools__table tbody td:first-child,
+    .tools__table thead th:first-child {
+        position: sticky;
+        top: 0;
+        left: 0;
+        background: linear-gradient(
+            90deg,
+            #f9f9f9 89.58%,
+            rgba(249, 249, 249, 0) 100%
+        );
+        width: 160px;
+        padding-right: 10px !important;
+    }
+}
+@media (max-width: 575px) {
+    .tools__table thead th {
+        min-width: 100px;
+    }
+    .tools_table_selects .form-select {
+        width: 120px;
+    }
+    .tools__table {
+        min-width: 700px;
+    }
 }

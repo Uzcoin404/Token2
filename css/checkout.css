@@ -8,7 +8,7 @@
     border-spacing: 0 2px;
     border-collapse: separate;
     overflow-x: auto;
-    min-width: 720px;
+    min-width: 640px;
 }
 .checkout__table td,
 .checkout__table th {
@@ -35,6 +35,7 @@
     color: var(--primary);
 }
 .checkout_trash_btn {
+    width: 44px !important;
     background: #f6f7f9;
     color: rgba(0, 0, 0, 0.33);
 }
@@ -109,6 +110,9 @@
         padding-left: 90px;
         padding-right: 90px;
     }
+    .checkout_table_th{
+        table-layout: fixed;
+    }
 }
 @media (max-width: 576px) {
     .checkout__content {
@@ -131,6 +135,6 @@
         padding-left: 8px;
     }
     .checkout__table {
-        min-width: 640px;
+        min-width: 550px;
     }
 }
