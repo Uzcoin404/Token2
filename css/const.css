@@ -129,14 +129,14 @@ button {
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
 }
-.basket_modal_total{
+.basket_modal_total {
     background-color: rgba(0, 0, 0, 0.05);
 }
-.modal_clear_btn{
+.modal_clear_btn {
     height: 53px;
     font-family: "Manrope";
-    background: #F6F7F9;
-    border-color: #F6F7F9;
+    background: #f6f7f9;
+    border-color: #f6f7f9;
     color: rgba(41, 45, 51, 0.5);
     padding-left: 30px;
     padding-right: 30px;
@@ -242,8 +242,8 @@ button {
 }
 
 .order_steps_blog {
-    overflow-x: auto;
-    overflow-y: auto;
+    /* overflow-x: auto;
+    overflow-y: auto; */
     display: flex;
     align-items: center;
 }
@@ -252,7 +252,7 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-width: 600px;
+    /* min-width: 600px; */
     min-height: 150px;
 }
 
@@ -296,7 +296,7 @@ button {
     white-space: nowrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .products__title {
         font-size: 48px;
     }
@@ -317,8 +317,23 @@ button {
         margin-left: 15px;
         margin-right: 15px;
     }
+    .order__steps {
+        justify-content: space-between;
+    }
+    .order__steps::before,
+    .order_steps_line {
+        width: calc(100% - 24px);
+        left: auto;
+        right: auto;
+    }
+    .order_steps_text {
+        white-space: inherit;
+        text-align: center;
+        font-size: 11px;
+        line-height: 13px;
+    }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .splide__arrow {
         width: 45px !important;
         height: 45px !important;
