@@ -11,31 +11,39 @@
 .guides__table tbody .btn {
     display: inline-flex;
 }
-.guides_table_title, .guides_table_th_title {
+.guides_table_title,
+.guides_table_th_title {
     font-family: "Open Sans";
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     color: var(--grey);
 }
-.guides_table_th_title{
+.guides_table_th_title {
     font-weight: 700;
 }
-.guides__table{
-    min-width: 1000px;
+.table_write_us{
+    white-space: nowrap;
 }
-@media (max-width: 991px) {
-    .guides__table{
-        min-width: 850px;
-    }
-}
+
 @media (max-width: 767px) {
-    .guides__table{
-        min-width: 700px;
+    .guides__table {
+        table-layout: fixed;
     }
-}
-@media (max-width: 576px) {
-    .guides__table{
-        min-width: 550px;
+    .guides__table tbody tr {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #dee2e6;
+    }
+    .guides__table tbody tr td {
+        border: none;
+    }
+    .guides__table thead th{
+        display: none;
+    }
+    .guides__table thead th:first-child{
+        display: block;
     }
 }

@@ -67,7 +67,8 @@
         table-layout: fixed;
     }
     .tools__table tbody td:first-child,
-    .tools__table thead th:first-child {
+    .tools__table thead th:first-child,
+    .tools_table_title {
         position: sticky;
         top: 0;
         left: 0;
