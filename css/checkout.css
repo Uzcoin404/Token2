@@ -104,27 +104,16 @@
     max-width: 150px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .checkout_pay_btn {
         padding-left: 15px;
         padding-right: 15px;
     }
-    .checkout__table{
-        table-layout: fixed;
-    }
-    .checkout__table th:first-child{
-        width: 100%;
-    }
-    .checkout__table tr{
-        display: flex;
-        flex-wrap: wrap;
-        margin-bottom: 6px;
-        padding: 5px 2px 0;
-        border-radius: 6px;
-        background-color: #fff;
+    .checkout__btn, .modal_clear_btn{
+        height: 44px;
     }
 }
-@media (max-width: 576px) {
+@media (max-width: 575px) {
     .checkout__content {
         margin-bottom: 40px;
     }
